@@ -1,0 +1,2201 @@
+@import 'reset';
+/* Import Reset Styles */
+/* roboto-300 - latin_cyrillic */
+ @font-face {
+	 font-family: 'Roboto';
+	 font-style: normal;
+	 font-weight: 300;
+	 src: local(''), url('../fonts/roboto-v29-latin_cyrillic-300.woff2') format('woff2'), url('../fonts/roboto-v29-latin_cyrillic-300.woff') format('woff');
+	/* Chrome 26+, Opera 23+, Firefox 39+ */
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-regular - latin_cyrillic */
+ @font-face {
+	 font-family: 'Roboto';
+	 font-style: normal;
+	 font-weight: 400;
+	 src: local(''), url('../fonts/roboto-v29-latin_cyrillic-regular.woff2') format('woff2'), url('../fonts/roboto-v29-latin_cyrillic-regular.woff') format('woff');
+	/* Chrome 26+, Opera 23+, Firefox 39+ */
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-500 - latin_cyrillic */
+ @font-face {
+	 font-family: 'Roboto';
+	 font-style: normal;
+	 font-weight: 500;
+	 src: local(''), url('../fonts/roboto-v29-latin_cyrillic-500.woff2') format('woff2'), url('../fonts/roboto-v29-latin_cyrillic-500.woff') format('woff');
+	/* Chrome 26+, Opera 23+, Firefox 39+ */
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-700 - latin_cyrillic */
+ @font-face {
+	 font-family: 'Roboto';
+	 font-style: normal;
+	 font-weight: 700;
+	 src: local(''), url('../fonts/roboto-v29-latin_cyrillic-700.woff2') format('woff2'), url('../fonts/roboto-v29-latin_cyrillic-700.woff') format('woff');
+	/* Chrome 26+, Opera 23+, Firefox 39+ */
+	/* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* Browser Prefix Mixins */
+/* Breakpoints */
+/* Colours and animation */
+/* Remove Standard margin & padding on main content container*/
+ #block-penhaligons-content {
+	 margin-bottom: 0px !important;
+	 padding-top: 0px !important;
+}
+ #fragrance-profiler {
+	 background: url(../images/fragrance-profiler-2/leather-background.png);
+	 color: #f5e7d1;
+	 background-size: contain;
+	 height: auto;
+	 position: relative;
+	 text-align: center;
+	 font-family: 'Roboto' !important;
+	 overflow: hidden;
+	 z-index: 1;
+	 scroll-behavior: smooth;
+	/* Absolute positioned elements appearing on multiple pages */
+	/* Panels */
+	/* HTML Elements*/
+	/* font */
+	/* Bootstrap overrides */
+	/* Step 1 */
+	/* Step 3*/
+	/* Step 4, 5, 6 & 8 */
+	/* Slider Style */
+	/* Animation */
+	/* Iphone X specific*/
+	/* Step 10 - Spin the wheel*/
+	/* Animations */
+	/* Results */
+	/*Pop ups*/
+}
+h1,h2,h3,h4,h5,span,p,a{
+	font-family: 'Roboto';
+}
+ #fragrance-profiler * {
+	 -webkit-box-sizing: border-box;
+	 -moz-box-sizing: border-box;
+	 -ms-box-sizing: border-box;
+	 -o-box-sizing: border-box;
+	 box-sizing: border-box;
+}
+ #fragrance-profiler #fragrance-profiler-inner {
+	 margin: 0 auto;
+	 position: relative;
+	 min-height: 750px;
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler #fragrance-profiler-inner {
+		 min-height: 100vh;
+	}
+}
+ #fragrance-profiler .close-full-screen {
+	 display: none;
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler.mobile-full-screen {
+		 position: absolute;
+		 top: 0;
+		 z-index: 99;
+		 width: 100%;
+	}
+	 #fragrance-profiler.mobile-full-screen .close-full-screen {
+		 position: absolute;
+		 top: 20px;
+		 right: 20px;
+		 color: #f5e7d1;
+		 font-size: 18px;
+		 display: block;
+	}
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler {
+		 min-height: 100vh;
+	}
+}
+ #fragrance-profiler .profiler-main {
+	 opacity: 0.3;
+	 min-height: 100vh;
+	 background-size: inherit;
+}
+ #fragrance-profiler .penhaligon {
+	 position: absolute;
+	 top: 40px;
+	 left: 40px;
+	 width: 10%;
+}
+ #fragrance-profiler .question-number {
+	 position: absolute;
+	 top: 0;
+	 left: 50%;
+	 -webkit-transform: translateX(-50%);
+	 -moz-transform: translateX(-50%);
+	 -ms-transform: translateX(-50%);
+	 -o-transform: translateX(-50%);
+	 transform: translateX(-50%);
+	 color: #1d362f;
+	 padding: 0px;
+	 width: 180px;
+	 background-image: url(../images/fragrance-profiler-2/question.png);
+	 background-repeat: no-repeat;
+	 height: 46px;
+	 -webkit-display: flex;
+	 -moz-display: flex;
+	 -ms-display: flex;
+	 -o-display: flex;
+	 display: flex;
+	 align-items: center;
+}
+ #fragrance-profiler .question-number p {
+	 text-align: center;
+	 line-height: 1;
+	 margin: 0 auto !important;
+	 padding: 0;
+}
+ #fragrance-profiler #start-over {
+	 position: absolute;
+	 left: 10px;
+	 bottom: 10px;
+	 line-height: 1;
+	 text-decoration: underline;
+	 cursor: pointer;
+	 z-index: 10;
+	 display: none;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler #start-over {
+		 left: 50%;
+		 -webkit-transform: translateX(-50%);
+		 -moz-transform: translateX(-50%);
+		 -ms-transform: translateX(-50%);
+		 -o-transform: translateX(-50%);
+		 transform: translateX(-50%);
+		 bottom: 10px;
+		 font-size: 14px;
+	}
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler #start-over.darktext {
+		 color: #1d362f;
+		 bottom: 50px;
+	}
+}
+ #fragrance-profiler .mb {
+	 display: none;
+}
+ #fragrance-profiler .question-text:last-of-type {
+	 display: none;
+}
+ #fragrance-profiler .share {
+	 position: absolute;
+	 bottom: 60px;
+	 left: 60px;
+}
+ #fragrance-profiler .share:hover {
+	 cursor: pointer;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .share {
+		 position: static;
+		 bottom: unset;
+		 left: unset;
+		 text-align: center;
+		 margin-top: 60px;
+		 text-align: center;
+		 display: block;
+		 width: 100%;
+	}
+}
+ #fragrance-profiler .no-width {
+	 width: 0 !important;
+	 padding: 0;
+}
+ #fragrance-profiler .slider-button {
+	 position: absolute;
+	 top: 50%;
+	 z-index: 1;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .dt {
+		 display: none !important;
+	}
+	 #fragrance-profiler .mb {
+		 display: unset !important;
+	}
+	 #fragrance-profiler .mb-m-40 {
+		 margin-bottom: 40px;
+	}
+}
+ #fragrance-profiler .panel-container {
+	 width: 60%;
+	 margin: auto;
+	 max-width: 800px;
+}
+ @media (max-width: 990px) {
+	 #fragrance-profiler .panel-container {
+		 width: 80%;
+	}
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .panel-container {
+		 padding: 0px 60px 0px;
+		 width: 100%;
+	}
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler .panel-container {
+		 padding: 0px 20px 0px;
+		 width: 100%;
+	}
+}
+ #fragrance-profiler .panel {
+	 display: none;
+	 margin-bottom: 30px;
+	 padding-top: 60px;
+	 padding-bottom: 30px;
+}
+ @media (min-height: 850px) {
+	 #fragrance-profiler .panel {
+		 padding-top: 100px;
+	}
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .panel {
+		 padding-top: 80px;
+	}
+	 #fragrance-profiler .panel.active-panel {
+		 padding-top: 20px;
+	}
+}
+ #fragrance-profiler .panel.active-panel {
+	 -webkit-display: flex;
+	 -moz-display: flex;
+	 -ms-display: flex;
+	 -o-display: flex;
+	 display: flex;
+}
+ #fragrance-profiler .flex-center {
+	 -webkit-display: flex;
+	 -moz-display: flex;
+	 -ms-display: flex;
+	 -o-display: flex;
+	 display: flex;
+	 align-items: center;
+	 justify-content: center;
+}
+ @keyframes giftAnimate {
+	 0% {
+		 -webkit-transform: scale(1);
+		 -moz-transform: scale(1);
+		 -ms-transform: scale(1);
+		 -o-transform: scale(1);
+		 transform: scale(1);
+	}
+	 50% {
+		 -webkit-transform: scale(1.1);
+		 -moz-transform: scale(1.1);
+		 -ms-transform: scale(1.1);
+		 -o-transform: scale(1.1);
+		 transform: scale(1.1);
+	}
+	 100% {
+		 -webkit-transform: scale(1);
+		 -moz-transform: scale(1);
+		 -ms-transform: scale(1);
+		 -o-transform: scale(1);
+		 transform: scale(1);
+	}
+}
+ #fragrance-profiler .choice, #fragrance-profiler .choice2 {
+	 -webkit-transition: 0.5s ease all;
+	 -moz-transition: 0.5s ease all;
+	 -ms-transition: 0.5s ease all;
+	 -o-transition: 0.5s ease all;
+	 transition: 0.5s ease all;
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler .choice, #fragrance-profiler .choice2 {
+		 -webkit-animation-name: giftAnimate;
+		 -moz-animation-name: giftAnimate;
+		 -ms-animation-name: giftAnimate;
+		 -o-animation-name: giftAnimate;
+		 animation-name: giftAnimate;
+		 -webkit-animation-duration: 1.5s;
+		 -moz-animation-duration: 1.5s;
+		 -ms-animation-duration: 1.5s;
+		 -o-animation-duration: 1.5s;
+		 animation-duration: 1.5s;
+		 -webkit-animation-iteration-count: infinite;
+		 -moz-animation-iteration-count: infinite;
+		 -ms-animation-iteration-count: infinite;
+		 -o-animation-iteration-count: infinite;
+		 animation-iteration-count: infinite;
+		 -webkit-animation-timing-function: linear;
+		 -moz-animation-timing-function: linear;
+		 -ms-animation-timing-function: linear;
+		 -o-animation-timing-function: linear;
+		 animation-timing-function: linear;
+		 -webkit-animation-direction: normal;
+		 -moz-animation-direction: normal;
+		 -ms-animation-direction: normal;
+		 -o-animation-direction: normal;
+		 animation-direction: normal;
+	}
+}
+ #fragrance-profiler .choice:hover, #fragrance-profiler .choice2:hover {
+	 -webkit-transform: scale(1.1);
+	 -moz-transform: scale(1.1);
+	 -ms-transform: scale(1.1);
+	 -o-transform: scale(1.1);
+	 transform: scale(1.1);
+	 cursor: pointer;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .text-align-left {
+		 text-align: center;
+	}
+}
+ #fragrance-profiler img {
+	 max-width: 100%;
+}
+ #fragrance-profiler .button {
+	 display: inline-block;
+}
+ #fragrance-profiler button, #fragrance-profiler .button {
+	 background: none;
+	 outline: none;
+	 border: 1px #f5e7d1 solid;
+	 width: auto;
+	 color: #f5e7d1;
+	 margin-bottom: 0;
+	 padding: 15px 30px;
+	 font-size: 22px;
+	 line-height: 1;
+	 text-transform: none;
+	 -webkit-transition: 0.5s ease all;
+	 -moz-transition: 0.5s ease all;
+	 -ms-transition: 0.5s ease all;
+	 -o-transition: 0.5s ease all;
+	 transition: 0.5s ease all;
+	 font-family: 'Roboto';
+}
+ #fragrance-profiler button:hover, #fragrance-profiler .button:hover {
+	 background: #f5e7d1;
+	 color: #333;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler button, #fragrance-profiler .button {
+		 font-size: 15px;
+		 line-height: 1;
+		 padding: 15px 20px 15px;
+		 margin: auto;
+	}
+}
+ #fragrance-profiler strong {
+	 font-weight: 800;
+	 text-decoration: underline;
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler #seeFragrances {
+		 margin-bottom: 80px;
+	}
+}
+ #fragrance-profiler h2, #fragrance-profiler .h2 {
+	 font-size: 37px;
+	 color: inherit;
+	 line-height: 1.2;
+	 margin-bottom: 10px;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler h2, #fragrance-profiler .h2 {
+		 font-size: 26px;
+	}
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler h2, #fragrance-profiler .h2 {
+		 margin-bottom: 5px;
+	}
+}
+ @media (max-width: 990px) {
+	 #fragrance-profiler .panel-container .question h2 {
+		 width: 80%;
+		 margin-left: auto;
+		 margin-right: auto;
+	}
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .panel-container .question h2 {
+		 width: 100%;
+	}
+}
+ #fragrance-profiler .popup.fragrances h2 {
+	 font-size: 46px;
+}
+ #fragrance-profiler p, #fragrance-profiler .p {
+	 font-family: 'Roboto';
+	 margin: 20px 0;
+	 color: inherit;
+	 font-size: 19px;
+	 line-height: 24px;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler p, #fragrance-profiler .p {
+		 margin-top: 0px;
+		 font-size: 16px;
+	}
+}
+ #fragrance-profiler h4 {
+	 color: inherit;
+	 font-size: 21px;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .col-xs-12 {
+		 margin-bottom: 40px;
+	}
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .question .col-xs-12 {
+		 margin-bottom: 40px;
+	}
+}
+ #fragrance-profiler .intro-text {
+	 position: absolute;
+	 top: 50%;
+	 left: 58%;
+	 -webkit-transform: translate(-58%, -50%) rotate(3deg);
+	 -moz-transform: translate(-58%, -50%) rotate(3deg);
+	 -ms-transform: translate(-58%, -50%) rotate(3deg);
+	 -o-transform: translate(-58%, -50%) rotate(3deg);
+	 transform: translate(-58%, -50%) rotate(3deg);
+	 width: 40%;
+}
+ @media (max-width: 990px) {
+	 #fragrance-profiler .step-1 .dt {
+		 padding-left: 100px;
+	}
+}
+ #fragrance-profiler .step-1 p {
+	 font-size: 16px;
+	 margin-top: 20px;
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler .question h2 {
+		 min-height: 65px;
+	}
+}
+ @media (max-width: 320px) {
+	 #fragrance-profiler .question h2 {
+		 font-size: 22px;
+		 margin-bottom: 0;
+	}
+}
+ #fragrance-profiler .picker {
+	 margin-top: 80px;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .picker {
+		 margin-top: 0;
+	}
+}
+ #fragrance-profiler .pointer {
+	 position: absolute;
+	 bottom: -10%;
+	 left: 50%;
+	 -webkit-transform: translateX(-50%);
+	 -moz-transform: translateX(-50%);
+	 -ms-transform: translateX(-50%);
+	 -o-transform: translateX(-50%);
+	 transform: translateX(-50%);
+	 -webkit-transition: 1s ease all;
+	 -moz-transition: 1s ease all;
+	 -ms-transition: 1s ease all;
+	 -o-transition: 1s ease all;
+	 transition: 1s ease all;
+	 -webkit-transform-origin: bottom center;
+	 -moz-transform-origin: bottom center;
+	 -ms-transform-origin: bottom center;
+	 -o-transform-origin: bottom center;
+	 transform-origin: bottom center;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .pointer {
+		 -webkit-transition: 0.5s ease all;
+		 -moz-transition: 0.5s ease all;
+		 -ms-transition: 0.5s ease all;
+		 -o-transition: 0.5s ease all;
+		 transition: 0.5s ease all;
+		 width: 16%;
+	}
+}
+ #fragrance-profiler .it-matters-not-animate {
+	 -webkit-transform: translateX(-50%) rotateZ(55deg);
+	 -moz-transform: translateX(-50%) rotateZ(55deg);
+	 -ms-transform: translateX(-50%) rotateZ(55deg);
+	 -o-transform: translateX(-50%) rotateZ(55deg);
+	 transform: translateX(-50%) rotateZ(55deg);
+}
+ #fragrance-profiler .lady-animate {
+	 -webkit-transform: translateX(-50%) rotateZ(-55deg);
+	 -moz-transform: translateX(-50%) rotateZ(-55deg);
+	 -ms-transform: translateX(-50%) rotateZ(-55deg);
+	 -o-transform: translateX(-50%) rotateZ(-55deg);
+	 transform: translateX(-50%) rotateZ(-55deg);
+}
+ #fragrance-profiler .gender-animate-PENProfHim {
+	 -webkit-transform: translateX(-50%);
+	 -moz-transform: translateX(-50%);
+	 -ms-transform: translateX(-50%);
+	 -o-transform: translateX(-50%);
+	 transform: translateX(-50%);
+}
+ #fragrance-profiler .gender-animate-PENProfHer {
+	 -webkit-transform: translateX(-50%) rotateZ(-55deg);
+	 -moz-transform: translateX(-50%) rotateZ(-55deg);
+	 -ms-transform: translateX(-50%) rotateZ(-55deg);
+	 -o-transform: translateX(-50%) rotateZ(-55deg);
+	 transform: translateX(-50%) rotateZ(-55deg);
+}
+ #fragrance-profiler .gender-animate-PENProfUnisex {
+	 -webkit-transform: translateX(-50%) rotateZ(55deg);
+	 -moz-transform: translateX(-50%) rotateZ(55deg);
+	 -ms-transform: translateX(-50%) rotateZ(55deg);
+	 -o-transform: translateX(-50%) rotateZ(55deg);
+	 transform: translateX(-50%) rotateZ(55deg);
+}
+ #fragrance-profiler .who-for {
+	 overflow: hidden;
+	 position: relative;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .who-for {
+		 width: 100%;
+		 margin: 0;
+	}
+}
+ #fragrance-profiler .who-for img {
+	 -webkit-display: flex;
+	 -moz-display: flex;
+	 -ms-display: flex;
+	 -o-display: flex;
+	 display: flex;
+	 margin: auto;
+}
+ #fragrance-profiler .you {
+	 overflow: hidden;
+	 position: relative;
+	 width: 62%;
+	 margin: auto;
+	 max-width: 468px;
+}
+ @media (max-width: 550px) {
+	 #fragrance-profiler .you {
+		 width: 100%;
+	}
+}
+ #fragrance-profiler .you img {
+	 display: block;
+}
+ #fragrance-profiler .youare-overlay {
+	 width: 33.333%;
+	 height: 100%;
+	 position: absolute;
+	 bottom: 0;
+	 left: 0;
+	 cursor: pointer;
+}
+ #fragrance-profiler .youare-overlay.select-imn {
+	 left: unset;
+	 right: 0;
+}
+ #fragrance-profiler .youare-overlay.select-gent {
+	 left: 33.333%;
+}
+ #fragrance-profiler .youare-overlay.select-PENProfHim {
+	 left: 33.333%;
+}
+ #fragrance-profiler .youare-overlay.select-PENProfUnisex {
+	 left: unset;
+	 right: 0;
+}
+ #fragrance-profiler .cards {
+	 padding: 80px 0 80px;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .cards {
+		 padding: 0;
+	}
+}
+ #fragrance-profiler .playing-cards {
+	 cursor: pointer;
+	 padding: 0;
+}
+ #fragrance-profiler .playing-cards .card-img {
+	 z-index: 2;
+	 -webkit-transition: 0.5s ease all;
+	 -moz-transition: 0.5s ease all;
+	 -ms-transition: 0.5s ease all;
+	 -o-transition: 0.5s ease all;
+	 transition: 0.5s ease all;
+	 position: relative;
+}
+ #fragrance-profiler .playing-cards .card-img:hover {
+	 margin-top: -5%;
+	 margin-bottom: 5%;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .playing-cards .card-img:hover {
+		 margin-top: 0;
+		 margin-bottom: 0;
+	}
+}
+ #fragrance-profiler .playing-cards.card-1 {
+	 -webkit-transform: rotate(-10deg);
+	 -moz-transform: rotate(-10deg);
+	 -ms-transform: rotate(-10deg);
+	 -o-transform: rotate(-10deg);
+	 transform: rotate(-10deg);
+	 z-index: 5;
+	 top: 2%;
+}
+ #fragrance-profiler .playing-cards.card-2 {
+	 z-index: 6;
+}
+ #fragrance-profiler .playing-cards.card-3 {
+	 -webkit-transform: rotate(4deg);
+	 -moz-transform: rotate(4deg);
+	 -ms-transform: rotate(4deg);
+	 -o-transform: rotate(4deg);
+	 transform: rotate(4deg);
+	 z-index: 6;
+}
+ #fragrance-profiler .playing-cards.card-4 {
+	 -webkit-transform: rotate(10deg);
+	 -moz-transform: rotate(10deg);
+	 -ms-transform: rotate(10deg);
+	 -o-transform: rotate(10deg);
+	 transform: rotate(10deg);
+	 top: 2%;
+	 z-index: 6;
+}
+ #fragrance-profiler .playing-cards.slick-slide {
+	 opacity: 0.3;
+	 -webkit-transition: 0.5s ease all;
+	 -moz-transition: 0.5s ease all;
+	 -ms-transition: 0.5s ease all;
+	 -o-transition: 0.5s ease all;
+	 transition: 0.5s ease all;
+}
+ #fragrance-profiler .playing-cards.slick-slide.faded {
+	 opacity: 0 !important;
+	 -webkit-transition: none;
+	 -moz-transition: none;
+	 -ms-transition: none;
+	 -o-transition: none;
+	 transition: none;
+}
+ #fragrance-profiler .playing-cards.slick-slide.slick-current {
+	 -webkit-transform: scale(1.15);
+	 -moz-transform: scale(1.15);
+	 -ms-transform: scale(1.15);
+	 -o-transform: scale(1.15);
+	 transform: scale(1.15);
+	 opacity: 1;
+	 -webkit-transition: 0.5s ease all;
+	 -moz-transition: 0.5s ease all;
+	 -ms-transition: 0.5s ease all;
+	 -o-transition: 0.5s ease all;
+	 transition: 0.5s ease all;
+	 z-index: 10;
+}
+ @media (max-width: 399px) {
+	 #fragrance-profiler .playing-cards.slick-slide.slick-current {
+		 -webkit-transform: scale(1.2);
+		 -moz-transform: scale(1.2);
+		 -ms-transform: scale(1.2);
+		 -o-transform: scale(1.2);
+		 transform: scale(1.2);
+	}
+}
+ @media only screen and (width: 375px) and (height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	 #fragrance-profiler .playing-cards.slick-slide.slick-current {
+		 -webkit-transform: scale(1.8);
+		 -moz-transform: scale(1.8);
+		 -ms-transform: scale(1.8);
+		 -o-transform: scale(1.8);
+		 transform: scale(1.8);
+	}
+}
+ #fragrance-profiler .playing-cards.slick-slide {
+	 -webkit-transform: rotate(0deg);
+	 -moz-transform: rotate(0deg);
+	 -ms-transform: rotate(0deg);
+	 -o-transform: rotate(0deg);
+	 transform: rotate(0deg);
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .playing-cards {
+		 top: 0;
+		 margin-top: 0;
+	}
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler .question .playing-cards {
+		 background: url(../images/fragrance-profiler-2/backofcard.png);
+		 background-repeat: no-repeat;
+		 background-size: contain;
+		 padding: 0px 20px;
+		 background-position: 20px 0;
+	}
+}
+ @media only screen and (width: 375px) and (height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	 #fragrance-profiler .question .playing-cards {
+		 -webkit-transform: scale(1.3);
+		 -moz-transform: scale(1.3);
+		 -ms-transform: scale(1.3);
+		 -o-transform: scale(1.3);
+		 transform: scale(1.3);
+	}
+}
+ #fragrance-profiler .selected-card-slider {
+	 opacity: 0;
+}
+ #fragrance-profiler .bg-flip {
+	 -webkit-transform: rotateY(-180deg);
+	 -moz-transform: rotateY(-180deg);
+	 -ms-transform: rotateY(-180deg);
+	 -o-transform: rotateY(-180deg);
+	 transform: rotateY(-180deg);
+	 -webkit-transition: 1s;
+	 -moz-transition: 1s;
+	 -ms-transition: 1s;
+	 -o-transition: 1s;
+	 transition: 1s;
+	 position: absolute;
+	 padding: 0 20px;
+	 top: 0;
+	 left: 0;
+}
+ #fragrance-profiler .slick-list {
+	 overflow: visible;
+	 z-index: 2;
+}
+ #fragrance-profiler .no-swipe {
+	 -webkit-transform: translate3d(-25%, 0px, 0px) !important;
+	 -moz-transform: translate3d(-25%, 0px, 0px) !important;
+	 -ms-transform: translate3d(-25%, 0px, 0px) !important;
+	 -o-transform: translate3d(-25%, 0px, 0px) !important;
+	 transform: translate3d(-25%, 0px, 0px) !important;
+}
+ #fragrance-profiler .card-container {
+	 margin-top: 40px;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .card-container {
+		 margin-top: 90px;
+	}
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler .card-container {
+		 margin-top: 85px;
+	}
+}
+ @keyframes rotating {
+	 from {
+		 -webkit-transform: rotate(0deg);
+		 -moz-transform: rotate(0deg);
+		 -ms-transform: rotate(0deg);
+		 -o-transform: rotate(0deg);
+		 transform: rotate(0deg);
+	}
+	 to {
+		 -webkit-transform: rotate(360deg);
+		 -moz-transform: rotate(360deg);
+		 -ms-transform: rotate(360deg);
+		 -o-transform: rotate(360deg);
+		 transform: rotate(360deg);
+	}
+}
+ #fragrance-profiler .card-bg {
+	 position: absolute;
+	 z-index: 0;
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler .card-bg {
+		 display: none !important;
+	}
+}
+ #fragrance-profiler .card-bg.card-bg-right {
+	 top: 17%;
+	 right: -16%;
+	 -webkit-transform: rotateZ(-15deg) rotateY(180deg) scale(1.55);
+	 -moz-transform: rotateZ(-15deg) rotateY(180deg) scale(1.55);
+	 -ms-transform: rotateZ(-15deg) rotateY(180deg) scale(1.55);
+	 -o-transform: rotateZ(-15deg) rotateY(180deg) scale(1.55);
+	 transform: rotateZ(-15deg) rotateY(180deg) scale(1.55);
+}
+ #fragrance-profiler .card-bg.card-bg-left {
+	 left: -11%;
+	 top: 17%;
+	 -webkit-transform: scale(1.55);
+	 -moz-transform: scale(1.55);
+	 -ms-transform: scale(1.55);
+	 -o-transform: scale(1.55);
+	 transform: scale(1.55);
+}
+ #fragrance-profiler .card-slot {
+	 border: 1px #f5e7d1 solid;
+	 -webkit-border-radius: 5px;
+	 -moz-border-radius: 5px;
+	 -ms-border-radius: 5px;
+	 -o-border-radius: 5px;
+	 border-radius: 5px;
+	 height: 75px;
+	 -webkit-display: flex;
+	 -moz-display: flex;
+	 -ms-display: flex;
+	 -o-display: flex;
+	 display: flex;
+	 width: 50px;
+	 margin: 0px 5px 0px 15px;
+	 position: relative;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .card-slot {
+		 margin: 0px 1px;
+		 width: 40px;
+		 height: 60px;
+	}
+}
+ #fragrance-profiler .card-slot:first-of-type {
+	 margin-left: 0;
+}
+ #fragrance-profiler .card-slot img {
+	 opacity: 0;
+}
+ #fragrance-profiler .card-slot img.fadeIn {
+	 opacity: 1;
+	 -webkit-transition: 3s ease all;
+	 -moz-transition: 3s ease all;
+	 -ms-transition: 3s ease all;
+	 -o-transition: 3s ease all;
+	 transition: 3s ease all;
+}
+ #fragrance-profiler .card-slot .picked {
+	 position: absolute;
+}
+ #fragrance-profiler .card-slot :nth-child(even) {
+	 margin-top: -20px;
+	 z-index: 2;
+}
+ #fragrance-profiler .card-slot:hover {
+	 cursor: pointer;
+}
+ #fragrance-profiler .chosen-cards {
+	 justify-content: center;
+}
+ #fragrance-profiler .your-fragrances .chosen-cards {
+	 justify-content: unset;
+	 width: 395px;
+	 margin-left: 47%;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .your-fragrances .chosen-cards {
+		 justify-content: center;
+		 width: auto;
+		 margin-left: 0;
+		 margin-right: 0;
+		 margin-bottom: 20px;
+	}
+}
+ #fragrance-profiler .chosen-cards [class*='col-'] {
+	 padding: 5px;
+}
+ #fragrance-profiler .chosen-card-2 {
+	 position: absolute;
+	 top: -25%;
+}
+ #fragrance-profiler .results {
+	 position: absolute;
+	 bottom: 10px;
+	 width: 100%;
+	 left: 0;
+	 z-index: 5;
+	 display: none;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .results {
+		 bottom: 60px;
+	}
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .results.personality-results {
+		 bottom: unset;
+		 top: 200px;
+	}
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler .results.personality-results {
+		 top: 200px;
+	}
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .results.fragrance-results {
+		 position: static;
+		 margin-bottom: 0px;
+	}
+}
+ #fragrance-profiler .instruction {
+	 display: none;
+	 margin: 0 0 25px 0;
+	 padding: 0;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .instruction {
+		 display: none !important;
+	}
+}
+ #fragrance-profiler .show {
+	 display: unset;
+}
+ #fragrance-profiler .button-container {
+	 min-height: 120px;
+	 margin-bottom: 20px;
+	 margin-top: 20px;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .button-container {
+		 margin-top: 20px;
+	}
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler .button-container {
+		 margin-top: 10px;
+	}
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler .question.panel .button-container {
+		 position: absolute;
+		 top: 0;
+		 height: 100%;
+		 display: none;
+		 margin: 0;
+		 z-index: 3;
+		 margin: 0;
+		 padding: 100% 0 0 0;
+		 left: 0;
+	}
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler .question.panel .hidden-button {
+		 margin: 0px auto 0;
+	}
+}
+ #fragrance-profiler .hidden-button {
+	 display: none;
+	 margin: 0px auto 40px;
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler .hidden-button {
+		 margin: 100px auto 0;
+	}
+}
+ @media only screen and (width: 375px) and (height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	 #fragrance-profiler .card-container {
+		 margin-top: 165px;
+	}
+	 #fragrance-profiler .question.panel .hidden-button {
+		 margin-top: 100px;
+	}
+	 #fragrance-profiler .popup .bartender {
+		 width: 39% !important;
+	}
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .step-10 {
+		 padding-bottom: 0px;
+	}
+}
+ #fragrance-profiler .step-10 #wheel {
+	 left: 50%;
+	 top: 50%;
+	 position: absolute;
+	 width: 55%;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .step-10 #wheel {
+		 width: 100%;
+	}
+}
+ #fragrance-profiler .step-10 #wheel-img {
+	 display: block;
+}
+ #fragrance-profiler .step-10 .spin-the-wheel {
+	 margin-top: 400px;
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler .step-10 .spin-the-wheel {
+		 margin-top: 370px;
+	}
+}
+ @media (max-width: 399px) {
+	 #fragrance-profiler .step-10 .spin-the-wheel {
+		 margin-top: 350px;
+	}
+}
+ @media (max-width: 320px) {
+	 #fragrance-profiler .step-10 .spin-the-wheel {
+		 margin-top: 290px;
+	}
+}
+ #fragrance-profiler .step-10 button#finish {
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 -webkit-transform: translate(-50%, -50%);
+	 -moz-transform: translate(-50%, -50%);
+	 -ms-transform: translate(-50%, -50%);
+	 -o-transform: translate(-50%, -50%);
+	 transform: translate(-50%, -50%);
+	 z-index: 20;
+	 background: #f5e7d1;
+	 color: #1d362f;
+	 border: 1px solid #1d362f;
+	 display: none;
+}
+ #fragrance-profiler #result-overlay {
+	 position: absolute;
+	 top: 50%;
+	 left: 50%;
+	 -webkit-transform: translate(-50%, -50%);
+	 -moz-transform: translate(-50%, -50%);
+	 -ms-transform: translate(-50%, -50%);
+	 -o-transform: translate(-50%, -50%);
+	 transform: translate(-50%, -50%);
+	 display: none;
+	 -webkit-transition: 0.3s ease all;
+	 -moz-transition: 0.3s ease all;
+	 -ms-transition: 0.3s ease all;
+	 -o-transition: 0.3s ease all;
+	 transition: 0.3s ease all;
+}
+ #fragrance-profiler .spintoselect {
+	 max-width: 100px;
+	 width: 100px;
+	 position: absolute;
+	 right: 10%;
+	 top: 10%;
+}
+ #fragrance-profiler .spintoselect p {
+	 margin: 0;
+}
+ #fragrance-profiler .spintoselect img {
+	 width: 20px;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .spintoselect {
+		 display: none;
+	}
+}
+ @keyframes rotating {
+	 from {
+		 -webkit-transform: rotate(0deg);
+		 -moz-transform: rotate(0deg);
+		 -ms-transform: rotate(0deg);
+		 -o-transform: rotate(0deg);
+		 transform: rotate(0deg);
+	}
+	 to {
+		 -webkit-transform: rotate(360deg);
+		 -moz-transform: rotate(360deg);
+		 -ms-transform: rotate(360deg);
+		 -o-transform: rotate(360deg);
+		 transform: rotate(360deg);
+	}
+}
+ #fragrance-profiler .wheel-pointer {
+	 position: absolute;
+	 top: 51%;
+	 left: 50%;
+	 -webkit-transform: translate(-50%, -50%);
+	 -moz-transform: translate(-50%, -50%);
+	 -ms-transform: translate(-50%, -50%);
+	 -o-transform: translate(-50%, -50%);
+	 transform: translate(-50%, -50%);
+	 width: 20%;
+	 z-index: 13;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .wheel-pointer {
+		 width: 35.5%;
+	}
+}
+ #fragrance-profiler .wheel-pointer button {
+	 display: none;
+	 margin: 0 auto;
+}
+ #fragrance-profiler .spin-1 {
+	 -webkit-transform: rotateZ(1350deg);
+	 -moz-transform: rotateZ(1350deg);
+	 -ms-transform: rotateZ(1350deg);
+	 -o-transform: rotateZ(1350deg);
+	 transform: rotateZ(1350deg);
+}
+ #fragrance-profiler .spin-2 {
+	 -webkit-transform: rotateZ(1400deg);
+	 -moz-transform: rotateZ(1400deg);
+	 -ms-transform: rotateZ(1400deg);
+	 -o-transform: rotateZ(1400deg);
+	 transform: rotateZ(1400deg);
+}
+ #fragrance-profiler .spin-3 {
+	 -webkit-transform: rotateZ(1480deg);
+	 -moz-transform: rotateZ(1480deg);
+	 -ms-transform: rotateZ(1480deg);
+	 -o-transform: rotateZ(1480deg);
+	 transform: rotateZ(1480deg);
+}
+ #fragrance-profiler .spin-4 {
+	 -webkit-transform: rotateZ(1540deg);
+	 -moz-transform: rotateZ(1540deg);
+	 -ms-transform: rotateZ(1540deg);
+	 -o-transform: rotateZ(1540deg);
+	 transform: rotateZ(1540deg);
+}
+ #fragrance-profiler .spin-5 {
+	 -webkit-transform: rotateZ(1600deg);
+	 -moz-transform: rotateZ(1600deg);
+	 -ms-transform: rotateZ(1600deg);
+	 -o-transform: rotateZ(1600deg);
+	 transform: rotateZ(1600deg);
+}
+ #fragrance-profiler .spin-6 {
+	 -webkit-transform: rotateZ(1660deg);
+	 -moz-transform: rotateZ(1660deg);
+	 -ms-transform: rotateZ(1660deg);
+	 -o-transform: rotateZ(1660deg);
+	 transform: rotateZ(1660deg);
+}
+ #fragrance-profiler .spin-7 {
+	 -webkit-transform: rotateZ(1720deg);
+	 -moz-transform: rotateZ(1720deg);
+	 -ms-transform: rotateZ(1720deg);
+	 -o-transform: rotateZ(1720deg);
+	 transform: rotateZ(1720deg);
+}
+ #fragrance-profiler .spin-8, #fragrance-profiler .spin-9, #fragrance-profiler .spin-10 {
+	 -webkit-transform: rotateZ(1780deg);
+	 -moz-transform: rotateZ(1780deg);
+	 -ms-transform: rotateZ(1780deg);
+	 -o-transform: rotateZ(1780deg);
+	 transform: rotateZ(1780deg);
+}
+ @keyframes leftAnimate {
+	 0% {
+		 margin-left: 0;
+		 -webkit-transform: rotate(0deg);
+		 -moz-transform: rotate(0deg);
+		 -ms-transform: rotate(0deg);
+		 -o-transform: rotate(0deg);
+		 transform: rotate(0deg);
+	}
+	 50% {
+		 margin-left: 25%;
+	}
+	 100% {
+		 margin-left: 0%;
+		 -webkit-transform: rotate(360deg);
+		 -moz-transform: rotate(360deg);
+		 -ms-transform: rotate(360deg);
+		 -o-transform: rotate(360deg);
+		 transform: rotate(360deg);
+	}
+}
+ @keyframes rightAnimate {
+	 0% {
+		 margin-right: 0;
+		 -webkit-transform: rotate(0);
+		 -moz-transform: rotate(0);
+		 -ms-transform: rotate(0);
+		 -o-transform: rotate(0);
+		 transform: rotate(0);
+	}
+	 50% {
+		 margin-right: 10%;
+	}
+	 100% {
+		 margin-right: 0%;
+		 -webkit-transform: rotate(-360deg);
+		 -moz-transform: rotate(-360deg);
+		 -ms-transform: rotate(-360deg);
+		 -o-transform: rotate(-360deg);
+		 transform: rotate(-360deg);
+	}
+}
+ #fragrance-profiler .results-container {
+	 position: relative;
+	 height: 100vh;
+	 margin-bottom: 10px;
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler .results-container {
+		 margin-bottom: 0;
+		 height: 65vh;
+	}
+}
+ #fragrance-profiler .resultCard {
+	 width: 20%;
+	 position: absolute;
+	 -webkit-animation-name: cardAnimate;
+	 -moz-animation-name: cardAnimate;
+	 -ms-animation-name: cardAnimate;
+	 -o-animation-name: cardAnimate;
+	 animation-name: cardAnimate;
+	 -webkit-animation-duration: 5000ms;
+	 -moz-animation-duration: 5000ms;
+	 -ms-animation-duration: 5000ms;
+	 -o-animation-duration: 5000ms;
+	 animation-duration: 5000ms;
+	 -webkit-animation-iteration-count: infinite;
+	 -moz-animation-iteration-count: infinite;
+	 -ms-animation-iteration-count: infinite;
+	 -o-animation-iteration-count: infinite;
+	 animation-iteration-count: infinite;
+	 -webkit-animation-timing-function: linear;
+	 -moz-animation-timing-function: linear;
+	 -ms-animation-timing-function: linear;
+	 -o-animation-timing-function: linear;
+	 animation-timing-function: linear;
+	 -webkit-animation-direction: normal;
+	 -moz-animation-direction: normal;
+	 -ms-animation-direction: normal;
+	 -o-animation-direction: normal;
+	 animation-direction: normal;
+}
+ #fragrance-profiler .resultCard#resultCard-1 {
+	 top: 0;
+	 left: 0;
+	 -webkit-animation-name: leftAnimate;
+	 -moz-animation-name: leftAnimate;
+	 -ms-animation-name: leftAnimate;
+	 -o-animation-name: leftAnimate;
+	 animation-name: leftAnimate;
+	 -webkit-animation-duration: 3.8s;
+	 -moz-animation-duration: 3.8s;
+	 -ms-animation-duration: 3.8s;
+	 -o-animation-duration: 3.8s;
+	 animation-duration: 3.8s;
+}
+ #fragrance-profiler .resultCard#resultCard-2 {
+	 top: 5%;
+	 left: 5%;
+	 -webkit-animation-name: rightAnimate;
+	 -moz-animation-name: rightAnimate;
+	 -ms-animation-name: rightAnimate;
+	 -o-animation-name: rightAnimate;
+	 animation-name: rightAnimate;
+	 -webkit-animation-duration: 4s;
+	 -moz-animation-duration: 4s;
+	 -ms-animation-duration: 4s;
+	 -o-animation-duration: 4s;
+	 animation-duration: 4s;
+}
+ #fragrance-profiler .resultCard#resultCard-3 {
+	 top: 0;
+	 left: 30%;
+	 -webkit-animation-name: leftAnimate;
+	 -moz-animation-name: leftAnimate;
+	 -ms-animation-name: leftAnimate;
+	 -o-animation-name: leftAnimate;
+	 animation-name: leftAnimate;
+	 -webkit-animation-duration: 3s;
+	 -moz-animation-duration: 3s;
+	 -ms-animation-duration: 3s;
+	 -o-animation-duration: 3s;
+	 animation-duration: 3s;
+}
+ #fragrance-profiler .resultCard#resultCard-4 {
+	 top: 47%;
+	 right: 19%;
+	 -webkit-animation-name: rightAnimate;
+	 -moz-animation-name: rightAnimate;
+	 -ms-animation-name: rightAnimate;
+	 -o-animation-name: rightAnimate;
+	 animation-name: rightAnimate;
+	 -webkit-animation-duration: 4.5s;
+	 -moz-animation-duration: 4.5s;
+	 -ms-animation-duration: 4.5s;
+	 -o-animation-duration: 4.5s;
+	 animation-duration: 4.5s;
+}
+ #fragrance-profiler .resultCard#resultCard-5 {
+	 top: 20%;
+	 right: 20%;
+	 -webkit-animation-name: leftAnimate;
+	 -moz-animation-name: leftAnimate;
+	 -ms-animation-name: leftAnimate;
+	 -o-animation-name: leftAnimate;
+	 animation-name: leftAnimate;
+	 -webkit-animation-duration: 6s;
+	 -moz-animation-duration: 6s;
+	 -ms-animation-duration: 6s;
+	 -o-animation-duration: 6s;
+	 animation-duration: 6s;
+}
+ #fragrance-profiler .resultCard#resultCard-6 {
+	 top: 30%;
+	 right: 10%;
+	 -webkit-animation-name: rightAnimate;
+	 -moz-animation-name: rightAnimate;
+	 -ms-animation-name: rightAnimate;
+	 -o-animation-name: rightAnimate;
+	 animation-name: rightAnimate;
+	 -webkit-animation-duration: 3.3s;
+	 -moz-animation-duration: 3.3s;
+	 -ms-animation-duration: 3.3s;
+	 -o-animation-duration: 3.3s;
+	 animation-duration: 3.3s;
+}
+ #fragrance-profiler .resultCard#resultCard-7 {
+	 top: 12%;
+	 left: 15%;
+	 -webkit-animation-name: leftAnimate;
+	 -moz-animation-name: leftAnimate;
+	 -ms-animation-name: leftAnimate;
+	 -o-animation-name: leftAnimate;
+	 animation-name: leftAnimate;
+	 -webkit-animation-duration: 4.2s;
+	 -moz-animation-duration: 4.2s;
+	 -ms-animation-duration: 4.2s;
+	 -o-animation-duration: 4.2s;
+	 animation-duration: 4.2s;
+}
+ #fragrance-profiler .resultCard#resultCard-8 {
+	 top: 28%;
+	 left: 38%;
+	 -webkit-animation-name: rightAnimate;
+	 -moz-animation-name: rightAnimate;
+	 -ms-animation-name: rightAnimate;
+	 -o-animation-name: rightAnimate;
+	 animation-name: rightAnimate;
+	 -webkit-animation-duration: 5.2s;
+	 -moz-animation-duration: 5.2s;
+	 -ms-animation-duration: 5.2s;
+	 -o-animation-duration: 5.2s;
+	 animation-duration: 5.2s;
+}
+ #fragrance-profiler .resultCard#resultCard-9 {
+	 top: 14%;
+	 right: 0%;
+	 -webkit-animation-name: leftAnimate;
+	 -moz-animation-name: leftAnimate;
+	 -ms-animation-name: leftAnimate;
+	 -o-animation-name: leftAnimate;
+	 animation-name: leftAnimate;
+	 -webkit-animation-duration: 3.8s;
+	 -moz-animation-duration: 3.8s;
+	 -ms-animation-duration: 3.8s;
+	 -o-animation-duration: 3.8s;
+	 animation-duration: 3.8s;
+}
+ #fragrance-profiler .resultCard#resultCard-10 {
+	 top: 40%;
+	 left: 20%;
+	 -webkit-animation-name: rightAnimate;
+	 -moz-animation-name: rightAnimate;
+	 -ms-animation-name: rightAnimate;
+	 -o-animation-name: rightAnimate;
+	 animation-name: rightAnimate;
+	 -webkit-animation-duration: 4.7s;
+	 -moz-animation-duration: 4.7s;
+	 -ms-animation-duration: 4.7s;
+	 -o-animation-duration: 4.7s;
+	 animation-duration: 4.7s;
+}
+ #fragrance-profiler .resultCard#resultCard-11 {
+	 top: 3%;
+	 right: 10%;
+	 -webkit-animation-name: leftAnimate;
+	 -moz-animation-name: leftAnimate;
+	 -ms-animation-name: leftAnimate;
+	 -o-animation-name: leftAnimate;
+	 animation-name: leftAnimate;
+	 -webkit-animation-duration: 3.5s;
+	 -moz-animation-duration: 3.5s;
+	 -ms-animation-duration: 3.5s;
+	 -o-animation-duration: 3.5s;
+	 animation-duration: 3.5s;
+}
+ #fragrance-profiler .step-12 .card-bg.card-bg-left {
+	 -webkit-transform: scale(1.1) rotate(4deg);
+	 -moz-transform: scale(1.1) rotate(4deg);
+	 -ms-transform: scale(1.1) rotate(4deg);
+	 -o-transform: scale(1.1) rotate(4deg);
+	 transform: scale(1.1) rotate(4deg);
+	 left: -4%;
+	 top: 15%;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .step-12 .card-bg.card-bg-left {
+		 -webkit-transform: scale(1.2) rotate(-5deg) translateX(-50%);
+		 -moz-transform: scale(1.2) rotate(-5deg) translateX(-50%);
+		 -ms-transform: scale(1.2) rotate(-5deg) translateX(-50%);
+		 -o-transform: scale(1.2) rotate(-5deg) translateX(-50%);
+		 transform: scale(1.2) rotate(-5deg) translateX(-50%);
+		 left: 50%;
+		 top: 0%;
+		 -webkit-display: flex;
+		 -moz-display: flex;
+		 -ms-display: flex;
+		 -o-display: flex;
+		 display: flex;
+	}
+}
+ #fragrance-profiler .step-13.panel {
+	 margin-bottom: 90px;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .step-13 .card-bg {
+		 display: block !important;
+	}
+	 #fragrance-profiler .step-13 .card-bg.card-bg-left {
+		 -webkit-transform: scale(1.4) rotate(4deg);
+		 -moz-transform: scale(1.4) rotate(4deg);
+		 -ms-transform: scale(1.4) rotate(4deg);
+		 -o-transform: scale(1.4) rotate(4deg);
+		 transform: scale(1.4) rotate(4deg);
+		 left: 10%;
+	}
+	 #fragrance-profiler .step-13 .card-bg.card-bg-middle {
+		 -webkit-transform: scale(1.4) rotate(12deg);
+		 -moz-transform: scale(1.4) rotate(12deg);
+		 -ms-transform: scale(1.4) rotate(12deg);
+		 -o-transform: scale(1.4) rotate(12deg);
+		 transform: scale(1.4) rotate(12deg);
+		 left: 10%;
+	}
+	 #fragrance-profiler .step-13 .card-bg.card-bg-right {
+		 -webkit-transform: scale(1.4) rotate(23deg);
+		 -moz-transform: scale(1.4) rotate(23deg);
+		 -ms-transform: scale(1.4) rotate(23deg);
+		 -o-transform: scale(1.4) rotate(23deg);
+		 transform: scale(1.4) rotate(23deg);
+		 left: 10%;
+	}
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .step-13 .fragrance-card {
+		 margin-bottom: 10px;
+	}
+}
+ #fragrance-profiler .step-13 .card.card-1 {
+	 -webkit-transform: rotate(0deg);
+	 -moz-transform: rotate(0deg);
+	 -ms-transform: rotate(0deg);
+	 -o-transform: rotate(0deg);
+	 transform: rotate(0deg);
+}
+ #fragrance-profiler .step-13 .cards {
+	 padding-bottom: 40px;
+}
+ #fragrance-profiler .step-13 .col-xs-12 {
+	 margin-bottom: 0;
+}
+ #fragrance-profiler .step-13 .button-container {
+	 min-height: unset;
+	 margin-bottom: unset;
+	 margin-top: 10px;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .step-13 .button-container {
+		 width: 100%;
+	}
+}
+ #fragrance-profiler .step-13 .add-to-basket {
+	 margin: 10px 0px 10px 10px;
+	 display: none;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .step-13 .add-to-basket {
+		 margin: 20px auto 0px;
+	}
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .step-13 .mb-40 {
+		 margin-bottom: 0;
+	}
+}
+ #fragrance-profiler .step-13 .fragcardlinks {
+	 -webkit-transition: 0.5s ease all;
+	 -moz-transition: 0.5s ease all;
+	 -ms-transition: 0.5s ease all;
+	 -o-transition: 0.5s ease all;
+	 transition: 0.5s ease all;
+}
+ #fragrance-profiler .step-13 .findoutmore {
+	 margin-bottom: 5px;
+	 margin-top: 40px;
+	 text-align: right;
+	 text-decoration: underline;
+}
+ #fragrance-profiler .step-13 .findoutmore:hover {
+	 text-shadow: 0px 0px 10px white;
+}
+ #fragrance-profiler .step-13 .shuffle {
+	 text-align: right;
+	 background-image: url(../images/fragrance-profiler-2/shuffle.png);
+	 background-repeat: no-repeat;
+	 background-position: right;
+	 margin-top: 40px;
+	 padding-right: 30px;
+	 font-size: 14px;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .step-13 .shuffle {
+		 margin-bottom: 40px;
+		 margin-top: 0px;
+		 position: relative;
+		 z-index: 3;
+	}
+}
+ #fragrance-profiler .step-14 .back {
+	 text-decoration: underline;
+	 cursor: pointer;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .step-14 .col-xs-12.frag-content {
+		 margin-bottom: 0;
+	}
+}
+ #fragrance-profiler .fragrance-carousel {
+	 overflow: hidden;
+	 margin: 0;
+	 padding: 0;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .fragrance-carousel {
+		 margin-bottom: 10px;
+	}
+}
+ #fragrance-profiler .fragrance-carousel .slick-slide {
+	 margin: 0;
+}
+ #fragrance-profiler .fragrance-carousel .slick-slide img {
+	 margin: auto;
+}
+ #fragrance-profiler .fragrance-carousel .slick-dots {
+	 width: 100%;
+	 padding: 0;
+	 margin: 40px 0 0 0;
+	 list-style: none;
+	 text-align: center;
+}
+ #fragrance-profiler .fragrance-carousel .slick-dots li {
+	 display: inline-block;
+}
+ #fragrance-profiler .fragrance-carousel .slick-dots li button {
+	 font-size: 0;
+	 line-height: 0;
+	 display: block;
+	 width: 20px;
+	 height: 20px;
+	 padding: 5px;
+	 cursor: pointer;
+	 color: transparent;
+	 border: 0;
+	 outline: none;
+	 border: 1px grey solid;
+	 background: transparent;
+	 float: left;
+	 justify-self: end;
+	 border-radius: 50px;
+	 background: transparent;
+	 margin: 0px 5px;
+}
+ #fragrance-profiler .fragrance-carousel .slick-dots li.slick-active button {
+	 background: grey;
+}
+ #fragrance-profiler .fragrance-carousel .slick-dots li button:before {
+	 font-family: 'slick';
+	 font-size: 6px;
+	 line-height: 20px;
+	 position: absolute;
+	 top: 0;
+	 left: 0;
+	 width: 20px;
+	 height: 20px;
+	 content: '';
+	 text-align: center;
+	 opacity: 0.25;
+	 color: black;
+	 -webkit-font-smoothing: antialiased;
+	 -moz-osx-font-smoothing: grayscale;
+}
+ #fragrance-profiler .add-to-basket {
+	 display: none;
+	 margin: 30px auto 0px;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .add-to-basket {
+		 display: inline-block;
+		 margin-top: 20px;
+	}
+}
+ #fragrance-profiler .add-to-basket.disab {
+	 padding: 15px 60px 13px 20px;
+}
+ #fragrance-profiler .step-15 .cards {
+	 padding-bottom: 40px;
+}
+ #fragrance-profiler .step-15 .confirmationButtons button {
+	 display: inline;
+	 min-width: 250px;
+	 margin: 0 5px 5px 5px;
+}
+ @media (max-width: 874px) {
+	 #fragrance-profiler .step-15 .confirmationButtons button:first-of-type {
+		 margin-bottom: 20px;
+	}
+}
+ #fragrance-profiler .step-15 #persona-final {
+	 -webkit-transform: rotate(3deg);
+	 -moz-transform: rotate(3deg);
+	 -ms-transform: rotate(3deg);
+	 -o-transform: rotate(3deg);
+	 transform: rotate(3deg);
+	 margin-top: 0%;
+	 left: 10%;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .step-15 #persona-final {
+		 left: 0;
+	}
+}
+ #fragrance-profiler .step-15 #sample-final1 {
+	 -webkit-transform: rotate(-5deg);
+	 -moz-transform: rotate(-5deg);
+	 -ms-transform: rotate(-5deg);
+	 -o-transform: rotate(-5deg);
+	 transform: rotate(-5deg);
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .step-15 #sample-final1 {
+		 margin-top: -20%;
+		 -webkit-transform: rotate(-4deg);
+		 -moz-transform: rotate(-4deg);
+		 -ms-transform: rotate(-4deg);
+		 -o-transform: rotate(-4deg);
+		 transform: rotate(-4deg);
+		 left: 5%;
+		 position: relative;
+	}
+}
+ #fragrance-profiler .step-15 #sample-final2 {
+	 -webkit-transform: rotate(9deg);
+	 -moz-transform: rotate(9deg);
+	 -ms-transform: rotate(9deg);
+	 -o-transform: rotate(9deg);
+	 transform: rotate(9deg);
+	 z-index: 1;
+	 right: 10%;
+	 top: 2%;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .step-15 #sample-final2 {
+		 margin-top: -20%;
+		 -webkit-transform: rotate(4deg);
+		 -moz-transform: rotate(4deg);
+		 -ms-transform: rotate(4deg);
+		 -o-transform: rotate(4deg);
+		 transform: rotate(4deg);
+		 right: 5%;
+		 position: relative;
+	}
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .step-15 .col-xs-12 {
+		 margin-bottom: 20px;
+	}
+}
+ #fragrance-profiler .popup {
+	 background: rgba(0, 0, 0, 0.6);
+	 width: 100%;
+	 height: 100%;
+	 min-height: 750px;
+	 top: 0;
+	 left: 0;
+	 overflow: hidden;
+	 z-index: 10;
+	 display: none;
+	 position: relative;
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler .popup {
+		 min-height: 812px;
+	}
+}
+ #fragrance-profiler .popup.error {
+	 position: absolute;
+}
+ #fragrance-profiler .popup.error .popup-inner {
+	 min-height: auto;
+}
+ #fragrance-profiler .popup.error .col-xs-12 {
+	 margin-bottom: 0;
+}
+ #fragrance-profiler .popup h2 {
+	 margin-bottom: 10px;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .popup h2 {
+		 margin-bottom: 20px;
+	}
+}
+ #fragrance-profiler .popup h2, #fragrance-profiler .popup p {
+	 color: #1d362f;
+}
+ #fragrance-profiler .popup p {
+	 -webkit-transition: 0.5s ease all;
+	 -moz-transition: 0.5s ease all;
+	 -ms-transition: 0.5s ease all;
+	 -o-transition: 0.5s ease all;
+	 transition: 0.5s ease all;
+	 margin-top: 10px;
+}
+ #fragrance-profiler .popup p.reviews {
+	 margin-top: 20px;
+	 text-align: left;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .popup p.reviews {
+		 text-align: center;
+	}
+}
+ #fragrance-profiler .popup p.reviews .review-text {
+	 text-decoration: underline;
+	 margin-left: 5px;
+	 margin-top: 10px;
+}
+ #fragrance-profiler .popup h3 {
+	 font-size: 44px;
+}
+ #fragrance-profiler .popup button {
+	 color: #1d362f;
+	 border: 1px #1d362f solid;
+}
+ #fragrance-profiler .popup button:hover {
+	 background: #1d362f;
+	 color: #f5e7d1;
+	 -webkit-transition: 0.5s ease all;
+	 -moz-transition: 0.5s ease all;
+	 -ms-transition: 0.5s ease all;
+	 -o-transition: 0.5s ease all;
+	 transition: 0.5s ease all;
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler .popup button {
+		 width: 100%;
+	}
+}
+ #fragrance-profiler .popup .button-container {
+	 height: 140px;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .popup .button-container {
+		 margin-bottom: 0;
+		 height: 90px;
+	}
+	 #fragrance-profiler .popup .button-container button {
+		 margin: 20px auto;
+	}
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler .popup .button-container {
+		 height: auto;
+		 position: static;
+	}
+}
+ #fragrance-profiler .popup .close {
+	 color: #1d362f;
+	 text-align: right;
+	 font-size: 18px;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .popup.hats .hidden-button {
+		 margin: 40px auto;
+	}
+}
+ #fragrance-profiler .popup.hats .button-container {
+	 min-height: auto;
+	 height: auto;
+	 margin-bottom: 0;
+}
+ #fragrance-profiler .popup.hats .button-container .next-step {
+	 position: relative;
+	 z-index: 9;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .popup.garnishes .mb-40, #fragrance-profiler .popup.hats .mb-40 {
+		 margin: 0;
+	}
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler .popup.garnishes .hidden-button, #fragrance-profiler .popup.hats .hidden-button {
+		 margin: 30px auto;
+	}
+}
+ #fragrance-profiler .popup.garnishes .col-md-2.col-xs-4 p, #fragrance-profiler .popup.hats .col-md-2.col-xs-4 p {
+	 margin-bottom: 20px;
+}
+ #fragrance-profiler .popup.garnishes .mb-40 {
+	 margin-bottom: 0;
+}
+ #fragrance-profiler .popup .popup-inner {
+	 width: 75%;
+	 max-width: 1280px;
+	 border-radius: 25px;
+	 padding: 40px 0px;
+	 position: relative;
+	 z-index: 2;
+	 margin: 92px auto 40px;
+	 background: #f5e7d1;
+	 min-height: 604px;
+}
+ @media (max-width: 990px) {
+	 #fragrance-profiler .popup .popup-inner {
+		 padding: 20px;
+		 width: 90%;
+		 margin-left: 5%;
+		 height: auto;
+	}
+}
+ #fragrance-profiler .popup .man {
+	 position: absolute;
+	 top: 10%;
+	 width: 40%;
+	 right: -10%;
+	 z-index: 3;
+}
+ @media (max-width: 900px) {
+	 #fragrance-profiler .popup .man {
+		 top: 10%;
+		 width: 40%;
+		 right: -10%;
+		 z-index: 3;
+	}
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .popup .man {
+		 top: unset;
+		 width: 35%;
+		 right: unset;
+		 bottom: -50%;
+		 left: 50%;
+		 -webkit-transform: translateX(-50%);
+		 -moz-transform: translateX(-50%);
+		 -ms-transform: translateX(-50%);
+		 -o-transform: translateX(-50%);
+		 transform: translateX(-50%);
+	}
+}
+ @media (max-width: 650px) {
+	 #fragrance-profiler .popup .man {
+		 bottom: -44%;
+	}
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler .popup .man {
+		 width: 42%;
+		 bottom: -49%;
+	}
+}
+ @media (max-width: 415px) {
+	 #fragrance-profiler .popup .man {
+		 width: 47%;
+		 bottom: -44%;
+	}
+}
+ @media (max-width: 399px) {
+	 #fragrance-profiler .popup .man {
+		 bottom: -33%;
+	}
+}
+ @media only screen and (width: 375px) and (height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
+	 #fragrance-profiler .popup .man {
+		 bottom: -33%;
+	}
+}
+ @media (max-width: 320px) {
+	 #fragrance-profiler .popup .man {
+		 bottom: -18%;
+	}
+}
+ #fragrance-profiler .popup .extra-row {
+	 -webkit-display: flex;
+	 -moz-display: flex;
+	 -ms-display: flex;
+	 -o-display: flex;
+	 display: flex;
+	 align-items: center;
+	 width: 60%;
+	 margin: 40px auto;
+}
+ #fragrance-profiler .popup .extra-box {
+	 flex: 1;
+}
+ #fragrance-profiler .popup .margin-auto {
+	 margin: auto;
+	 max-width: 50%;
+	 flex: 0 0 50%;
+	 margin-left: 25%;
+}
+ #fragrance-profiler .popup img.extra {
+	 max-width: 129px;
+	 width: 100%;
+	 align-self: unset;
+	 margin: auto;
+	 -webkit-transition: 0.5s ease all;
+	 -moz-transition: 0.5s ease all;
+	 -ms-transition: 0.5s ease all;
+	 -o-transition: 0.5s ease all;
+	 transition: 0.5s ease all;
+}
+ #fragrance-profiler .popup .margin-auto img.extra {
+	 max-width: 250px;
+}
+ #fragrance-profiler .popup .hat, #fragrance-profiler .popup .garnish {
+	 cursor: pointer;
+	 position: relative;
+	 z-index: 4;
+	 -webkit-transition: 0.5s ease all;
+	 -moz-transition: 0.5s ease all;
+	 -ms-transition: 0.5s ease all;
+	 -o-transition: 0.5s ease all;
+	 transition: 0.5s ease all;
+}
+ #fragrance-profiler .popup .hat:hover, #fragrance-profiler .popup .garnish:hover {
+	 -webkit-transform: scale(1.1);
+	 -moz-transform: scale(1.1);
+	 -ms-transform: scale(1.1);
+	 -o-transform: scale(1.1);
+	 transform: scale(1.1);
+}
+ #fragrance-profiler .popup .bartender {
+	 position: absolute;
+	 bottom: 0px;
+	 left: 50%;
+	 -webkit-transform: translateX(-50%);
+	 -moz-transform: translateX(-50%);
+	 -ms-transform: translateX(-50%);
+	 -o-transform: translateX(-50%);
+	 transform: translateX(-50%);
+	 width: 28.6%;
+	 padding: 0;
+	 -webkit-display: flex;
+	 -moz-display: flex;
+	 -ms-display: flex;
+	 -o-display: flex;
+	 display: flex;
+	 z-index: 3;
+	 max-width: 362px;
+	 align-items: flex-end;
+	 justify-content: center;
+}
+ #fragrance-profiler .popup .bartender img {
+	 height: auto;
+	 max-width: 350px;
+	 width: 100%;
+}
+ @media (max-width: 990px) {
+	 #fragrance-profiler .popup .bartender {
+		 width: 45%;
+	}
+	 #fragrance-profiler .popup .bartender img {
+		 max-width: 280px;
+	}
+}
+ @media (max-width: 850px) {
+	 #fragrance-profiler .popup .bartender {
+		 width: 40%;
+	}
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .popup .bartender {
+		 width: 30%;
+	}
+	 #fragrance-profiler .popup .bartender img {
+		 max-width: 190px;
+	}
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler .popup .bartender {
+		 width: 40%;
+	}
+	 #fragrance-profiler .popup .bartender img {
+		 max-width: 150px;
+	}
+}
+ #fragrance-profiler .popup.youare {
+	 text-align: left;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .popup.youare {
+		 text-align: left;
+	}
+}
+ #fragrance-profiler .popup.youare .popup-inner {
+	 padding: 40px;
+	 margin-top: 92px;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .popup.youare .popup-inner {
+		 margin-top: 20px;
+	}
+}
+ #fragrance-profiler .popup.youare .persona {
+	 position: absolute;
+	 width: 68%;
+	 left: 17%;
+	 top: 15%;
+	 -webkit-transform: rotate(3deg);
+	 -moz-transform: rotate(3deg);
+	 -ms-transform: rotate(3deg);
+	 -o-transform: rotate(3deg);
+	 transform: rotate(3deg);
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .popup.youare .persona {
+		 position: static;
+		 width: 50%;
+		 margin: 0 25%;
+	}
+	 #fragrance-profiler .popup.youare .persona h4 {
+		 line-height: 1;
+	}
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler .popup.youare .persona {
+		 width: 80%;
+		 margin: auto;
+		 display: block;
+	}
+}
+ #fragrance-profiler .popup.youare p {
+	 font-size: 16px;
+}
+ #fragrance-profiler .popup .pers-card {
+	 padding: 0;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .popup .pers-card {
+		 padding: 0 10%;
+	}
+}
+ #fragrance-profiler .popup .col-xs-12 {
+	 margin-bottom: 20px;
+}
+ #fragrance-profiler .popup #animal {
+	 position: absolute;
+	 bottom: 0;
+	 right: 0;
+	 width: 30%;
+}
+ @media (max-width: 499px) {
+	 #fragrance-profiler .popup #animal {
+		 width: 38%;
+	}
+}
+ #fragrance-profiler .popup p {
+	 font-family: 'Roboto';
+	 color: #1d362f;
+}
+ #fragrance-profiler .popup h4 {
+	 font-size: 21px;
+	 color: #1d362f;
+}
+ #fragrance-profiler .popup.fragrances {
+	 text-align: left;
+}
+ #fragrance-profiler .popup.fragrances .popup-inner {
+	 padding: 40px;
+	 width: 60%;
+	 margin-top: 92px;
+	 min-height: auto;
+	 max-width: 768px;
+	 margin-left: auto;
+	 margin-right: auto;
+}
+ @media (max-width: 990px) {
+	 #fragrance-profiler .popup.fragrances .popup-inner {
+		 width: 80%;
+		 margin-left: 10%;
+	}
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .popup.fragrances .popup-inner {
+		 width: 90%;
+		 margin-left: 5%;
+		 padding: 20px;
+		 margin-top: 20px;
+	}
+}
+ #fragrance-profiler .popup.fragrances .popup-inner .flex-row {
+	 align-items: baseline;
+}
+ #fragrance-profiler .popup.fragrances .popup-inner .col-xs-12 {
+	 margin-bottom: 0;
+}
+ #fragrance-profiler .popup.fragrances .notes {
+	 margin-bottom: 20px;
+}
+ #fragrance-profiler .popup.fragrances .notes .note {
+	 border-right: 1px #1d362f solid;
+}
+ #fragrance-profiler .popup.fragrances .notes .note:last-of-type {
+	 border: none;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .popup.fragrances .notes .note {
+		 border: none;
+		 margin-bottom: 10px;
+	}
+}
+ #fragrance-profiler .popup.fragrances .notes p {
+	 margin: 0;
+	 padding: 0;
+	 line-height: 1.2;
+}
+ #fragrance-profiler .popup.fragrances .notes p:first-of-type {
+	 font-family: 'Roboto';
+	 margin-bottom: 5px;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .popup.fragrances h2 {
+		 text-align: center;
+	}
+}
+ #fragrance-profiler .popup.fragrances p {
+	 font-size: 16px;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .popup.error {
+		 position: absolute;
+	}
+}
+ #fragrance-profiler .popup.error .popup-inner {
+	 padding: 40px;
+	 width: 40%;
+	 margin-left: auto;
+	 margin-right: auto;
+}
+ @media (max-width: 767px) {
+	 #fragrance-profiler .popup.error .popup-inner {
+		 width: 80%;
+		 margin-left: 10%;
+	}
+}
+ #fragrance-profiler .popup.error button {
+	 margin: auto;
+}
+ 

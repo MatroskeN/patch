@@ -1,0 +1,901 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Fragrance Profiler</title>
+        <!-- CSS in page head-->
+        <link rel="stylesheet" media="all" href="css/penhaligons.css">
+        <!--CSS links on Penhaligon's site-->
+        <link rel="stylesheet" media="all" href="https://www.penhaligons.com/sites/default/files/css/css_tgxa2A3YBAvkFvThOcKwjfjZUGB-NvO2DclJ382HGrA.css" />
+        <link rel="stylesheet" media="all" href="https://www.penhaligons.com/sites/default/files/css/css_zyJD0SHIGy8MhH0GWQrfRJ-XNSqL62j7zvVOZkC0GCE.css" />
+        <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/select2@4.0.13/dist/css/select2.min.css" />
+        <link rel="stylesheet" media="all" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+        <link rel="stylesheet" media="all" href="https://www.penhaligons.com/sites/default/files/css/css_-dHoHaIQyQEQr6RGZ56GZbjYx5YqEmKlirHPLf7VoVY.css" />
+        <link rel="stylesheet" media="all" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css"/>
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="css/profiler-styles.css">
+        <style>
+            
+        </style>
+    </head>
+<body>
+    <div id="fragrance-profiler">
+        <div id="fragrance-profiler-inner">
+        <div class="close-full-screen">
+            X
+        </div>
+        <!-- Absolute postioned image visible on every panel-->
+        <div class="penhaligon dt">
+            <img src="images/fragrance-profiler-2/penhaligon.png">
+        </div>
+            <!-- Panels start-->
+            <div class="panel-container">
+                <!-- Step 1 - Start-->
+                <div class="step step-1 panel active-panel generic">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-6 flex-center mb-m-40">
+                            <img class="dt" src="images/fragrance-profiler-2/pack1.png">
+                            <img class="mb" src="images/fragrance-profiler-2/penhaligon.png">
+                        </div>
+                        <div class="col-xs-12 col-md-6 flex-center">
+                            <div class="flex-content text-align-left">
+                                <h2>Добро пожаловать в мир профилирования ароматов, садитесь поближе</h2>
+                                <p>
+                                    Это место, куда люди с острым нюхом приходят удовлетворить свое любопытство. Просто ответьте на несколько вопросов, и Penhaligon's подберет ряд ароматов, которые, как мы полагаем, вам придутся по душе. Более того, мы отправим вам два выбранных вами пробника. Чудесно! Приготовьтесь к предсказанию вашей ароматической судьбы.
+                                </p>
+                                <button class="next-step" id="start">Начнём?</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Step 2 - A gift or for me? -->
+                <div class="step step-2 panel generic">
+                    <div class="row">
+                        <div class="col-xs-12 col-md-8 col-md-offset-2 mb-40">
+                            <h2>
+                                Прежде, чем мы начнем, давайте кое-что проясним. Этот аромат предназначается
+                            </h2>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <img class="mb-20 choice" src="images/fragrance-profiler-2/forme.png" data-name="not_gift">
+                            <h4>Для меня</h4>
+                        </div>
+                        <div class="col-md-6 col-xs-12">
+                            <img class="mb-20 choice" src="images/fragrance-profiler-2/agift.png" data-name="gift">
+                            <h4>В подарок</h4>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Step 3 - Pick Gent, Lady or It matters not -->
+                <div class="step step-3 panel generic">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2 class="for-me-text">Вы...</h2>
+                            <h2 class="gift-text">Подарок получит</h2>
+                        </div>
+                        <div class="col-xs-12 picker">
+                            <div class="you">
+                                <div id="youare-picker">
+                                    <img src="images/fragrance-profiler-2/step-3-picker-gent.png">
+                                </div>
+                                <img class="pointer" src="images/fragrance-profiler-2/hand.png">
+                                <div class="select-lady youare-overlay next-step" data-name="lady"></div>
+                                <div class="select-gent youare-overlay next-step" data-name="gent"></div>
+                                <div class="select-imn youare-overlay next-step" data-name="imn"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Step 4 - Question 1-->
+                <div class="step step-4 panel question gent">
+                    <div class="question-number">
+                        <p>Вопрос <span>1</span> из 7</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2 class="for-me-text">Опишите себя, выбрав две из этих карт</h2>
+                            <h2 class="gift-text">Опишите получателя подарка, выбрав две из этих карт</h2>
+                            <p>Выберите две карты</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row card-container">
+                       
+                        <div class="col-xs-3 playing-cards card-1">
+                            <img class="card-img" data-score="1" data-name="adventurous" src="images/fragrance-profiler-2/adventurous.png">
+                            <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
+                            
+                        </div>
+                        <div class="col-xs-3 playing-cards card-2">
+                            <img class="card-img" data-score="2" data-name="funloving" src="images/fragrance-profiler-2/funloving.png">
+    
+                        </div>
+                        <div class="col-xs-3 playing-cards card-3">
+                        <img class="card-img" data-score="3" data-name="rugged" src="images/fragrance-profiler-2/rugged.png">
+                        </div>
+                        <div class="col-xs-3 playing-cards card-4">
+                            <img class="card-img" data-score="4" data-name="dapper" src="images/fragrance-profiler-2/dapper.png">
+                            <img class="card-bg card-bg-right" src="images/fragrance-profiler-2/pack-left-v6.png">
+                        </div>
+                        <!--div class="col-xs-3">
+                            <button class="next-step hidden-button">Next</button>
+                        </div-->
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 button-container ">
+                            <button class="next-step hidden-button">Далее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="step step-4 panel question lady">
+                    <div class="question-number">
+                        <p>Вопрос <span>1</span> из 7</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2 class="for-me-text">Опишите себя, выбрав две из этих карт</h2>
+                            <h2 class="gift-text">Опишите получателя подарка, выбрав две из этих карт</h2>
+                            <p>Выберите две карты</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row card-container">
+                        <div class="col-xs-3 playing-cards card-1">
+                            <img class="card-img" data-score="1" data-name="captivating" src="images/fragrance-profiler-2/captivating.png">
+                            <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
+                            
+                        </div>
+                        <div class="col-xs-3 playing-cards card-2">
+                            <img class="card-img" data-score="2" data-name="adventurouslady" src="images/fragrance-profiler-2/adventurouslady.png">
+                            
+                        </div>
+                    <div class="col-xs-3 playing-cards card-3">
+                        <img class="card-img" data-score="3" data-name="graceful" src="images/fragrance-profiler-2/graceful.png">
+                        
+                    </div>
+                    <div class="col-xs-3 playing-cards card-4">
+                        <img class="card-img" data-score="4" data-name="funlovinglady" src="images/fragrance-profiler-2/funlovinglady.png">
+                        <img class="card-bg card-bg-right" src="images/fragrance-profiler-2/pack-left-v6.png">                
+                    </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 button-container">
+                            <button class="next-step hidden-button">Далее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="step step-4 panel question imn">
+                    <div class="question-number">
+                        <p>Вопрос <span>1</span> из 7</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2 class="for-me-text">Опишите себя, выбрав две из этих карт</h2>
+                            <h2 class="gift-text">Опишите получателя подарка, выбрав две из этих карт</h2>
+                            <p>Выберите две карты</p>
+                        </div>
+                    </div>
+                    
+                    <div class="row card-container">
+                        <div class="col-xs-3 playing-cards card-1">
+                            <img class="card-img" data-score="1" data-name="funloving" src="images/fragrance-profiler-2/funloving.png">
+                            <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
+                            
+                        </div>
+                        <div class="col-xs-3 playing-cards card-2">
+                            <img class="card-img" data-score="2" data-name="adventurouslady" src="images/fragrance-profiler-2/adventurouslady.png">
+                            
+                        </div>
+                        <div class="col-xs-3 playing-cards card-3">
+                            <img class="card-img" data-score="3" data-name="rugged" src="images/fragrance-profiler-2/rugged.png">
+                            
+                        </div>
+                        <div class="col-xs-3 playing-cards card-4">
+                            <img class="card-img" data-score="4" data-name="graceful" src="images/fragrance-profiler-2/graceful.png">
+                            <img class="card-bg card-bg-right" src="images/fragrance-profiler-2/pack-left-v6.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 button-container">
+                            <button class="next-step hidden-button">Далее</button>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Step 5 - Question 2-->
+                <div class="step step-5 panel question generic">
+                    <div class="question-number">
+                        <p>Вопрос <span>2</span> из 7</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2 class="for-me-text">Опишите свой идеальный отдых</h2>
+                            <h2 class="gift-text">Опишите его (ее) идеальный отдых</h2>
+                            <p>Выберите две карты</p>
+                        </div>
+                    </div>
+                    <div class="row card-container">
+                        <div class="col-xs-3 playing-cards card-1">
+                            <img class="card-img" data-score="1" data-name="city" src="images/fragrance-profiler-2/city.png">
+                            <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
+                        </div>
+                        <div class="col-xs-3 playing-cards card-2">
+                            <img class="card-img" data-score="2" data-name="picnic" src="images/fragrance-profiler-2/picnic.png">
+                        </div>
+                        <div class="col-xs-3 playing-cards card-3">
+                            <img class="card-img" data-score="3" data-name="ski" src="images/fragrance-profiler-2/ski.png">
+                        </div>
+                        <div class="col-xs-3 playing-cards card-4">
+                            <img class="card-img" data-score="4" data-name="roadtrip" src="images/fragrance-profiler-2/roadtrip.png">
+                            <img class="card-bg card-bg-right" src="images/fragrance-profiler-2/pack-left-v6.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 button-container">
+                            <button class="next-step hidden-button">Далее</button>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Step 6 - Question 3-->
+                <div class="step step-6 panel question gent">
+                    <div class="question-number">
+                        <p>Вопрос <span>3</span> из 7</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2 class="for-me-text">Мне нравится ваш внешний вид, как бы вы описали свой стиль?</h2>
+                            <h2 class="gift-text">Какой, по вашему мнению, у него (нее) стиль?</h2>
+                            <p>Выберите две карты</p>
+                        </div>
+                    </div>
+                    <div class="row card-container">
+                        <div class="col-xs-3 playing-cards card-1">
+                            <img class="card-img" data-score="1" data-name="classic" src="images/fragrance-profiler-2/classic.png">
+                            <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
+                        </div>
+                        <div class="col-xs-3 playing-cards card-2">
+                            <img class="card-img" data-score="2" data-name="modern" src="images/fragrance-profiler-2/modern.png">
+                        </div>
+                        <div class="col-xs-3 playing-cards card-3">
+                            <img class="card-img" data-score="3" data-name="sporty" src="images/fragrance-profiler-2/sporty.png">
+                        </div>
+                        <div class="col-xs-3 playing-cards card-4">
+                            <img class="card-img" data-score="4" data-name="worldly" src="images/fragrance-profiler-2/worldly.png">
+                            <img class="card-bg card-bg-right" src="images/fragrance-profiler-2/pack-left-v6.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 button-container">
+                            <button class="next-step hidden-button">Далее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="step step-6 panel question lady">
+                    <div class="question-number">
+                        <p>Вопрос <span>3</span> из 7</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2 class="for-me-text">Мне нравится ваш внешний вид, как бы вы описали свой стиль?</h2>
+                            <h2 class="gift-text">Какой, по вашему мнению, у него (нее) стиль?</h2>
+                            <p>Выберите две карты</p>
+                        </div>
+                    </div>
+                    <div class="row card-container">
+                        <div class="col-xs-3 playing-cards card-1">
+                            <img class="card-img" data-score="1" data-name="classiclady" src="images/fragrance-profiler-2/classiclady.png">
+                            <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
+                        </div>
+                        <div class="col-xs-3 playing-cards card-2">
+                            <img class="card-img" data-score="2" data-name="elegant" src="images/fragrance-profiler-2/elegant.png">
+                        </div>
+                        <div class="col-xs-3 playing-cards card-3">
+                            <img class="card-img" data-score="3" data-name="natural" src="images/fragrance-profiler-2/natural.png">
+                        </div>
+                        <div class="col-xs-3 playing-cards card-4">
+                            <img class="card-img" data-score="4" data-name="bold" src="images/fragrance-profiler-2/bold.png">
+                            <img class="card-bg card-bg-right" src="images/fragrance-profiler-2/pack-left-v6.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 button-container">
+                            <button class="next-step hidden-button">Далее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="step step-6 panel question imn">
+                    <div class="question-number">
+                        <p>Вопрос <span>3</span> из 7</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2 class="for-me-text">Мне нравится ваш внешний вид, как бы вы описали свой стиль?</h2>
+                            <h2 class="gift-text">Какой, по вашему мнению, у него (нее) стиль?</h2>
+                            <p>Выберите две карты</p>
+                        </div>
+                    </div>
+                    <div class="row card-container">
+                        <div class="col-xs-3 playing-cards card-1">
+                            <img class="card-img" data-score="1" data-name="modern" src="images/fragrance-profiler-2/modern.png">
+                            <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
+                        </div>
+                        <div class="col-xs-3 playing-cards card-2">
+                            <img class="card-img" data-score="2" data-name="worldly" src="images/fragrance-profiler-2/worldly.png">
+                        </div>
+                        <div class="col-xs-3 playing-cards card-3">
+                            <img class="card-img" data-score="3" data-name="sporty" src="images/fragrance-profiler-2/sporty.png">
+                        </div>
+                        <div class="col-xs-3 playing-cards card-4">
+                            <img class="card-img" data-score="4" data-name="bold" src="images/fragrance-profiler-2/bold.png">
+                            <img class="card-bg card-bg-right" src="images/fragrance-profiler-2/pack-left-v6.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 button-container">
+                            <button class="next-step hidden-button">Далее</button>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Step 8 - Question 5-->
+                <div class="step step-8 panel question gent">
+                    <div class="question-number">
+                        <p>Вопрос <span>5</span> из 7</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2 class="for-me-text">Как вы ведете себя на вечеринке?</h2>
+                            <h2 class="gift-text">Как он (она) ведет себя на вечеринке?</h2>
+                            <p>Выберите две карты</p>
+                        </div>
+                    </div>
+                    <div class="row card-container">
+                        <div class="col-xs-3 playing-cards card-1">
+                            <img class="card-img" data-score="1" data-name="charming" src="images/fragrance-profiler-2/charming.png">
+                            <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
+                        </div>
+                        <div class="col-xs-3 playing-cards card-2">
+                            <img class="card-img" data-score="2" data-name="headturner" src="images/fragrance-profiler-2/headturner.png">
+                        </div>
+                        <div class="col-xs-3 playing-cards card-3">
+                            <img class="card-img" data-score="3" data-name="intriguing" src="images/fragrance-profiler-2/intriguing.png">
+                        </div>
+                        <div class="col-xs-3 playing-cards card-4">
+                            <img class="card-img" data-score="4" data-name="sophisticated" src="images/fragrance-profiler-2/sophisticated.png">
+                            <img class="card-bg card-bg-right" src="images/fragrance-profiler-2/pack-left-v6.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 button-container">
+                            <button class="next-step hidden-button">Далее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="step step-8 panel question lady">
+                    <div class="question-number">
+                        <p>Вопрос <span>5</span> из 7</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2 class="for-me-text">Как вы ведете себя на вечеринке?</h2>
+                            <h2 class="gift-text">Как он (она) ведет себя на вечеринке?</h2>
+                            <p>Выберите две карты</p>
+                        </div>
+                    </div>
+                    <div class="row card-container">
+                        <div class="col-xs-3 playing-cards card-1">
+                            <img class="card-img" data-score="1" data-name="charminglady" src="images/fragrance-profiler-2/charminglady.png">
+                            <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
+                        </div>
+                        <div class="col-xs-3 playing-cards card-2">
+                            <img class="card-img" data-score="2" data-name="enticing" src="images/fragrance-profiler-2/enticing.png">
+                        </div>
+                        <div class="col-xs-3 playing-cards card-3">
+                            <img class="card-img" data-score="3" data-name="strong" src="images/fragrance-profiler-2/strong.png">
+                        </div>
+                        <div class="col-xs-3 playing-cards card-4">
+                            <img class="card-img" data-score="4" data-name="inspiring" src="images/fragrance-profiler-2/inspiring.png">
+                            <img class="card-bg card-bg-right" src="images/fragrance-profiler-2/pack-left-v6.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 button-container">
+                            <button class="next-step hidden-button">Далее</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="step step-8 panel question imn">
+                    <div class="question-number">
+                        <p>Вопрос <span>5</span> из 7</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2 class="for-me-text">Как вы ведете себя на вечеринке?</h2>
+                            <h2 class="gift-text">Как он (она) ведет себя на вечеринке?</h2>
+                            <p>Выберите две карты</p>
+                        </div>
+                    </div>
+                    <div class="row card-container">
+                        <div class="col-xs-3 playing-cards card-1">
+                            <img class="card-img" data-score="1" data-name="carefree" src="images/fragrance-profiler-2/carefree.png">
+                            <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
+                        </div>
+                        <div class="col-xs-3 playing-cards card-2">
+                            <img class="card-img" data-score="2" data-name="comforting" src="images/fragrance-profiler-2/comforting.png">
+                        </div>
+                        <div class="col-xs-3 playing-cards card-3">
+                            <img class="card-img" data-score="3" data-name="enticing" src="images/fragrance-profiler-2/enticing.png">
+                        </div>
+                        <div class="col-xs-3 playing-cards card-4">
+                            <img class="card-img" data-score="4" data-name="sensual" src="images/fragrance-profiler-2/sensual.png">
+                            <img class="card-bg card-bg-right" src="images/fragrance-profiler-2/pack-left-v6.png">
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 button-container">
+                            <button class="next-step hidden-button">Далее</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 10 - Question 7-->
+                <div class="step step-10 panel question generic">
+                    <div class="question-number">
+                        <p>Вопрос <span>7</span> из 7</p>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 mb-40">
+                            <h2>И напоследок, поверните колесо и выберите свое тотемное животное</h2>
+                            <!-- Button was originally used to spin the wheel. It is now a touch event but just link the function (line 312 in js file) to #spin if you want to use this version instead-->
+                            <!--button class="button-controls" id="spin">Spin</button-->
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <div class="spintoselect">
+                                <p>Поверните колесо</p>
+                                <img src="images/fragrance-profiler-2/turntoselect.png">
+                            </div>
+                            <div class="spin-the-wheel">
+                                <div id="wheel">
+                                    <img id="wheel-img" src="images/fragrance-profiler-2/turnthewheel.png">
+                                    <img id="result-overlay" src="images/fragrance-profiler-2/result-highlight.png">
+                                </div>
+                                
+                               <div class="wheel-pointer">
+                                    <img src="images/fragrance-profiler-2/hand-border.png">
+                                </div>
+                                <button id="finish">Завершить</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Step 11 - Results & card shuffle effect-->
+                <div class="step step-11 panel generic">
+                    <h2 class="for-me-text">Сейчас посмотрим значение ваших карт</h2>
+                    <h2 class="gift-text">Сейчас посмотрим значение его (её) карт</h2>
+                    <p>Не задержим вас ни на минуту</p>
+                    <div class="results-container">
+                        <div class="resultCard" id="resultCard-1"></div>
+                        <div class="resultCard" id="resultCard-2"></div>
+                        <div class="resultCard" id="resultCard-3"></div>
+                        <div class="resultCard" id="resultCard-4"></div>
+                        <div class="resultCard" id="resultCard-5"></div>
+                        <div class="resultCard" id="resultCard-6"></div>
+                        <div class="resultCard" id="resultCard-7"></div>
+                        <div class="resultCard" id="resultCard-8"></div>
+                        <div class="resultCard" id="resultCard-9"></div>
+                        <div class="resultCard" id="resultCard-10"></div>
+                        <div class="resultCard" id="resultCard-11"></div>
+                    </div>
+                    
+                </div>
+                <!-- Step 13 - Your Fragrances-->
+                <div class="step step-13 panel your-fragrances generic">
+                    <div class="row mb-40">
+                        <div class="col-xs-12">
+                            <h2 class="for-me-text">Ваши ароматы</h2>
+                            <h2 class="gift-text">Его (ее) ароматы</h2>
+                            <p>Выберите два аромата для пробы</p>
+                        </div>
+                    </div>
+                    <div class="results fragrance-results">
+                        <div class="row chosen-cards">
+                            <div class="card-slot">
+                                <div class="picked" id="fragrance-card1"></div>
+                            </div>
+                            <div class="card-slot">
+                                <div class="picked" id="fragrance-card2"></div>
+                            </div>
+                            <div class="button-container">
+                                <button>
+                                    <a href="https://www.letu.ru/brand/penhaligon-s" target="_blank">Перейти в веб-корнер</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-3 col-md-offset-1 col-xs-6 col-xs-offset-3 playing-cards">
+                            <img class="card-1 fragrance-card card-img" data-name="blazingmistersam" src="images/fragrance-profiler-2/blazingmistersam.png">
+                            <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
+                            <p class="fragcardlinks shuffle">Перемешать</p>
+                        </div>
+                        <div class="col-md-3 col-md-offset-1 col-xs-6 col-xs-offset-3 playing-cards">
+                            <img class="card-2 fragrance-card card-img" data-name="cairo" src="images/fragrance-profiler-2/cairo.png">
+                            <img class="card-bg card-bg-left card-bg-middle" src="images/fragrance-profiler-2/pack-left-v6.png">
+                            <p class="fragcardlinks shuffle">Перемешать</p>
+                        </div>
+                        <div class="col-md-3 col-md-offset-1 col-xs-6 col-xs-offset-3 playing-cards">
+                            <img class="card-3 fragrance-card card-img" data-name="vaara" src="images/fragrance-profiler-2/vaara.png">
+                            <img class="card-bg card-bg-right" src="images/fragrance-profiler-2/pack-left-v6.png">
+                            <p class="fragcardlinks shuffle">Перемешать</p>
+                        </div>
+                        
+                    </div>
+                    
+                </div>
+                <div class="step step-15 panel generic">
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2>Подтверждение</h2>
+                            <p>Ваши пробники добавлены в корзину</p>
+                        </div>
+                    </div>
+                    <div class="row confirmationButtons">
+                        <div class="col-xs-12">
+                            <button>Продолжить покупки</button>
+                        </div>
+                    </div>
+                    <div class="row cards">
+                        <div id="persona-final" class="col-md-3 col-md-offset-1 col-xs-6 col-xs-offset-3">
+                            
+                        </div>
+                        <div id="sample-final1" class="col-md-3 col-md-offset-1 col-xs-6">
+                           
+                        </div>
+                        <div id="sample-final2" class="col-md-3 col-md-offset-1 col-xs-6">
+                           
+                        </div>
+                    </div>
+                    
+                </div>
+                <!-- Personality card results-->
+                <div class="results personality-results">
+                    <p class="instruction">Нажмите на карту, чтобы удалить ее из выбранных вариантов</p>    
+                    <div class="row chosen-cards">
+                        <div class="card-slot card-slot4">
+                            <div class="picked" id="card1"></div>
+                            <div class="picked" id="card2"></div>
+                        </div>
+                        <div class="card-slot card-slot5">
+                            <div class="picked" id="card3"></div>
+                            <div class="picked" id="card4"></div>
+                        </div>
+                        <div class="card-slot card-slot6">
+                            <div class="picked" id="card5"></div>
+                            <div class="picked" id="card6"></div>
+                        </div>
+                        <div class="card-slot card-slot7">
+                            <div class="picked" id="card7"></div>
+                        </div>
+                        <div class="card-slot card-slot8">
+                            <div class="picked" id="card8"></div>
+                            <div class="picked" id="card9"></div>
+                        </div>
+                        <div class="card-slot card-slot9">
+                            <div class="picked" id="card10"></div>
+                        </div>
+                        <div class="card-slot card-slot10">
+                            <div class="picked" id="card11"></div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!--Panels end & Popups start-->
+           <div class="popup-container">
+        <!-- Step 7 - Question 4 'Hats'-->
+        <div class="step step-7 popup question hats gent">
+            <div class="question-number">
+                <p>Вопрос <span>4</span> из 7</p>
+            </div>
+            <div class="popup-inner">
+                <div class="row mb-40">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="question-text">
+                            <h2 class="for-me-text">Простите за навязчивость, какой из этих головных уборов ваш?</h2>
+                            <h2 class="gift-text">Какой из этих головных уборов его (ее)?</h2>
+                            <p class="dt">Выберите одну карту</p>
+                        </div>
+                        <div class="question-text">
+                            <h2>Отличный выбор, бесспорно!</h2>
+                        </div>
+                    </div>
+                </div>
+                <!--img src="images/fragrance-profiler-2/popup-bg.png"-->
+                <div class="row">
+                    
+                    <div class="col-md-3 col-md-offset-3 col-xs-6 hat-container">
+                        <img data-name="boater" data-score="1" class="extra hat" src="images/fragrance-profiler-2/boater-extra.png">
+                        <p>Канотье</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6 hat-container">
+                        <img data-name="cap" data-score="2" class="extra hat" src="images/fragrance-profiler-2/cap-extra.png">
+                        <p>Кепи</p>
+                    </div>
+                    <div class="col-md-3 col-md-offset-3 col-xs-6 hat-container">
+                        <img data-name="tophat" data-score="3" class="extra hat" src="images/fragrance-profiler-2/tophat-extra.png">
+                        <p>Цилиндр</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6 hat-container">
+                        <img data-name="divers" data-score="4" class="extra hat" src="images/fragrance-profiler-2/divers-extra.png">
+                        <p>Водолазный шлем</p>
+                    </div>
+                    <div class="col-xs-12 button-container">
+                        <button class="next-step hidden-button extras-button hat-button">Далее</button>
+                    </div>
+                </div>
+                <div class="man">
+                    <img src="images/fragrance-profiler-2/hat-man.png">
+                </div>
+            </div>
+            
+        </div>
+        <div class="step step-7 popup question hats lady">
+            <div class="question-number">
+                <p>Вопрос <span>4</span> из 7</p>
+            </div>
+            <div class="popup-inner">
+               
+                <div class="row mb-40">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="question-text">
+                            <h2 class="for-me-text">Простите за навязчивость, какой из этих головных уборов ваш?</h2>
+                            <h2 class="gift-text">Какой из этих головных уборов его (ее)?</h2>
+                            <p class="dt">Выберите одну карту</p>
+                        </div>
+                        <div class="question-text">
+                            <h2>Отличный выбор, бесспорно!</h2>
+                        </div>
+                    </div>
+                </div>
+                <!--img src="images/fragrance-profiler-2/popup-bg.png"-->
+                <div class="row">
+                    
+                    <div class="col-md-3 col-md-offset-3 col-xs-6 hat-container">
+                        <img data-name="tiara" data-score="1" class="extra hat" src="images/fragrance-profiler-2/tiara-extra.png">
+                        <p>Тиара</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6 hat-container">
+                        <img data-name="aviator" data-score="2" class="extra hat" src="images/fragrance-profiler-2/aviator-extra.png">
+                        <p>Авиационный шлем</p>
+                    </div>
+                    <div class="col-md-3 col-md-offset-3 col-xs-6 hat-container">
+                        <img data-name="straw" data-score="3" class="extra hat" src="images/fragrance-profiler-2/straw-extra.png">
+                        <p>Соломенная шляпа</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6 hat-container">
+                        <img data-name="bowler" data-score="4" class="extra hat" src="images/fragrance-profiler-2/bowler-extra.png">
+                        <p>Котелок</p>
+                    </div>
+                    <div class="col-xs-12 button-container">
+                        <button class="next-step hidden-button extras-button hat-button">Далее</button>
+                    </div>
+                </div>
+                <div class="man">
+                    <img src="images/fragrance-profiler-2/hat-man.png">
+                </div>
+            </div>
+            
+        </div>
+        <div class="step step-7 popup question hats imn">
+            <div class="question-number">
+                <p>Вопрос <span>4</span> из 7</p>
+            </div>
+            <div class="popup-inner">
+                
+                <div class="row mb-40">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="question-text">
+                            <h2 class="for-me-text">Простите за навязчивость, какой из этих головных уборов ваш?</h2>
+                            <h2 class="gift-text">Какой из этих головных уборов его (ее)?</h2>
+                            <p class="dt">Выберите одну карту</p>
+                        </div>
+                        <div class="question-text">
+                            <h2>Отличный выбор, бесспорно!</h2>
+                        </div>
+                    </div>
+                </div>
+                <!--img src="images/fragrance-profiler-2/popup-bg.png"-->
+                <div class="row">
+                    
+                    <div class="col-md-3 col-md-offset-3 col-xs-6 hat-container">
+                        <img data-name="tiara" data-score="1" class="extra hat" src="images/fragrance-profiler-2/straw-extra.png">
+                        <p>Соломенная шляпа</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6 hat-container">
+                        <img data-name="aviator" data-score="2" class="extra hat" src="images/fragrance-profiler-2/beret-extra.png">
+                        <p>Берет</p>
+                    </div>
+                    <div class="col-md-3 col-md-offset-3 col-xs-6 hat-container">
+                        <img data-name="straw" data-score="3" class="extra hat" src="images/fragrance-profiler-2/divers-extra.png">
+                        <p>Водолазный шлем</p>
+                    </div>
+                    <div class="col-md-3 col-xs-6 hat-container">
+                        <img data-name="bowler" data-score="4" class="extra hat" src="images/fragrance-profiler-2/bowler-extra.png">
+                        <p>Котелок</p>
+                    </div>
+                    <div class="col-xs-12 button-container">
+                        <button class="next-step hidden-button extras-button hat-button">Далее</button>
+                    </div>
+                </div>
+                <div class="man">
+                    <img src="images/fragrance-profiler-2/hat-man.png">
+                </div>
+            </div>
+            
+        </div>
+        <!--Step 9 - Question 6 'Garnishes'-->
+        <div class="step step-9 popup question garnishes generic">
+            <div class="question-number">
+                <p>Вопрос <span>6</span> из 7</p>
+            </div>
+            <div class="popup-inner">
+                <div class="row mb-40">
+                    <div class="col-md-6 col-md-offset-3">
+                        <div class="question-text">
+                            <h2 class="for-me-text">Мы почти у цели, <br> что украшает ваш напиток?</h2>
+                            <h2 class="gift-text">Мы почти у цели, <br> что украшает его (ее) напиток?</h2>
+                            <p>Выберите одну из карт.</p>
+                        </div>
+                       <div class="question-text">
+                           <h2>О да! Великолепный выбор</h2>
+                       </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-2 col-xs-4">
+                        <img class="extra garnish" data-score="1" data-name="cucumber" src="images/fragrance-profiler-2/cucumber-extra.png">
+                        <p>Огурец</p>
+                    </div>
+                    <div class="col-md-2 col-xs-4">
+                        <img class="extra garnish" data-score="1" data-name="pear" src="images/fragrance-profiler-2/pear-extra.png">
+                        <p>Груша</p>
+                    </div>
+                    <div class="col-md-2 col-md-offset-4 col-xs-4">
+                        <img class="extra garnish" data-score="2" data-name="grapefruit" src="images/fragrance-profiler-2/grapefruit-extra.png">
+                        <p>Грейпфрут</p>
+                    </div>
+                    <div class="col-md-2 col-xs-4">
+                        <img class="extra garnish" data-score="2" data-name="juniper" src="images/fragrance-profiler-2/juniper-extra.png">
+                        <p>Можжевельник</p>
+                    </div>
+                    <div class="col-md-2 col-xs-4">
+                        <img class="extra garnish" data-score="3" data-name="ginger" src="images/fragrance-profiler-2/ginger-extra.png">
+                        <p>Имбирь</p>
+                    </div>
+                    <div class="col-md-2 col-xs-4">
+                        <img class="extra garnish" data-score="3" data-name="rose" src="images/fragrance-profiler-2/rose-extra.png">
+                        <p>Лепестки роз</p>
+                    </div>
+                    <div class="col-md-2 col-md-offset-4 col-xs-4 col-xs-offset-2">
+                        <img class="extra garnish" data-score="4" data-name="peppercorn" src="images/fragrance-profiler-2/peppercorn-extra.png">
+                        <p>Черный перец</p>
+                    </div>
+                    <div class="col-md-2 col-xs-4">
+                        <img class="extra garnish" data-score="4" data-name="mint" src="images/fragrance-profiler-2/mint-extra.png">
+                        <p>Мята</p>
+                    </div>
+                    <div class="col-md-6 col-md-offset-3 col-xs-12 button-container">
+                        <button class="next-step hidden-button">Далее</button>
+                    </div>
+                </div>  
+            </div>
+            <div class="bartender">
+                <img src="images/fragrance-profiler-2/bartender.png">
+            </div>
+        </div>
+        <!--Step 12 - Persona result page-->
+        <div class="step step-12 popup youare generic">
+            <div class="popup-inner">
+                <div class="row" id="persona-content">
+                    <!--Persona content loaded here-->
+                </div>
+                <div class="row">
+                    
+                    <div class="col-md-7 col-md-offset-4">
+                        <button id="seeFragrances">Посмотреть <span class="for-me-text">своё</span><span class="gift-text">его (ее)</span> ольфакторное предсказание</button>
+                    </div>
+                    
+                </div>
+                <div id="animal"></div>
+            </div>
+        </div>
+        <!--Step 14 - Fragrance detail popup. Content dynamically loaded-->
+        <div class="step step-14 popup fragrances generic">
+            <div class="popup-inner">
+                <div class="close">X</div>
+                <div class="row">
+                    <div class="col-md-5 fragrance-carousel">
+                        <div class="row flex-row ">
+                            <div class="col-xs-12" id="bottle-image2">
+                                <!-- Insert Sample content here-->
+                            </div>
+                        </div><div class="row flex-row ">
+                            <div class="col-xs-12" id="bottle-image">
+                                <!-- Insert Sample content here-->
+                             </div>
+                        </div>    
+                    </div>
+                    <div class="col-md-7">
+                        <div id="sample-content">
+                            <!-- Insert Sample content here-->
+                        </div>
+                        <div class="row">
+                            <div class="col-xs-12">
+                                <button>
+                                    <a href="#" target="_blank" class="add-sample">Купить</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+
+        </div>
+
+        <!--Popup error message - Displayed if user tries to pick three fragrances-->
+        <div class="popup error" id="fragrance-error">
+            <div class="popup-inner">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>ОЙ!</h2>
+                        <p>Вы уже добавили два пробника. Хотите поменять? Просто нажмите на тот, который хотите удалить, внизу экрана.</p>
+                        <button class="closeError">ОК</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--Popup error message - Displayed if user tries to pick three personality cards-->
+        <div class="popup error" id="question-error">
+            <div class="popup-inner">
+                <div class="row">
+                    <div class="col-xs-12">
+                        <h2>ОЙ!</h2>
+                        <p>Вы уже добавили два пробника. Хотите поменять? Просто нажмите на тот, который хотите удалить, внизу экрана.</p>
+                        <button class="closeError">ОК</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--Popups end-->
+       
+        <div id="start-over">Начать сначала</div>
+    </div>
+    
+    <!--#fragrance-profiler-inner end-->
+    </div>
+    <!--#fragrance-profiler end-->
+
+    <!--JavaScript-->
+
+    <!--jQuery-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    
+    <!--Custom JS-->
+    <script src="js/scripts.js"></script>
+
+    <!--Slider code-->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!--Spin wheel plugin JS-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/TweenMax.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/latest/utils/Draggable.min.js"></script>
+    <script>
+        
+    </script>
+  
+</body>
+</html>
+

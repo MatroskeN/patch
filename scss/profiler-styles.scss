@@ -1,0 +1,1860 @@
+/* Import Reset Styles */
+@import 'reset';
+
+/* roboto-300 - latin_cyrillic */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    src: local(''),
+         url('../fonts/roboto-v29-latin_cyrillic-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v29-latin_cyrillic-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-regular - latin_cyrillic */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    src: local(''),
+         url('../fonts/roboto-v29-latin_cyrillic-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v29-latin_cyrillic-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-500 - latin_cyrillic */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 500;
+    src: local(''),
+         url('../fonts/roboto-v29-latin_cyrillic-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v29-latin_cyrillic-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+  /* roboto-700 - latin_cyrillic */
+  @font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    src: local(''),
+         url('../fonts/roboto-v29-latin_cyrillic-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+         url('../fonts/roboto-v29-latin_cyrillic-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+  }
+
+/* Browser Prefix Mixins */
+@mixin css3-prefix($prop, $value) {
+    -webkit-#{$prop}: #{$value};
+    -moz-#{$prop}: #{$value};
+    -ms-#{$prop}: #{$value};
+    -o-#{$prop}: #{$value};
+    #{$prop}: #{$value};
+}
+
+@mixin respond-below($breakpoint) {
+    @media (max-width: ($breakpoint - 1)) {
+    	@content;
+    }
+}
+
+@mixin respond-above($breakpoint) {
+    @media (min-width: ($breakpoint - 1)) {
+    	@content;
+    }
+}
+
+/* Breakpoints */
+$breakpoint-xs: 400px;
+$breakpoint-sm: 500px;
+$breakpoint-md: 768px;
+$breakpoint-lg: 991px; 
+$breakpoint-xl: 1200px; 
+
+/* Colours and animation */
+$themeColour: #F5E7D1;
+$themeColourDark:#1D362F;
+$transition: 0.5s ease all;
+
+/* Remove Standard margin & padding on main content container*/
+#block-penhaligons-content {
+    margin-bottom: 0px !important;
+    padding-top: 0px !important;
+}
+
+#fragrance-profiler {
+    background: url(../images/fragrance-profiler-2/leather-background.png);
+    color: $themeColour;
+    background-size: contain;
+    height: auto;
+    position: relative;
+    text-align: center;
+    font-family: 'Roboto' !important;
+    overflow: hidden;
+    z-index: 1;
+    scroll-behavior: smooth;
+
+    * {
+        @include css3-prefix(box-sizing, border-box);
+    }
+
+    #fragrance-profiler-inner {
+        margin: 0 auto;
+        position: relative;
+        min-height: 750px;
+        @media (max-width: ($breakpoint-sm - 1)) {
+            min-height: 100vh;
+        }
+    }
+    
+    .close-full-screen {
+        display: none;
+    }
+
+    @media (max-width: ($breakpoint-sm - 1)) {
+        &.mobile-full-screen {
+            position: absolute;
+            top: 0;
+            z-index: 99;
+            width: 100%;
+
+            .close-full-screen {
+                position: absolute;
+                top: 20px;
+                right: 20px;
+                color: $themeColour;
+                font-size: 18px;
+                display: block;
+            }
+        }
+    }
+
+    @media (max-width: ($breakpoint-md - 1)) {
+        min-height: 100vh;
+     }
+
+    .profiler-main {
+        opacity: 0.3;
+        min-height: 100vh;
+        background-size: inherit;
+    }
+
+    /* Absolute positioned elements appearing on multiple pages */
+    .penhaligon {
+        position: absolute;
+        top: 40px;
+        left: 40px;
+        width: 10%;
+    }
+    
+    .question-number {
+        position: absolute;
+        top: 0;
+        left: 50%;
+        @include css3-prefix(transform, translateX(-50%));
+        color: #1D362F;
+        padding: 0px;
+        width: 180px;
+        background-image: url(../images/fragrance-profiler-2/question.png);
+        background-repeat: no-repeat;
+        height: 46px;
+        @include css3-prefix(display, flex);
+        align-items: center;
+        
+        p {
+            text-align: center;
+            line-height: 1;
+            margin: 0 auto !important;
+            padding: 0;
+        }
+    }
+
+    #start-over {
+        position: absolute;
+        left: 10px;
+        bottom: 10px;
+        line-height: 1;
+        text-decoration: underline;
+        cursor: pointer;
+        z-index: 10;
+        display: none;
+        @media (max-width: ($breakpoint-md - 1)) {
+            left: 50%;
+            @include css3-prefix(transform, translateX(-50%));
+            bottom: 10px;
+            font-size: 14px;
+        }
+
+        &.darktext {
+            @media (max-width: ($breakpoint-md - 1)) {
+                color: $themeColourDark;
+                bottom: 50px;
+            }
+        }
+    }
+
+    .mb {
+        display: none;
+    }
+
+    .question-text:last-of-type {
+        display: none;
+    }
+
+    .share {
+        position: absolute;
+        bottom: 60px;
+        left: 60px;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        @media (max-width: ($breakpoint-md - 1)) {
+            position: static;
+            bottom: unset;
+            left: unset;
+            text-align: center;
+            margin-top: 60px;
+            text-align: center;
+            display: block;
+            width: 100%;
+        }
+    }
+
+    .no-width {
+        width: 0 !important;
+        padding: 0;
+    }
+
+    .slider-button {
+        position: absolute;
+        top: 50%;
+        z-index: 1;
+    }
+
+    @media (max-width: ($breakpoint-md - 1)) {
+        .dt {
+            display: none !important;
+        }
+        .mb {
+            display: unset !important;
+        }
+        .mb-m-40 {
+            margin-bottom: 40px;
+        }
+    }
+    
+    /* Panels */
+    .panel-container {
+        width: 60%;
+        margin: auto;
+        max-width: 800px;
+        @media (max-width: ($breakpoint-lg - 1)) {
+            width: 80%;
+        }
+        @media (max-width: ($breakpoint-md - 1)) {
+            padding: 0px 60px 0px;
+            width: 100%;
+        }
+        @media (max-width: ($breakpoint-sm - 1)) {
+            padding: 0px 20px 0px;
+            width: 100%;
+        }
+    }
+
+    .panel {
+        display: none;
+        margin-bottom: 30px;
+        padding-top: 60px;
+        padding-bottom: 30px;
+        @media (min-height: 850px ) {
+            padding-top: 100px;
+        }
+        @media (max-width: ($breakpoint-md - 1)) {
+            padding-top: 80px;
+
+            &.active-panel {
+                padding-top: 20px;
+            }
+        }
+
+        &.active-panel {
+            @include css3-prefix(display, flex);
+        }
+    }
+    
+    .flex-center {
+        @include css3-prefix(display, flex);
+        align-items: center;
+        justify-content: center;
+    }
+
+    @keyframes giftAnimate {
+        0% {
+            @include css3-prefix(transform, scale(1));
+        }
+        50% {
+             @include css3-prefix(transform, scale(1.1));
+        }
+        100% {
+            @include css3-prefix(transform, scale(1));
+        }
+    }
+
+    .choice, .choice2 {
+        @include css3-prefix(transition, $transition);
+        @media (max-width: ($breakpoint-sm - 1)) {
+            @include css3-prefix(animation-name, giftAnimate);
+            @include css3-prefix(animation-duration, 1.5s);
+            @include css3-prefix(animation-iteration-count, infinite);
+            @include css3-prefix(animation-timing-function, linear);
+            @include css3-prefix(animation-direction, normal);
+        }
+
+        &:hover {
+            @include css3-prefix(transform, scale(1.1));
+            cursor: pointer;
+        }
+    }
+
+    @media (max-width: ($breakpoint-md - 1)) {
+       .text-align-left {
+           text-align: center;
+       }
+    }
+
+    /* HTML Elements*/
+    img {
+        max-width: 100%;
+    }
+
+    .button {
+        display: inline-block; 
+    }
+
+    button, 
+    .button {
+        background: none;
+        outline: none;
+        border: 1px #F5E7D1 solid;
+        width: auto;
+        color: #F5E7D1;
+        margin-bottom: 0;
+        padding: 15px 30px;
+        font-size: 22px;
+        line-height: 1;
+        text-transform: none;
+        @include css3-prefix(transition, $transition);
+        font-family: 'Roboto';
+        &:hover {
+            background: #F5E7D1;
+            color: #333;
+        }
+        @media (max-width: ($breakpoint-md - 1)) {
+            font-size: 15px;
+            line-height: 1;
+            padding: 15px 20px 15px;
+            margin: auto;
+        }
+    }
+
+    strong {
+        font-weight: 800;
+        text-decoration: underline;
+    }
+
+    #seeFragrances {
+        @media (max-width: ($breakpoint-sm - 1)) {
+            margin-bottom: 80px;
+        }
+    }
+
+    /* font */
+    h2, .h2 {
+        font-size: 37px;
+        color: inherit;
+        line-height: 1.2;
+        margin-bottom: 10px;
+        @media (max-width: ($breakpoint-md - 1)) {
+           font-size: 26px;
+        }
+        @media (max-width: ($breakpoint-sm - 1)) {
+            margin-bottom: 5px;
+        }    
+    }
+    
+    .panel-container .question h2 {
+        @media (max-width: ($breakpoint-lg - 1)) {
+            width: 80%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        @media (max-width: ($breakpoint-md - 1)) {
+            width: 100%;
+        }
+    }
+    
+    .popup.fragrances h2 {
+        font-size: 46px;
+    }
+
+    p, .p {
+        font-family: 'Roboto';
+        margin: 20px 0;
+        color: inherit;
+        font-size: 19px;
+        line-height: 24px;
+        @media (max-width: ($breakpoint-md - 1)) {
+            margin-top: 0px;
+            font-size: 16px;
+        }
+    }
+
+    h4 {
+        color: inherit;
+        font-size: 21px;
+    }
+
+    /* Bootstrap overrides */
+    .col-xs-12 {
+        @media (max-width: ($breakpoint-md - 1)) {
+            margin-bottom: 40px;
+         }
+    }
+
+    .question {
+        .col-xs-12 {
+            @media (max-width: ($breakpoint-md - 1)) {
+                margin-bottom: 40px;
+             }
+        }
+    }
+
+    /* Step 1 */
+    .intro-text {
+        position: absolute;
+        top: 50%;
+        left: 58%;
+        @include css3-prefix(transform, translate(-58%,-50%) rotate(3deg));
+        width: 40%;
+    }
+
+    .step-1 .dt {
+        @media (max-width: ($breakpoint-lg - 1)) {
+            padding-left: 100px;
+         }
+    }
+
+    .step-1 p {
+        font-size: 16px;
+        margin-top: 20px;
+    }
+
+    .question h2 {
+        @media (max-width: ($breakpoint-sm - 1)) {
+            min-height: 65px;
+        }
+        @media (max-width: 320px) {
+            font-size: 22px;
+            margin-bottom: 0;
+        }
+    }
+
+     /* Step 3*/
+    .picker {
+        margin-top: 80px;
+        @media (max-width: ($breakpoint-md - 1)) {
+            margin-top: 0;
+        }
+    }
+
+     .pointer {
+        position: absolute;
+        bottom: -10%;
+        left: 50%;
+        @include css3-prefix(transform, translateX(-50%));
+        @include css3-prefix(transition, 1s ease all);
+        @include css3-prefix(transform-origin, bottom center);
+        @media (max-width: ($breakpoint-md - 1)) {
+            @include css3-prefix(transition, $transition);
+            width: 16%;
+        }
+    }
+
+    .it-matters-not-animate {
+        @include css3-prefix(transform, translateX(-50%) rotateZ(55deg));
+    }
+
+    .lady-animate {
+        @include css3-prefix(transform, translateX(-50%) rotateZ(-55deg));
+    }
+
+   .gender-animate-PENProfHim {
+        @include css3-prefix(transform, translateX(-50%)); 
+    }
+
+    .gender-animate-PENProfHer {
+        @include css3-prefix(transform, translateX(-50%) rotateZ(-55deg)); 
+    }
+
+    .gender-animate-PENProfUnisex {
+        @include css3-prefix(transform, translateX(-50%) rotateZ(55deg)); 
+    }
+
+    .who-for {
+        overflow: hidden;
+        position: relative;
+        @media (max-width: ($breakpoint-md - 1)) {
+            width: 100%;
+            margin: 0;
+         }
+
+        img {
+            @include css3-prefix(display, flex);
+            margin: auto;
+        }
+    }
+
+    .you {
+        overflow: hidden;
+        position: relative;
+        width: 62%;
+        margin: auto;
+        max-width: 468px;
+        @media (max-width: 550px) {
+            width: 100%;
+        }
+
+        img {
+            display: block;
+        }
+    }
+
+    .youare-overlay {
+        width: 33.333%;
+        height: 100%;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        cursor: pointer;
+        
+        &.select-imn {
+            left: unset;
+            right: 0;
+        }
+
+        &.select-gent {
+            left: 33.333%;
+        }
+
+        &.select-PENProfHim {
+            left: 33.333%; 
+        }
+
+        &.select-PENProfUnisex {
+            left: unset;
+            right: 0; 
+        }
+    }
+
+    /* Step 4, 5, 6 & 8 */
+    .cards {
+        padding: 80px 0 80px;
+        @media (max-width: ($breakpoint-md - 1)) {
+           padding: 0;
+        }
+    }
+
+    .playing-cards {
+        cursor: pointer;
+        padding: 0;
+
+        .card-img {
+            z-index: 2;
+            @include css3-prefix(transition, $transition);
+            position: relative;
+            &:hover {
+                margin-top: -5%;
+                margin-bottom: 5%;
+                @media (max-width: ($breakpoint-md - 1)) {
+                    margin-top: 0;
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        &.card-1 {
+            @include css3-prefix(transform, rotate(-10deg));
+            z-index: 5;
+            top: 2%;
+        }
+
+        &.card-2 {
+            z-index: 6;
+        }
+
+        &.card-3 {
+            @include css3-prefix(transform, rotate(4deg));
+            z-index: 6;
+        }
+
+        &.card-4 {
+            @include css3-prefix(transform, rotate(10deg));
+            top: 2%;
+            z-index: 6;
+        }
+
+        &.slick-slide {
+            opacity: 0.3;
+            @include css3-prefix(transition, $transition);
+            &.faded {
+                opacity: 0 !important;
+                @include css3-prefix(transition, none);
+            }
+        }
+
+        &.slick-slide.slick-current {
+            @include css3-prefix(transform, scale(1.15));
+            opacity: 1;
+            @include css3-prefix(transition, $transition);
+            z-index: 10;
+            @media (max-width: ($breakpoint-xs - 1)) {
+                @include css3-prefix(transform, scale(1.2));
+            }
+            @media only screen and (width : 375px) and (height : 812px) and (orientation : portrait)  and (-webkit-device-pixel-ratio : 3) { 
+                @include css3-prefix(transform, scale(1.8));
+           }
+        }
+
+        &.slick-slide {
+            @include css3-prefix(transform, rotate(0deg));
+        }
+
+        @media (max-width: ($breakpoint-md - 1)) {
+            top: 0;
+            margin-top: 0;
+        }
+    }
+
+    .question {
+        .playing-cards {
+            @media (max-width: ($breakpoint-sm - 1)) {
+                background: url(../images/fragrance-profiler-2/backofcard.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+                padding: 0px 20px;
+                background-position: 20px 0;
+            }
+            @media only screen 
+            and (width : 375px) 
+            and (height : 812px)
+            and (orientation : portrait)  
+            and (-webkit-device-pixel-ratio : 3) { 
+                @include css3-prefix(transform, scale(1.3));
+            }
+        }
+    }
+    
+    .selected-card-slider {
+        opacity: 0;
+    }
+    
+    .bg-flip {
+        @include css3-prefix(transform, rotateY(-180deg));
+        @include css3-prefix(transition, 1s);
+        position: absolute;
+        padding: 0 20px;
+        top: 0;
+        left: 0;
+    }
+    
+    /* Slider Style */
+    .slick-list {
+        overflow: visible;
+        z-index: 2;
+    }
+
+    .no-swipe {
+        @include css3-prefix(transform, translate3d(-25%, 0px, 0px)!important);
+    }
+   
+    .card-container {
+        margin-top: 40px;
+        @media (max-width: ($breakpoint-md - 1)) {
+            margin-top: 90px;
+        }
+        @media (max-width: ($breakpoint-sm - 1)) {
+            margin-top: 85px;
+        }
+    }
+
+    /* Animation */
+    @keyframes rotating {
+        from {
+            @include css3-prefix(transform, rotate(0deg));
+        }
+        to {
+            @include css3-prefix(transform, rotate(360deg));
+        }
+    }
+
+    .card-bg {
+        position: absolute;
+        z-index: 0;
+        @media (max-width: ($breakpoint-sm - 1)) {
+            display: none !important;
+        }
+
+        &.card-bg-right {
+            top: 17%;
+            right: -16%;
+            @include css3-prefix(transform, rotateZ(-15deg) rotateY(180deg) scale(1.55));
+        }
+
+        &.card-bg-left {
+            left: -11%;
+            top: 17%;
+            @include css3-prefix(transform, scale(1.55));
+        }
+    }
+    
+    .card-slot {
+        border: 1px $themeColour solid;
+        @include css3-prefix(border-radius, 5px);
+        height: 75px;
+        @include css3-prefix(display, flex);
+        width: 50px;
+        margin: 0px 5px 0px 15px;
+        position: relative;
+        @media (max-width: ($breakpoint-md - 1)) {
+        margin: 0px 1px;
+        width: 40px;
+        height: 60px;
+        }
+
+        &:first-of-type {
+            margin-left: 0;
+        }
+
+        img {
+            opacity: 0;
+
+            &.fadeIn {
+                opacity: 1;
+                @include css3-prefix(transition, 3s ease all);
+            }
+        }
+
+        .picked {
+            position: absolute;
+        }
+
+        :nth-child(even) {
+            margin-top: -20px;
+            z-index: 2;
+        }
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    .chosen-cards {
+        justify-content: center;
+    }
+
+    .your-fragrances {
+        .chosen-cards {
+            justify-content: unset;
+            width: 395px;
+            margin-left: 47%;
+            @media (max-width: ($breakpoint-md - 1)) {
+                justify-content: center;
+                width: auto;
+                margin-left: 0;
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    .chosen-cards [class*='col-'] {
+        padding: 5px;
+    }
+
+    .chosen-card-2 {
+        position: absolute;
+        top: -25%;
+    }
+
+    .results {
+        position: absolute;
+        bottom: 10px;
+        width: 100%;
+        left: 0;
+        z-index: 5;
+        display: none;
+        @media (max-width: ($breakpoint-md - 1)) {
+            bottom: 60px;
+        }
+        &.personality-results {
+            @media (max-width: ($breakpoint-md - 1)) {
+                bottom: unset;
+                top: 200px;
+            }
+            @media (max-width: ($breakpoint-sm - 1)) {
+                top: 200px;
+            }  
+        }
+        &.fragrance-results {
+            @media (max-width: ($breakpoint-md - 1)) {
+                position: static;
+                margin-bottom: 0px;
+            }  
+        }
+    }
+
+    .instruction {
+        display: none;
+        margin: 0 0 25px 0;
+        padding: 0;
+        @media (max-width: ($breakpoint-md - 1)) {
+            display: none !important;
+        }
+    }
+
+    .show {
+        display: unset;    
+    }
+
+    .button-container {
+        min-height: 120px;
+        margin-bottom: 20px;
+        margin-top: 20px;
+        @media (max-width: ($breakpoint-md - 1)) {
+            margin-top: 20px;
+        }
+        @media (max-width: ($breakpoint-sm - 1)) {
+            margin-top: 10px;
+        }
+    }
+
+    .question.panel {
+        .button-container {
+            @media (max-width: ($breakpoint-sm - 1)) {
+                position: absolute;
+                top: 0;
+                height: 100%;
+                display: none;
+                margin: 0;
+                z-index: 3;
+                margin: 0;
+                padding: 100% 0 0 0;
+                left: 0;
+            }
+        }
+        .hidden-button {
+            @media (max-width: ($breakpoint-sm - 1)) {
+                margin: 0px auto 0;
+            }  
+        }
+    }
+
+    .hidden-button {
+        display: none;
+        margin: 0px auto 40px;
+        @media (max-width: ($breakpoint-sm - 1)) {
+            margin: 100px auto 0;
+        }  
+    }
+    
+    /* Iphone X specific*/
+    @media only screen 
+    and (width : 375px) 
+    and (height : 812px)
+    and (orientation : portrait)  
+    and (-webkit-device-pixel-ratio : 3) { 
+        .card-container {
+            margin-top: 165px;
+       }
+        .question.panel .hidden-button {
+            margin-top: 100px;
+        }
+        .popup .bartender {
+            width: 39% !important;
+        }
+    }
+
+    /*  Step 10 - Spin the wheel*/
+    .step-10 {
+        @media (max-width: ($breakpoint-md - 1)) {
+            padding-bottom: 0px;
+        } 
+        #wheel {
+            left: 50%;
+            top: 50%;
+            position: absolute;
+            width: 55%;
+            @media (max-width: ($breakpoint-md - 1)) {
+                width: 100%;
+            }
+        }
+        #wheel-img {
+            display: block;
+        }
+        .spin-the-wheel {
+            margin-top: 400px;
+            @media (max-width: ($breakpoint-sm - 1)) {
+                margin-top: 370px;
+            }
+            @media (max-width: ($breakpoint-xs - 1)) {
+                margin-top: 350px;
+            }
+            @media (max-width: 320px) {
+                margin-top: 290px;
+            }
+        }
+          
+        button#finish {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            @include css3-prefix(transform, translate(-50%, -50%));
+            z-index: 20;
+            background: $themeColour;
+            color: $themeColourDark;
+            border: 1px solid $themeColourDark;
+            display: none;
+        }
+    }
+
+    #result-overlay {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        @include css3-prefix(transform, translate(-50%,-50%));
+        display: none;
+        @include css3-prefix(transition, .3s ease all);
+    }
+
+    .spintoselect {
+        max-width: 100px;
+        width: 100px;
+        position: absolute;
+        right: 10%;
+        top: 10%;
+
+        p {
+            margin: 0;
+        }
+
+        img {
+            width: 20px;
+        }
+
+        @media (max-width: ($breakpoint-md - 1)) {
+            display: none;
+        }
+    }
+
+    @keyframes rotating {
+        from {
+            @include css3-prefix(transform, rotate(0deg));
+        }
+        to {
+            @include css3-prefix(transform, rotate(360deg));
+        }
+    }
+
+    .wheel-pointer {
+        position: absolute;
+        top: 51%;
+        left: 50%;
+        @include css3-prefix(transform, translate(-50%, -50%));
+        width: 20%;
+        z-index: 13;
+        @media (max-width: ($breakpoint-md - 1)) {
+            width: 35.5%;    
+        }
+
+        button {
+            display: none;
+            margin: 0 auto;
+        }
+    }
+  
+   .spin-1 {
+        @include css3-prefix(transform, rotateZ(1350deg));
+   }
+   .spin-2 {
+        @include css3-prefix(transform, rotateZ(1400deg));
+   }
+   .spin-3 {
+        @include css3-prefix(transform, rotateZ(1480deg));
+   }
+   .spin-4 {
+        @include css3-prefix(transform, rotateZ(1540deg));
+   }
+   .spin-5 {
+        @include css3-prefix(transform, rotateZ(1600deg));
+   }
+   .spin-6 {
+        @include css3-prefix(transform, rotateZ(1660deg));
+   }
+   .spin-7 {
+        @include css3-prefix(transform, rotateZ(1720deg));
+   }
+   .spin-8, .spin-9, .spin-10 {
+        @include css3-prefix(transform, rotateZ(1780deg));
+   }
+
+    /* Animations */
+    @keyframes leftAnimate {
+        0% {
+            margin-left: 0;
+            @include css3-prefix(transform, rotate(0deg));
+        }
+        50% {
+            margin-left: 25%;
+        }
+        100% {
+            margin-left: 0%;
+            @include css3-prefix(transform, rotate(360deg));
+        }
+    }
+
+    @keyframes rightAnimate {
+        0% {
+            margin-right: 0;
+            @include css3-prefix(transform, rotate(0));
+        }
+        50% {
+            margin-right: 10%;
+        }
+        100% {
+            margin-right: 0%;
+            @include css3-prefix(transform, rotate(-360deg));
+        }
+    }
+
+     /* Results */
+    .results-container {
+        position: relative;
+        height: 100vh;
+        margin-bottom: 10px;
+        @media (max-width: ($breakpoint-sm - 1)) {
+            margin-bottom: 0;
+            height: 65vh;
+        }
+    }
+
+    .resultCard{
+        width: 20%;
+        position: absolute;
+        @include css3-prefix(animation-name, cardAnimate);
+        @include css3-prefix(animation-duration, 5000ms);
+        @include css3-prefix(animation-iteration-count, infinite);
+        @include css3-prefix(animation-timing-function, linear);
+        @include css3-prefix(animation-direction, normal);
+       
+        &#resultCard-1 {
+            top: 0;
+            left: 0;
+            @include css3-prefix(animation-name, leftAnimate);
+            @include css3-prefix(animation-duration, 3.8s);
+        }
+
+        &#resultCard-2 {
+            top: 5%;
+            left: 5%;
+            @include css3-prefix(animation-name, rightAnimate);
+            @include css3-prefix(animation-duration, 4s);
+        }
+
+        &#resultCard-3 {
+            top: 0;
+            left: 30%;
+            @include css3-prefix(animation-name, leftAnimate);
+            @include css3-prefix(animation-duration, 3s);
+        }
+
+        &#resultCard-4 {
+            top: 47%;
+            right: 19%;
+            @include css3-prefix(animation-name, rightAnimate);
+            @include css3-prefix(animation-duration, 4.5s);
+        }
+
+        &#resultCard-5 {
+            top: 20%;
+            right: 20%;
+            @include css3-prefix(animation-name, leftAnimate);
+            @include css3-prefix(animation-duration, 6s);
+        }
+
+        &#resultCard-6 {
+            top: 30%;
+            right: 10%;
+            @include css3-prefix(animation-name, rightAnimate);
+            @include css3-prefix(animation-duration, 3.3s);
+        }
+
+        &#resultCard-7 {
+            top: 12%;
+            left: 15%;
+            @include css3-prefix(animation-name, leftAnimate);
+            @include css3-prefix(animation-duration, 4.2s);
+        }
+
+        &#resultCard-8 {
+            top: 28%;
+            left: 38%;
+            @include css3-prefix(animation-name, rightAnimate);
+            @include css3-prefix(animation-duration, 5.2s);
+        }
+
+        &#resultCard-9 {
+            top: 14%;
+            right: 0% ;
+            @include css3-prefix(animation-name, leftAnimate);
+            @include css3-prefix(animation-duration, 3.8s);
+        }
+
+        &#resultCard-10 {
+            top: 40%;
+            left: 20%;
+            @include css3-prefix(animation-name, rightAnimate);
+            @include css3-prefix(animation-duration, 4.7s);
+        }
+
+        &#resultCard-11 {
+            top: 3%;
+            right: 10%;
+            @include css3-prefix(animation-name, leftAnimate);
+            @include css3-prefix(animation-duration, 3.5s);
+        }
+    }
+
+    .step-12 {
+        .card-bg.card-bg-left {
+            @include css3-prefix(transform, scale(1.1) rotate(4deg));
+            left: -4%;
+            top: 15%;
+            @media (max-width: ($breakpoint-md - 1)) {
+                @include css3-prefix(transform, scale(1.2) rotate(-5deg) translateX(-50%));
+                left: 50%;
+                top: 0%;
+                @include css3-prefix(display, flex);
+            }
+        }
+    }
+
+    .step-13 {
+
+        &.panel {
+            margin-bottom: 90px;
+        }
+
+        .card-bg {
+            @media (max-width: ($breakpoint-md - 1)) {
+                display: block !important;
+                
+                &.card-bg-left {
+                    @include css3-prefix(transform, scale(1.4) rotate(4deg));
+                    left: 10%;
+                }
+
+                &.card-bg-middle {
+                    @include css3-prefix(transform, scale(1.4) rotate(12deg));
+                    left: 10%;
+                }
+
+                &.card-bg-right {
+                    @include css3-prefix(transform, scale(1.4) rotate(23deg));
+                    left: 10%;
+                }
+            }    
+        }
+
+        .fragrance-card {
+            @media (max-width: ($breakpoint-md - 1)) {
+                margin-bottom: 10px;
+            }
+        }
+        
+        .card.card-1 {
+            @include css3-prefix(transform, rotate(0deg));
+        }
+
+        .cards {
+            padding-bottom: 40px;
+        }
+
+        .col-xs-12 {
+            margin-bottom: 0;
+        }
+        
+        .button-container {
+            min-height: unset;
+            margin-bottom: unset;
+            margin-top: 10px;
+            @media (max-width: ($breakpoint-md - 1)) {
+                width: 100%;    
+            }
+        }
+
+        .add-to-basket {
+            margin: 10px 0px 10px 10px;
+            display: none;
+            @media (max-width: ($breakpoint-md - 1)) {
+                margin: 20px auto 0px;
+            }
+        }
+
+        .mb-40 {
+            @media (max-width: ($breakpoint-md - 1)) {
+                margin-bottom: 0;
+            }
+        }
+
+        .fragcardlinks {
+            @include css3-prefix(transition, $transition);
+        }
+
+        .findoutmore {
+            margin-bottom: 5px;
+            margin-top: 40px;
+            text-align: right;
+            text-decoration: underline;
+
+            &:hover {
+                text-shadow: 0px 0px 10px white;
+            }
+        }
+
+        .shuffle {
+            text-align: right;
+            background-image: url(../images/fragrance-profiler-2/shuffle.png);
+            background-repeat: no-repeat;
+            background-position: right;
+            margin-top: 40px;
+            padding-right: 30px;
+            font-size: 14px;
+            @media (max-width: ($breakpoint-md - 1)) {
+                margin-bottom: 40px;
+                margin-top: 0px;
+                position: relative;
+                z-index: 3;
+            }
+        }
+    }
+
+    .step-14 {
+
+        .back {
+            text-decoration: underline;
+            cursor: pointer;
+        }
+
+        .col-xs-12.frag-content {           
+            @media (max-width: ($breakpoint-md - 1)) {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    .fragrance-carousel {
+        overflow: hidden;
+        margin: 0;
+        padding: 0;
+        @media (max-width: ($breakpoint-md - 1)) {
+            margin-bottom: 10px;
+        }
+        
+        .slick-slide {
+            margin: 0;
+
+            img {
+                margin: auto;
+            }
+        }
+
+        .slick-dots {
+            width: 100%;
+            padding: 0;
+            margin: 40px 0 0 0;
+            list-style: none;
+            text-align: center;
+        }
+
+        .slick-dots li {
+            display: inline-block;
+        }
+
+        .slick-dots li button {
+            font-size: 0;
+            line-height: 0;
+            display: block;
+            width: 20px;
+            height: 20px;
+            padding: 5px;
+            cursor: pointer;
+            color: transparent;
+            border: 0;
+            outline: none;
+            border: 1px grey solid;
+            background: transparent;
+            float: left;
+            justify-self: end;
+            border-radius: 50px;
+            background: transparent;
+            margin: 0px 5px;
+        }
+
+         .slick-dots li.slick-active button {
+            background: grey;
+        }
+
+        .slick-dots li button:before {
+            font-family: 'slick';
+            font-size: 6px;
+            line-height: 20px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 20px;
+            height: 20px;
+            content: '';
+            text-align: center;
+            opacity: .25;
+            color: black;
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }    
+    }
+    
+    .add-to-basket {
+        display: none;
+        margin: 30px auto 0px;
+        @media (max-width: ($breakpoint-md - 1)) {
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        &.disab {
+            padding: 15px 60px 13px 20px; }
+    }
+
+    .step-15 {
+        .cards {
+            padding-bottom: 40px;
+        }
+        .confirmationButtons {
+            
+            button {
+                display: inline;
+                min-width: 250px;
+                margin: 0 5px 5px 5px;
+                @media (max-width: 874px) {
+
+                    &:first-of-type {
+                        margin-bottom: 20px;
+                    }
+                }
+            }
+        }
+        
+        #persona-final{
+            @include css3-prefix(transform, rotate(3deg));
+            margin-top: 0%;
+            left: 10%;
+                @media (max-width: ($breakpoint-md - 1)) {
+                    left: 0;
+                }
+        }
+        #sample-final1{
+            @include css3-prefix(transform, rotate(-5deg));
+            @media (max-width: ($breakpoint-md - 1)) {
+                margin-top: -20%;
+                @include css3-prefix(transform, rotate(-4deg));
+                left: 5%;
+                position: relative;
+            }   
+        }
+
+        #sample-final2 {
+            @include css3-prefix(transform, rotate(9deg));
+            z-index: 1;
+            right: 10%;
+            top: 2%;
+            @media (max-width: ($breakpoint-md - 1)) {
+                margin-top: -20%;
+                @include css3-prefix(transform, rotate(4deg));
+                right: 5%;
+                position: relative;
+            }
+        }   
+
+        .col-xs-12 {
+            @media (max-width: ($breakpoint-md - 1)) {
+                margin-bottom: 20px;
+            }
+        }
+    }
+
+    /*Pop ups*/
+    .popup {
+        background: rgba(0,0,0,0.6);
+        width: 100%;
+        height: 100%;
+        min-height: 750px;
+        top: 0;
+        left: 0;
+        overflow: hidden;
+        z-index: 10;
+        display: none;
+        position: relative;
+        @media (max-width: ($breakpoint-sm - 1)) {
+            min-height: 812px;
+        }
+
+        &.error {
+            position: absolute;
+
+            .popup-inner {
+                min-height: auto;
+            }
+
+            .col-xs-12 {
+                margin-bottom: 0;
+            }
+        }
+
+        h2 {
+            margin-bottom: 10px;
+            @media (max-width: ($breakpoint-md - 1)) {
+                margin-bottom: 20px;
+            }
+        }
+
+        h2, p {
+            color:#1D362F;
+        }
+
+        p {
+            @include css3-prefix(transition, $transition);
+            margin-top: 10px;
+            &.reviews {
+                margin-top: 20px;
+                text-align: left;
+                @media (max-width: ($breakpoint-md - 1)) {
+                    text-align: center;
+                }
+                
+                .review-text {
+                    text-decoration: underline;
+                    margin-left: 5px;
+                    margin-top: 10px;
+                }
+            }
+        }
+
+        h3 {
+            font-size: 44px;
+        }
+
+        button {
+            color:#1D362F;
+            border: 1px$themeColourDark solid;
+
+            &:hover {
+                background:$themeColourDark;
+                color: $themeColour;
+                @include css3-prefix(transition, $transition);
+            }
+
+            @media (max-width: ($breakpoint-sm - 1)) {
+                width: 100%;
+            }
+        }
+
+        .button-container {
+            height: 140px;
+
+            @media (max-width: ($breakpoint-md - 1)) {
+                margin-bottom: 0;
+                height: 90px;
+
+                 button {
+                     margin: 20px auto;
+                 }
+            }
+
+            @media (max-width: ($breakpoint-sm - 1)) {
+                height: auto;
+                position: static;
+            }
+        }
+
+        .close {
+            color: #1D362F;
+            text-align: right;
+            font-size: 18px;
+        }
+        
+        &.hats {
+            @media (max-width: ($breakpoint-md - 1)) {
+                .hidden-button {
+                    margin: 40px auto;
+                }   
+            }
+
+            .button-container {
+                min-height: auto;
+                height: auto;
+                margin-bottom: 0; 
+            }
+
+            .button-container .next-step {
+                position: relative;
+                z-index: 9; 
+            }
+        }
+
+        &.garnishes, &.hats {
+            @media (max-width: ($breakpoint-md - 1)) {
+                .mb-40 {
+                    margin: 0;
+                }
+            }
+
+            .hidden-button {
+                @media (max-width: ($breakpoint-sm - 1)) {
+                    margin: 30px auto;        
+                }
+            }
+
+            .col-md-2.col-xs-4 {
+                p {
+                    margin-bottom: 20px;
+                }
+            }
+        }
+
+        &.garnishes {
+            .mb-40 {
+                margin-bottom: 0;
+            }
+        }
+
+        .popup-inner {
+            width: 75%;
+            max-width: 1280px;
+            border-radius: 25px;
+            padding: 40px 0px;
+            position: relative;
+            z-index: 2;
+            margin: 92px auto 40px; 
+            background: #F5E7D1;
+            min-height: 604px;
+            @media (max-width: ($breakpoint-lg - 1)) {
+                padding: 20px;
+                width: 90%;
+                margin-left: 5%;
+                height: auto; 
+            } 
+        }
+
+        .man {
+            position: absolute;
+            top: 10%;
+            width: 40%;
+            right: -10%;
+            z-index: 3;
+            @media (max-width: 900px) {
+                top: 10%;
+                width: 40%;
+                right: -10%;
+                z-index: 3;
+            }
+            @media (max-width: ($breakpoint-md - 1)) {
+                top: unset;
+                width: 35%;
+                right: unset;
+                bottom: -50%;
+                left: 50%;
+                @include css3-prefix(transform, translateX(-50%));
+            }
+            @media (max-width: 650px) {
+                bottom: -44%;
+            }
+            @media (max-width: ($breakpoint-sm - 1)) {
+                width: 42%;
+                bottom: -49%;
+            }
+            @media (max-width: 415px) {
+                width: 47%;
+                bottom: -44%;
+            }
+            @media (max-width: ($breakpoint-xs - 1)) {
+                bottom: -33%;
+            }
+            @media only screen 
+            and (width : 375px) 
+            and (height : 812px)
+            and (orientation : portrait)  
+            and (-webkit-device-pixel-ratio : 3) {
+               bottom: -33%;
+            }
+            @media (max-width: 320px) {
+               bottom: -18%;
+            }
+        }
+        
+        .extra-row {
+            @include css3-prefix(display, flex);
+            align-items: center;
+            width: 60%;
+            margin: 40px auto;
+        }
+
+        .extra-box {
+            flex: 1;
+        }
+
+        .margin-auto {
+            margin: auto;
+            max-width: 50%;
+            flex: 0 0 50%;
+            margin-left: 25%;
+        }
+
+        img.extra {
+            max-width: 129px;
+            width: 100%;
+            align-self: unset;
+            margin: auto;
+            @include css3-prefix(transition, $transition);
+        }
+
+        .margin-auto {
+            img.extra {
+                max-width: 250px;
+            }
+        }
+
+        .hat, .garnish {
+            cursor: pointer;
+            position: relative;
+            z-index: 4;
+            @include css3-prefix(transition, $transition);
+            
+            &:hover {
+                 @include css3-prefix(transform, scale(1.1));
+            }
+        }
+
+        .bartender {
+            position: absolute;
+            bottom: 0px;
+            left: 50%;
+            @include css3-prefix(transform, translateX(-50%));
+            width: 28.6%;
+            padding: 0;
+            @include css3-prefix(display, flex);
+            z-index: 3;
+            max-width: 362px;
+            align-items: flex-end;
+            justify-content: center; 
+
+            img {
+                height: auto;
+                max-width: 350px;
+                width: 100%;
+            }
+            
+            @media (max-width: ($breakpoint-lg - 1)) {
+                width: 45%;
+                
+                img {
+                    max-width: 280px; 
+                }
+            }
+            @media (max-width: 850px) {
+                width: 40%;
+            }
+            @media (max-width: ($breakpoint-md - 1)) {
+                width: 30%;
+                img {
+                    max-width: 190px; 
+                }
+            }
+            @media (max-width: ($breakpoint-sm - 1)) {
+                width: 40%;
+
+                img {
+                    max-width: 150px;
+                }
+            }   
+        }
+
+        &.youare {
+            text-align: left;
+            @media (max-width: ($breakpoint-md - 1)) {
+                text-align: left;
+            }
+
+            .popup-inner {
+                padding: 40px;
+                margin-top: 92px;
+                @media (max-width: ($breakpoint-md - 1)) {
+                    margin-top: 20px;
+                }
+            }
+
+            .persona {
+                position: absolute;
+                width: 68%;
+                left: 17%;
+                top: 15%;
+                @include css3-prefix(transform, rotate(3deg));
+                @media (max-width: ($breakpoint-md - 1)) {
+                    position: static;
+                    width: 50%;
+                    margin: 0 25%;
+
+                    h4 {
+                        line-height: 1;
+                    }
+                }
+
+                @media (max-width: ($breakpoint-sm - 1)) {
+                    width: 80%;
+                    margin: auto;
+                    display: block;
+                }    
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+            
+        .pers-card {
+            padding: 0;
+            @media (max-width: ($breakpoint-md - 1)) {
+                padding: 0 10%;
+            }
+        }
+            
+        .col-xs-12 {
+            margin-bottom: 20px;
+        }
+
+        #animal {
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            width: 30%;
+            @media (max-width: ($breakpoint-sm - 1)) {
+                width: 38%;
+            }
+        }
+            
+        p {
+            font-family: 'Roboto';
+            color:$themeColourDark;
+        }
+
+        h4 {
+            font-size: 21px;
+            color: $themeColourDark;
+        }
+
+        &.fragrances {
+            text-align: left;
+            
+            .popup-inner {
+                padding: 40px;
+                width: 60%;
+                margin-top: 92px;
+                min-height: auto;
+                max-width: 768px;
+                margin-left: auto;
+                margin-right: auto;
+                @media (max-width: ($breakpoint-lg - 1)) {
+                    width: 80%;
+                    margin-left: 10%;
+                }
+                @media (max-width: ($breakpoint-md - 1)) {
+                    width: 90%;
+                    margin-left: 5%;
+                    padding: 20px;
+                    margin-top: 20px;
+                }
+
+                .flex-row {
+                    align-items: baseline;
+                }
+
+                .col-xs-12 {
+                    margin-bottom: 0;
+                }
+            }
+
+            .notes {
+                margin-bottom: 20px;
+
+                .note {
+                    border-right: 1px $themeColourDark solid;
+                    
+                    &:last-of-type {
+                        border: none;
+                    }
+                    @media (max-width: ($breakpoint-md - 1)) {
+                        border: none;
+                        margin-bottom: 10px;
+                    }
+                }
+
+                p {
+                    margin: 0;
+                    padding: 0;
+                    line-height: 1.2;
+                    
+                    &:first-of-type {
+                        font-family: 'Roboto';
+                        margin-bottom: 5px;
+                    }
+                }
+            }
+
+            h2 {
+                @media (max-width: ($breakpoint-md - 1)) {
+                    text-align: center;
+                }
+            }
+
+            p {
+                font-size: 16px;
+            }
+        }
+
+        &.error {
+            @media (max-width: ($breakpoint-md - 1)) {
+                position: absolute;
+            }
+
+            .popup-inner {
+                padding: 40px;
+                width: 40%;
+                margin-left: auto;
+                margin-right: auto;
+                @media (max-width: ($breakpoint-md - 1)) {
+                    width: 80%;
+                    margin-left: 10%;
+                }
+            }
+
+            button {
+                margin: auto;
+            }
+        }
+    } 
+}
