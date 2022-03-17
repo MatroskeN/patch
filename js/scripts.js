@@ -872,19 +872,49 @@ initWheel();
         document.getElementById('animal').innerHTML = `<img src="images/animal-${cardData[10]}.png">`
 
         let cards = ''
-
+        let dataCards;
         getAroma(profilerData.identity, score).then(res => {
             console.log(res)
+            dataCards = res.products;
             res.products.forEach((item) => {
                 cards += `
                 <div class="col-md-3 col-md-offset-1 col-xs-6 col-xs-offset-3 playing-cards">
-                    <img class="card-1 fragrance-card card-img" data-name="${item.data}" src="${item.image}">
+                    <img class="card-1 fragrance-card card-img check-data" data-name="${item.data}" src="${item.image}">
                     <img class="card-bg card-bg-left" src="images/pack-left-v6.png">
                     <p class="fragcardlinks shuffle">Перемешать</p>
                 </div>
                 `;
             })
             $('.aroma-result').html('').html(cards)
+            $('.check-data').on('click', (evt) => {
+                let data = evt.target.dataset.name;
+                let item = dataCards.filter((item) => item.data === data)
+                console.log(item)
+                document.getElementById('bottle-image').innerHTML = `<img src="${item[0].image}"/>`;
+                document.getElementById('sample-content').innerHTML = `
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <h2>${item[0].name}</h2>
+                        </div>
+                    </div>
+                    <div class="row notes">
+                        <div class="col-md-4 note">
+                            <p>Верхние ноты</p>
+                            <p>Кардамон</p>
+                        </div>
+                        <div class="col-md-4 note">
+                            <p>Средние ноты</p>
+                            <p>Черный перец</p>
+                        </div>
+                        <div class="col-md-4 note">
+                            <p>Базовые ноты</p>
+                            <p>Кедр</p>
+                        </div>
+                    </div>
+                    `;
+                $(`.add-to-basket`).fadeIn(500);
+                nextStep();
+            })
         })
 
         // Load personality content for Gent
