@@ -1,6 +1,6 @@
 [
   {
-    "gender": "GENTS",
+    "gender": "gent",
     "scoreMin": 12,
     "scoreMax": 15,
     "products": [
@@ -22,7 +22,7 @@
     ]
   },
   {
-    "gender": "GENTS",
+    "gender": "gent",
     "scoreMin": 16,
     "scoreMax": 19,
     "products": [
@@ -44,7 +44,7 @@
     ]
   },
   {
-    "gender": "GENTS",
+    "gender": "gent",
     "scoreMin": 20,
     "scoreMax": 23,
     "products": [
@@ -66,7 +66,7 @@
     ]
   },
   {
-    "gender": "GENTS",
+    "gender": "gent",
     "scoreMin": 24,
     "scoreMax": 28,
     "products": [
@@ -88,7 +88,7 @@
     ]
   },
   {
-    "gender": "LADIES",
+    "gender": "lady",
     "scoreMin": 12,
     "scoreMax": 15,
     "products": [
@@ -110,7 +110,7 @@
     ]
   },
   {
-    "gender": "LADIES",
+    "gender": "lady",
     "scoreMin": 16,
     "scoreMax": 19,
     "products": [
@@ -132,7 +132,7 @@
     ]
   },
   {
-    "gender": "LADIES",
+    "gender": "lady",
     "scoreMin": 20,
     "scoreMax": 23,
     "products": [
@@ -154,7 +154,7 @@
     ]
   },
   {
-    "gender": "LADIES",
+    "gender": "lady",
     "scoreMin": 24,
     "scoreMax": 28,
     "products": [
@@ -176,7 +176,7 @@
     ]
   },
   {
-    "gender": "IT MATTERS NOT",
+    "gender": "imn",
     "scoreMin": 12,
     "scoreMax": 15,
     "products": [
@@ -198,7 +198,7 @@
     ]
   },
   {
-    "gender": "IT MATTERS NOT",
+    "gender": "imn",
     "scoreMin": 16,
     "scoreMax": 19,
     "products": [
@@ -220,7 +220,7 @@
     ]
   },
   {
-    "gender": "IT MATTERS NOT",
+    "gender": "imn",
     "scoreMin": 20,
     "scoreMax": 23,
     "products": [
@@ -242,7 +242,7 @@
     ]
   },
   {
-    "gender": "IT MATTERS NOT",
+    "gender": "imn",
     "scoreMin": 24,
     "scoreMax": 28,
     "products": [

@@ -871,6 +871,22 @@ initWheel();
         // Animal image for persona pop up
         document.getElementById('animal').innerHTML = `<img src="images/animal-${cardData[10]}.png">`
 
+        let cards = ''
+
+        getAroma(profilerData.identity, score).then(res => {
+            console.log(res)
+            res.products.forEach((item) => {
+                cards += `
+                <div class="col-md-3 col-md-offset-1 col-xs-6 col-xs-offset-3 playing-cards">
+                    <img class="card-1 fragrance-card card-img" data-name="${item.data}" src="${item.image}">
+                    <img class="card-bg card-bg-left" src="images/pack-left-v6.png">
+                    <p class="fragcardlinks shuffle">Перемешать</p>
+                </div>
+                `;
+            })
+            $('.aroma-result').html('').html(cards)
+        })
+
         // Load personality content for Gent
         if (profilerData.identity == 'gent') {
             
