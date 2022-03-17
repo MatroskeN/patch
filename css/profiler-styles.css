@@ -45,7 +45,7 @@
 	 padding-top: 0px !important;
 }
  #fragrance-profiler {
-	 background: url(../images/fragrance-profiler-2/leather-background.png);
+	 background: url(../images/leather-background.png);
 	 color: #f5e7d1;
 	 background-size: contain;
 	 height: auto;
@@ -138,7 +138,7 @@ h1,h2,h3,h4,h5,span,p,a{
 	 color: #1d362f;
 	 padding: 0px;
 	 width: 180px;
-	 background-image: url(../images/fragrance-profiler-2/question.png);
+	 background-image: url(../images/question.png);
 	 background-repeat: no-repeat;
 	 height: 46px;
 	 -webkit-display: flex;
@@ -742,7 +742,7 @@ h1,h2,h3,h4,h5,span,p,a{
 }
  @media (max-width: 499px) {
 	 #fragrance-profiler .question .playing-cards {
-		 background: url(../images/fragrance-profiler-2/backofcard.png);
+		 background: url(../images/backofcard.png);
 		 background-repeat: no-repeat;
 		 background-size: contain;
 		 padding: 0px 20px;
@@ -1544,7 +1544,7 @@ h1,h2,h3,h4,h5,span,p,a{
 }
  #fragrance-profiler .step-13 .shuffle {
 	 text-align: right;
-	 background-image: url(../images/fragrance-profiler-2/shuffle.png);
+	 background-image: url(../images/shuffle.png);
 	 background-repeat: no-repeat;
 	 background-position: right;
 	 margin-top: 40px;

@@ -229,16 +229,16 @@ jQuery(document).ready(function () {
     $('.youare-overlay.select-imn').on('hover touchstart', function(){
         $('.pointer').removeClass('lady-animate');
         $('.pointer').addClass('it-matters-not-animate');
-        document.getElementById('youare-picker').innerHTML = `<img src="images/fragrance-profiler-2/step-3-picker-imn.png">`;
+        document.getElementById('youare-picker').innerHTML = `<img src="images/step-3-picker-imn.png">`;
     });
     $('.youare-overlay.select-lady').on('hover touchstart', function(){
         $('.pointer').removeClass('it-matters-not-animate');
         $('.pointer').addClass('lady-animate');
-        document.getElementById('youare-picker').innerHTML = `<img src="images/fragrance-profiler-2/step-3-picker-lady.png">`;
+        document.getElementById('youare-picker').innerHTML = `<img src="images/step-3-picker-lady.png">`;
     });
     $('.youare-overlay.select-gent').on('hover touchstart', function(){
         $('.pointer').removeClass('lady-animate').removeClass('it-matters-not-animate');
-        document.getElementById('youare-picker').innerHTML = `<img src="images/fragrance-profiler-2/step-3-picker-gent.png">`;
+        document.getElementById('youare-picker').innerHTML = `<img src="images/step-3-picker-gent.png">`;
     });
 
     // Select Identity and path. Identity will not change but path will switch back and forth to generic throughout the process.
@@ -389,7 +389,7 @@ jQuery(document).ready(function () {
 
         if (hatOrGarnish == 'extra hat') {
             // Add to results
-            document.getElementById('card7').innerHTML = `<img src="images/fragrance-profiler-2/${extraName}.png">`;
+            document.getElementById('card7').innerHTML = `<img src="images/${extraName}.png">`;
 
             // Hide images that have not been selected
             $(`.extra.hat`).not(this).parent().hide(); 
@@ -397,7 +397,7 @@ jQuery(document).ready(function () {
         }
         else if (hatOrGarnish == 'extra garnish') {
             // Add to results
-            document.getElementById('card10').innerHTML = `<img src="images/fragrance-profiler-2/${extraName}.png">`;
+            document.getElementById('card10').innerHTML = `<img src="images/${extraName}.png">`;
 
             // Hide images that have not been selected
             $(`.extra.garnish`).not(this).parent().hide(); 
@@ -631,7 +631,7 @@ function initWheel()
         }    
 	
          // Add Spirit animal to results
-         document.getElementById('card11').innerHTML = `<img src="images/fragrance-profiler-2/animal-card-${spiritAnimal}.png">`;
+         document.getElementById('card11').innerHTML = `<img src="images/animal-card-${spiritAnimal}.png">`;
          cardData[10] = spiritAnimal;
 
          // Highlight result
@@ -662,8 +662,8 @@ initWheel();
                 // Load content in popup for selected card.  
     
                 
-                document.getElementById('bottle-image').innerHTML = `<img src="images/fragrance-profiler-2/${activeFragCard}-sample.png"/>`;
-                document.getElementById('bottle-image2').innerHTML = `<img src="images/fragrance-profiler-2/${activeFragCard}-bottle.png"/>`;
+                document.getElementById('bottle-image').innerHTML = `<img src="images/${activeFragCard}-sample.png"/>`;
+                document.getElementById('bottle-image2').innerHTML = `<img src="images/${activeFragCard}-bottle.png"/>`;
     
                 if (activeFragCard == 'blazingmistersam'){
                     document.getElementById('sample-content').innerHTML = `
@@ -815,16 +815,16 @@ initWheel();
             if (firstEmpty == true){
                 $(`[data-name="${activeFragCard}"]`).parent().addClass(`picked-card1`);
                 $(`[data-name="${activeFragCard}"]`).parent().removeClass(`picked-card2`);
-                document.getElementById(`fragrance-card1`).innerHTML = `<img data-label=${activeFragCard} src="images/fragrance-profiler-2/${activeFragCard}.png">`;
-                document.getElementById(`sample-final1`).innerHTML = `<img src="images/fragrance-profiler-2/${activeFragCard}.png">`;
+                document.getElementById(`fragrance-card1`).innerHTML = `<img data-label=${activeFragCard} src="images/${activeFragCard}.png">`;
+                document.getElementById(`sample-final1`).innerHTML = `<img src="images/${activeFragCard}.png">`;
                 firstEmpty = false;
                 fragCardArray.unshift(activeFragCard);
             }
             else if (firstEmpty == false) {
                 $(`[data-name="${activeFragCard}"]`).parent().addClass(`picked-card2`);
                 $(`[data-name="${activeFragCard}"]`).parent().removeClass(`picked-card1`);
-                document.getElementById(`fragrance-card2`).innerHTML = `<img data-label=${activeFragCard} src="images/fragrance-profiler-2/${activeFragCard}.png">`;
-                document.getElementById(`sample-final2`).innerHTML = `<img src="images/fragrance-profiler-2/${activeFragCard}.png">`;
+                document.getElementById(`fragrance-card2`).innerHTML = `<img data-label=${activeFragCard} src="images/${activeFragCard}.png">`;
+                document.getElementById(`sample-final2`).innerHTML = `<img src="images/${activeFragCard}.png">`;
                 fragCardArray.push(activeFragCard);
             }
             
@@ -862,26 +862,26 @@ initWheel();
 
         // Display all cards on results page (except animal card)
        for (i = 0; i < cardData.length -1; i++) {
-        document.getElementById(`resultCard-${i+1}`).innerHTML = `<img src="images/fragrance-profiler-2/${cardData[i]}.png"></img>`;
+        document.getElementById(`resultCard-${i+1}`).innerHTML = `<img src="images/${cardData[i]}.png"></img>`;
        }
 
         // Animal card for results page
-        document.getElementById('resultCard-11').innerHTML = `<img src="images/fragrance-profiler-2/animal-card-${cardData[10]}.png"></img>`;
+        document.getElementById('resultCard-11').innerHTML = `<img src="images/animal-card-${cardData[10]}.png"></img>`;
 
         // Animal image for persona pop up
-        document.getElementById('animal').innerHTML = `<img src="images/fragrance-profiler-2/animal-${cardData[10]}.png">`
+        document.getElementById('animal').innerHTML = `<img src="images/animal-${cardData[10]}.png">`
 
         // Load personality content for Gent
         if (profilerData.identity == 'gent') {
             
             if (score <= 15) {
                 profilerData.personalityType = 'The Modern Dandy';
-                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="dandy" src="images/fragrance-profiler-2/gent-persona-card-1.png">`;
+                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="dandy" src="images/gent-persona-card-1.png">`;
                 document.getElementById('persona-content').innerHTML = `
                 
                 <div class="col-md-4 col-xs-12 pers-card">
-                    <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
-                    <img class="persona" src="images/fragrance-profiler-2/gent-persona-card-1.png">
+                    <img class="card-bg card-bg-left" src="images/pack-left-v6.png">
+                    <img class="persona" src="images/gent-persona-card-1.png">
                 </div>
                 <div class="col-md-7">
                     <h4 class="for-me-text">Вы</h4>
@@ -901,12 +901,12 @@ initWheel();
             }
             else if (score >= 16 && score <= 19){
                 profilerData.personalityType = 'The Fearless Fellow';
-                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="card2" src="images/fragrance-profiler-2/gent-persona-card-2.png">`;
+                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="card2" src="images/gent-persona-card-2.png">`;
                 document.getElementById('persona-content').innerHTML = `
                 
                 <div class="col-md-4 col-xs-12 pers-card">
-                    <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
-                    <img class="persona" src="images/fragrance-profiler-2/gent-persona-card-2.png">
+                    <img class="card-bg card-bg-left" src="images/pack-left-v6.png">
+                    <img class="persona" src="images/gent-persona-card-2.png">
                 </div>
                 <div class="col-md-7">
                 <h4 class="for-me-text">Вы</h4>
@@ -924,12 +924,12 @@ initWheel();
             }
             else if (score >= 20 && score <= 23){
                 profilerData.personalityType = 'The 3rd Persona';
-                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="card3" src="images/fragrance-profiler-2/gent-persona-card-3.png">`;
+                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="card3" src="images/gent-persona-card-3.png">`;
                 document.getElementById('persona-content').innerHTML = `
                 
                 <div class="col-md-4 col-xs-12 pers-card">
-                    <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
-                    <img class="persona" src="images/fragrance-profiler-2/gent-persona-card-3.png">
+                    <img class="card-bg card-bg-left" src="images/pack-left-v6.png">
+                    <img class="persona" src="images/gent-persona-card-3.png">
                 </div>
                 <div class="col-md-7">
                 <h4 class="for-me-text">Вы</h4>
@@ -947,12 +947,12 @@ initWheel();
             }
             else if (score >= 24){
                 profilerData.personalityType = 'The 4th Persona';
-                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="card4" src="images/fragrance-profiler-2/gent-persona-card-4.png">`;
+                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="card4" src="images/gent-persona-card-4.png">`;
                 document.getElementById('persona-content').innerHTML = `
                 
                     <div class="col-md-4 col-xs-12 pers-card">
-                        <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
-                        <img class="persona" src="images/fragrance-profiler-2/gent-persona-card-4.png">
+                        <img class="card-bg card-bg-left" src="images/pack-left-v6.png">
+                        <img class="persona" src="images/gent-persona-card-4.png">
                     </div>
                     <div class="col-md-7">
                     <h4 class="for-me-text">Вы</h4>
@@ -972,12 +972,12 @@ initWheel();
         else if (profilerData.identity == 'lady') {
             if (score <= 15) {
                 profilerData.personalityType = 'The Modern Dandy Lady';
-                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="dandy" src="images/fragrance-profiler-2/lady-persona-card-1.png">`;
+                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="dandy" src="images/lady-persona-card-1.png">`;
                 document.getElementById('persona-content').innerHTML = `
                 
                 <div class="col-md-4 col-xs-12 pers-card">
-                    <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
-                    <img class="persona" src="images/fragrance-profiler-2/lady-persona-card-1.png">
+                    <img class="card-bg card-bg-left" src="images/pack-left-v6.png">
+                    <img class="persona" src="images/lady-persona-card-1.png">
                 </div>
                 <div class="col-md-7">
                 <h4 class="for-me-text">Вы</h4>
@@ -992,12 +992,12 @@ initWheel();
             }
             else if (score >= 16 && score <= 19){
                 profilerData.personalityType = 'The Fearless Lady';
-                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="card2" src="images/fragrance-profiler-2/lady-persona-card-2.png">`;
+                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="card2" src="images/lady-persona-card-2.png">`;
                 document.getElementById('persona-content').innerHTML = `
                 
                 <div class="col-md-4 col-xs-12 pers-card">
-                    <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
-                    <img class="persona" src="images/fragrance-profiler-2/lady-persona-card-2.png">
+                    <img class="card-bg card-bg-left" src="images/pack-left-v6.png">
+                    <img class="persona" src="images/lady-persona-card-2.png">
                 </div>
                 <div class="col-md-7">
                 <h4 class="for-me-text">Вы</h4>
@@ -1013,12 +1013,12 @@ initWheel();
             }
             else if (score >= 20 && score <= 23){
                 profilerData.personalityType = 'The 3rd Lady';
-                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="card3" src="images/fragrance-profiler-2/lady-persona-card-3.png">`;
+                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="card3" src="images/lady-persona-card-3.png">`;
                 document.getElementById('persona-content').innerHTML = `
                 
                 <div class="col-md-4 col-xs-12 pers-card">
-                    <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
-                    <img class="persona" src="images/fragrance-profiler-2/lady-persona-card-3.png">
+                    <img class="card-bg card-bg-left" src="images/pack-left-v6.png">
+                    <img class="persona" src="images/lady-persona-card-3.png">
                 </div>
                 <div class="col-md-7">
                 <h4 class="for-me-text">Вы</h4>
@@ -1035,12 +1035,12 @@ initWheel();
             }
             else if (score >= 24){
                 profilerData.personalityType = 'The 4th Lady';
-                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="card4" src="images/fragrance-profiler-2/lady-persona-card-4.png">`;
+                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="card4" src="images/lady-persona-card-4.png">`;
                 document.getElementById('persona-content').innerHTML = `
                 
                     <div class="col-md-4 col-xs-12 pers-card">
-                        <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
-                        <img class="persona" src="images/fragrance-profiler-2/lady-persona-card-4.png">
+                        <img class="card-bg card-bg-left" src="images/pack-left-v6.png">
+                        <img class="persona" src="images/lady-persona-card-4.png">
                     </div>
                     <div class="col-md-7">
                     <h4 class="for-me-text">Вы</h4>
@@ -1063,12 +1063,12 @@ initWheel();
         else if (profilerData.identity == 'imn') {
             if (score <= 15) {
                 profilerData.personalityType = 'The Modern Dandy IMN';
-                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="dandy" src="images/fragrance-profiler-2/lady-persona-card-1.png">`;
+                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="dandy" src="images/lady-persona-card-1.png">`;
                 document.getElementById('persona-content').innerHTML = `
                 
                 <div class="col-md-4 col-xs-12 pers-card">
-                    <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
-                    <img class="persona" src="images/fragrance-profiler-2/lady-persona-card-1.png">
+                    <img class="card-bg card-bg-left" src="images/pack-left-v6.png">
+                    <img class="persona" src="images/lady-persona-card-1.png">
                 </div>
                 <div class="col-md-7">
                 <h4 class="for-me-text">Вы</h4>
@@ -1087,12 +1087,12 @@ initWheel();
             }
             else if (score >= 16 && score <= 19){
                 profilerData.personalityType = 'The Fearless IMN';
-                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="card2" src="images/fragrance-profiler-2/lady-persona-card-2.png">`;
+                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="card2" src="images/lady-persona-card-2.png">`;
                 document.getElementById('persona-content').innerHTML = `
                 
                 <div class="col-md-4 col-xs-12 pers-card">
-                    <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
-                    <img class="persona" src="images/fragrance-profiler-2/lady-persona-card-2.png">
+                    <img class="card-bg card-bg-left" src="images/pack-left-v6.png">
+                    <img class="persona" src="images/lady-persona-card-2.png">
                 </div>
                 <div class="col-md-7">
                 <h4 class="for-me-text">Вы</h4>
@@ -1110,12 +1110,12 @@ initWheel();
             }
             else if (score >= 20 && score <= 23){
                 profilerData.personalityType = 'The 3rd IMN';
-                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="card3" src="images/fragrance-profiler-2/lady-persona-card-3.png">`;
+                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="card3" src="images/lady-persona-card-3.png">`;
                 document.getElementById('persona-content').innerHTML = `
                 
                 <div class="col-md-4 col-xs-12 pers-card">
-                    <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
-                    <img class="persona" src="images/fragrance-profiler-2/lady-persona-card-3.png">
+                    <img class="card-bg card-bg-left" src="images/pack-left-v6.png">
+                    <img class="persona" src="images/lady-persona-card-3.png">
                 </div>
                 <div class="col-md-7">
                 <h4 class="for-me-text">Вы</h4>
@@ -1132,12 +1132,12 @@ initWheel();
             }
             else if (score >= 24){
                 profilerData.personalityType = 'The 4th IMN';
-                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="card4" src="images/fragrance-profiler-2/lady-persona-card-4.png">`;
+                document.getElementById('persona-final').innerHTML = `<img class="card card-1 fragrance-card" data-name="card4" src="images/lady-persona-card-4.png">`;
                 document.getElementById('persona-content').innerHTML = `
                 
                     <div class="col-md-4 col-xs-12 pers-card">
-                        <img class="card-bg card-bg-left" src="images/fragrance-profiler-2/pack-left-v6.png">
-                        <img class="persona" src="images/fragrance-profiler-2/lady-persona-card-4.png">
+                        <img class="card-bg card-bg-left" src="images/pack-left-v6.png">
+                        <img class="persona" src="images/lady-persona-card-4.png">
                     </div>
                     <div class="col-md-7">
                     <h4 class="for-me-text">Вы</h4>
@@ -1234,7 +1234,7 @@ initWheel();
         if ($(window).width() < 484 ) {
             $('.panel-container .question .button-container').fadeOut(500);
         }
-        document.getElementById('youare-picker').innerHTML = `<img src="images/fragrance-profiler-2/step-3-picker-gent.png">`;
+        document.getElementById('youare-picker').innerHTML = `<img src="images/step-3-picker-gent.png">`;
         $(`.personality-results .card-slot`).on('click', function(){
             removal();
         });

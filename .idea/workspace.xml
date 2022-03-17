@@ -15,6 +15,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+<<<<<<< Updated upstream
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
@@ -28,6 +29,11 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+=======
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+>>>>>>> Stashed changes
   <component name="ProjectId" id="25sKL2dUojM3y34pW8LCwTf15R7" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -54,8 +60,12 @@
       <option name="presentableId" value="Default" />
       <updated>1646310297139</updated>
       <workItem from="1646310299124" duration="600000" />
+<<<<<<< Updated upstream
       <workItem from="1647505200904" duration="647000" />
       <workItem from="1647508295887" duration="3465000" />
+=======
+      <workItem from="1647445461289" duration="732000" />
+>>>>>>> Stashed changes
     </task>
     <servers />
   </component>
