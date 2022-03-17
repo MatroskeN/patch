@@ -798,51 +798,17 @@ initWheel();
     });
 
 
-    $('.add-sample').on('click', function(){
+    $(document).on('click', '.add-sample', function(){
 
-        if (fragClickCount === 1) {
-            fragClickCount = 0;
-
-            if (firstEmpty == true){
-                $(`[data-name="${activeFragCard}"]`).parent().addClass(`picked-card1`);
-                $(`[data-name="${activeFragCard}"]`).parent().removeClass(`picked-card2`);
-                document.getElementById(`fragrance-card1`).innerHTML = `<img data-label=${activeFragCard} src="images/${activeFragCard}.png">`;
-                document.getElementById(`sample-final1`).innerHTML = `<img src="images/${activeFragCard}.png">`;
-                firstEmpty = false;
-                fragCardArray.unshift(activeFragCard);
-            }
-            else if (firstEmpty == false) {
-                $(`[data-name="${activeFragCard}"]`).parent().addClass(`picked-card2`);
-                $(`[data-name="${activeFragCard}"]`).parent().removeClass(`picked-card1`);
-                document.getElementById(`fragrance-card2`).innerHTML = `<img data-label=${activeFragCard} src="images/${activeFragCard}.png">`;
-                document.getElementById(`sample-final2`).innerHTML = `<img src="images/${activeFragCard}.png">`;
-                fragCardArray.push(activeFragCard);
-            }
-
-            $(`[data-name="${activeFragCard}"]`).fadeOut(500);
-            $(`[data-name="${activeFragCard}"]`).siblings('.fragcardlinks').fadeOut(500);
-
-            fragCardsPicked ++;
-            if (fragCardsPicked == 2) {
-                $(`.add-to-basket`).fadeIn(500);
-            }
-
-            previousStep();
-            cardAnimation();
-        }
+        previousStep();
+        cardAnimation();
 
     });
 
 
     // Close fragrance popup. 
-    $('.close').on('click', function(){
-        if (fragClickCount === 1) {
-            fragClickCount = 0;
-            
-            $(`[data-name="${activeFragCard}"]`).siblings('.fragcardlinks').fadeIn(500);
-            previousStep();
-            activeFragCard = null;
-        }
+    $(document).on('click', '.close', function(){
+        previousStep();
     });
 
     $('#finish').on('click', function(){
