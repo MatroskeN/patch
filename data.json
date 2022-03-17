@@ -9,21 +9,30 @@
         "description": "Классическая элегантность под стать самому красивому сыну Зевса. Искра бергамота кружится в танце с замшей, кофе и геранью. Одеколон на века. Кто сможет устоять перед таким мужчиной?",
         "image": "images/endymion",
         "data": "endymion",
-        "link": "https://www.letu.ru/product/penhaligon-s-endymion/80700020"
+        "link": "https://www.letu.ru/product/penhaligon-s-endymion/80700020",
+        "alt-note": "Шалфей",
+        "heart-note": "Абсолют кофе",
+        "base-note": "Ладан"
       },
       {
         "name": "Halfeti",
         "description": "Итак, это любовь. Опьяняющий, таинственный аромат: энергичный грейпфрут, левантийская пряность и сплетение роз в лунном свете. Но что это на берегу реки? Может быть, это легендарная черная роза?",
         "image": "images/halfeti",
         "data": "halfeti",
-        "link": "https://www.letu.ru/product/penhaligon-s-halfeti/80700016"
+        "link": "https://www.letu.ru/product/penhaligon-s-halfeti/80700016",
+        "alt-note": "Бергамот",
+        "heart-note": "Роза",
+        "base-note": "Уд"
       },
       {
         "name": "Babylon",
         "description": "Логово беззакония или величественное чудо древнего мира? Неважно— аромат Babylon просто божественный. Теплая ваниль, благородный кедр и декадентский шафран. Некоторые тайны лучше оставить нераскрытыми.",
         "image": "images/babylon",
         "data": "babylon",
-        "link": "https://www.letu.ru/product/penhaligon-s-babylon/98300001"
+        "link": "https://www.letu.ru/product/penhaligon-s-babylon/98300001",
+        "alt-note": "Шафран",
+        "heart-note": "Нагармота",
+        "base-note": "Сандаловое дерево"
       }
     ]
   },
@@ -37,21 +46,30 @@
         "description": "Американец за границей со всей своей дерзкой уверенностью в себе, которую можно от него ожидать. В его парфюмированной воде горячие и холодные пряные ноты смешиваются с сухим пачули и сливочным кедром. Никто не может устоять перед чарами Сэма. «Йо-хо!»",
         "image": "images/blazingmistersam",
         "data": "blazingmistersam",
-        "link": "https://www.letu.ru/product/penhaligon-s-blazing-mister-sam/80700001"
+        "link": "https://www.letu.ru/product/penhaligon-s-blazing-mister-sam/80700001",
+        "alt-note": "Кардамон",
+        "heart-note": "Черный перец",
+        "base-note": "Кедр"
       },
       {
         "name": "Endymion",
-        "description": "#",
+        "description": "Классическая элегантность под стать самому красивому сыну Зевса. Искра бергамота кружится в танце с замшей, кофе и геранью. Одеколон на века. Кто сможет устоять перед таким мужчиной?",
         "image": "images/endymion",
         "data": "endymion",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-endymion/80700020",
+        "alt-note": "Шалфей",
+        "heart-note": "Абсолют кофе",
+        "base-note": "Ладан"
       },
       {
-        "name": "Terryble Teddy",
-        "description": "#",
+        "name": "Terrible Teddy",
+        "description": "Тедди живет азартом погони, заманивая ничего не подозревающие сердца своим ароматом кожи, ладана и амброксана. Покоритель сердец, его взгляд устремлен на Хелен... пока он не встретил герцога. ",
         "image": "images/terribleteddy",
         "data": "terribleteddy",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-terrible-teddy/80700007",
+        "alt-note": "Ладан",
+        "heart-note": "Кожа",
+        "base-note": "Ветивер"
       }
     ]
   },
@@ -62,24 +80,33 @@
     "products": [
       {
         "name": "Blenheim",
-        "description": "#",
+        "description": "О, привет! Сухо и свежо, как лучший джин— или все лучшее от английского юмора. Лимон, черный перец и сосна. Эта туалетная вода была создана для герцога Мальборо, и это заметно.",
         "image": "images/blenheim",
         "data": "blenheim",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-blenheim-bouquet/80700018",
+        "alt-note": "Лимон",
+        "heart-note": "Отсутствует",
+        "base-note": "Черный перец"
       },
       {
         "name": "Endymion",
-        "description": "#",
+        "description": "Классическая элегантность под стать самому красивому сыну Зевса. Искра бергамота кружится в танце с замшей, кофе и геранью. Одеколон на века. Кто сможет устоять перед таким мужчиной?",
         "image": "images/endymion",
         "data": "endymion",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-endymion/80700020",
+        "alt-note": "Шалфей",
+        "heart-note": "Абсолют кофе",
+        "base-note": "Ладан"
       },
       {
         "name": "Quercus",
-        "description": "#",
+        "description": "Изысканный одеколон, названный в честь культового английского дуба. Свежие, как горный ручей, ноты базилика и лимона, сладкий жасмин и древесная, мшистая глубина, которая благополучно возвращает вас на землю.",
         "image": "images/quercus",
         "data": "quercus",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-quercus/80700023",
+        "alt-note": "Мандарин",
+        "heart-note": "Ландыш",
+        "base-note": "Дубовый мох"
       }
     ]
   },
@@ -90,24 +117,33 @@
     "products": [
       {
         "name": "Sartorial",
-        "description": "#",
+        "description": "Зайдите в ателье Norton & Sons на Сэвил-Роу, где портные работают по индивидуальному заказу, и вдохните этот воздух. Пар, пчелиный воск, кожа и лаванда. Ванильно-сладкие нотки бобов тонка. Элегантный аромат для одетых с иголочки джентльменов.",
         "image": "images/sartorial",
         "data": "sartorial",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-sartorial/80700024",
+        "alt-note": "Лист фиалки",
+        "heart-note": "Кожа",
+        "base-note": "Бобы тонка"
       },
       {
         "name": "Endymion",
-        "description": "#",
+        "description": "Классическая элегантность под стать самому красивому сыну Зевса. Искра бергамота кружится в танце с замшей, кофе и геранью. Одеколон на века. Кто сможет устоять перед таким мужчиной?",
         "image": "images/endymion",
         "data": "endymion",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-endymion/80700020",
+        "alt-note": "Шалфей",
+        "heart-note": "Абсолют кофе",
+        "base-note": "Ладан"
       },
       {
         "name": "Quercus",
-        "description": "#",
+        "description": "Изысканный одеколон, названный в честь культового английского дуба. Свежие, как горный ручей, ноты базилика и лимона, сладкий жасмин и древесная, мшистая глубина, которая благополучно возвращает вас на землю.",
         "image": "images/quercus",
         "data": "quercus",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-quercus/80700023",
+        "alt-note": "Мандарин",
+        "heart-note": "Ландыш",
+        "base-note": "Дубовый мох"
       }
     ]
   },
@@ -118,24 +154,33 @@
     "products": [
       {
         "name": "The Favourite",
-        "description": "#",
+        "description": "Этой леди не пристало ждать. Она точно знает, что происходит за дверями дворца. Золотая мимоза оказывает влияние на мнение общества. Величественный аромат ириса и мускуса встречает милой улыбкой, когда на сцену выходит сандаловое дерево.",
         "image": "images/thefavourite",
         "data": "thefavourite",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-the-favourite/89900002",
+        "alt-note": "Лист фиалки",
+        "heart-note": "Ирис",
+        "base-note": "Мускус"
       },
       {
         "name": "Constance",
-        "description": "#",
+        "description": "Констанция— это олицетворение очень современной женщины. Она пренебрегает обычаями и поступает так, как ей нравится. Прохладный кардамон, острый перец, соленая карамель— ее своевольный аромат нарушает все правила. ",
         "image": "images/constance",
         "data": "constance",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-changing-constance/80700002",
+        "alt-note": "Кардамон",
+        "heart-note": "Карамель с соленым маслом",
+        "base-note": "Ваниль"
       },
       {
         "name": "Halfeti",
-        "description": "#",
+        "description": "Итак, это любовь. Опьяняющий, таинственный аромат: энергичный грейпфрут, левантийская пряность и сплетение роз в лунном свете. Но что это на берегу реки? Может быть, это легендарная черная роза?",
         "image": "images/halfeti",
         "data": "halfeti",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-halfeti/80700016",
+        "alt-note": "Бергамот",
+        "heart-note": "Роза",
+        "base-note": "Уд"
       }
     ]
   },
@@ -146,24 +191,33 @@
     "products": [
       {
         "name": "Duchess Rose",
-        "description": "#",
+        "description": "За скромностью парфюмерной воды Роуз скрывается нечто более чувственное — оттенок мускусного дерева. Увы, герцог где-то пропадает, а его милая юная невеста изнемогает от желания. Неужели никто (хоть кто-то) ее не осчастливит?",
         "image": "images/duchessrose",
         "data": "duchessrose",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-the-coveted-duchess-rose/80700009",
+        "alt-note": "Мандарин",
+        "heart-note": "Столистная роза",
+        "base-note": "Ваниль"
       },
       {
         "name": "Heartless Helen",
-        "description": "#",
+        "description": "Кому нужна романтика, когда есть власть? Тубероза, мандарин, дерево: аромат нашей бесстрашной завоевательницы соблазняет всех, кто встречается на ее пути. То, что происходит на сафари, остается на сафари, или сэр Тедди так думает... ",
         "image": "images/heartlesshelen",
         "data": "heartlesshelen",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-heartless-helen/80700004",
+        "alt-note": "Розовый перец",
+        "heart-note": "Тубероза",
+        "base-note": "Кашмеран"
       },
       {
         "name": "The Favourite",
-        "description": "#",
+        "description": "Этой леди не пристало ждать. Она точно знает, что происходит за дверями дворца. Золотая мимоза оказывает влияние на мнение общества. Величественный аромат ириса и мускуса встречает милой улыбкой, когда на сцену выходит сандаловое дерево.",
         "image": "images/thefavourite",
         "data": "thefavourite",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-the-favourite/89900002",
+        "alt-note": "Лист фиалки",
+        "heart-note": "Ирис",
+        "base-note": "Мускус"
       }
     ]
   },
@@ -174,24 +228,33 @@
     "products": [
       {
         "name": "Duchess Rose",
-        "description": "#",
+        "description": "За скромностью парфюмерной воды Роуз скрывается нечто более чувственное — оттенок мускусного дерева. Увы, герцог где-то пропадает, а его милая юная невеста изнемогает от желания. Неужели никто (хоть кто-то) ее не осчастливит?",
         "image": "images/duchessrose",
         "data": "duchessrose",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-the-coveted-duchess-rose/80700009",
+        "alt-note": "Мандарин",
+        "heart-note": "Столистная роза",
+        "base-note": "Ваниль"
       },
       {
         "name": "Luna",
-        "description": "#",
+        "description": "Ванна, принимаемая богиней Луны, успокаивает и соблазняет, как и ее туалетная вода. Она сияет нотами апельсина, жасмина, нежной розы и пихтового бальзама. Расслабьтесь. Поддайтесь этому чувству. Сдаться еще никогда не было так сладко. ",
         "image": "images/luna",
         "data": "luna",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-luna/80700021",
+        "alt-note": "Бергамот",
+        "heart-note": "Ягода можжевельника",
+        "base-note": "Пихтовый бальзам"
       },
       {
         "name": "Cousin Flora",
-        "description": "#",
+        "description": "Наивная и невинная Флора всех обманула. Как ни парадоксально, но под ее милой внешностью скрывается большая проказница. Необузданный, бьющий ключом свежий аромат Флоры— это цитрусовый глоток бодрости. ",
         "image": "images/cousinflora",
         "data": "cousinflora",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-the-ingenue-cousin-flora/80700011",
+        "alt-note": "Мандарин",
+        "heart-note": "Мята",
+        "base-note": "Мускус"
       }
     ]
   },
@@ -202,24 +265,33 @@
     "products": [
       {
         "name": "William P.",
-        "description": "#",
+        "description": "«Говорю вам, сам мистер Пенхалигон!» Он входит в комнату дымкой ветивера — теплым, свежим и землистым ароматом. Такой великолепный аромат! Неудивительно, что он единственный парфюмер, которому доверяют представители высшего общества.",
         "image": "images/williampenhaligon",
         "data": "williampenhaligon",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-the-inimitable-william-penhaligon/95000005",
+        "alt-note": "Бергамот",
+        "heart-note": "Ладан",
+        "base-note": "Гаитянский ветивер"
       },
       {
         "name": "Elisabethan R",
-        "description": "#",
+        "description": "Взгляните на знаменитую розу Тюдоров — цветок, символизирующий Англию. Эта воздушная парфюмированная вода, на создание которой вдохновило объединение домов Йорков и Ланкастеров, представляет собой гармоничное сочетание розы, листьев орешника и ветивера.",
         "image": "images/elisabethanrose",
         "data": "elisabethanrose",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-elisabethan-rose/80700026",
+        "alt-note": "Листья орешника",
+        "heart-note": "Столистная роза",
+        "base-note": "Ветивер"
       },
       {
         "name": "Lady Blanche",
-        "description": "#",
+        "description": "Опасно очаровательная леди Бланш владеет своей красотой как оружием. Жертва? Ее бедный ничего не замечающий муж. Свежий, но пряный аромат. Цветочные и древесные ноты. Ей-богу! Эта парфюмированная вода преступно хороша.",
         "image": "images/ladyblanche-bottle",
         "data": "ladyblanche",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-the-revenge-of-lady-blanche/80700012",
+        "alt-note": "Нарцисс",
+        "heart-note": "Ирис",
+        "base-note": "Сандаловое дерево"
       }
     ]
   },
@@ -230,24 +302,33 @@
     "products": [
       {
         "name": "Babylon",
-        "description": "#",
+        "description": "Логово беззакония или величественное чудо древнего мира? Неважно— аромат Babylon просто божественный. Теплая ваниль, благородный кедр и декадентский шафран. Некоторые тайны лучше оставить нераскрытыми.",
         "image": "images/babylon",
         "data": "babylon",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-babylon/98300001",
+        "alt-note": "Шафран",
+        "heart-note": "Нагармота",
+        "base-note": "Сандаловое дерево"
       },
       {
         "name": "Halfeti",
-        "description": "#",
+        "description": "Итак, это любовь. Опьяняющий, таинственный аромат: энергичный грейпфрут, левантийская пряность и сплетение роз в лунном свете. Но что это на берегу реки? Может быть, это легендарная черная роза?",
         "image": "images/halfeti",
         "data": "halfeti",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-halfeti/80700016",
+        "alt-note": "Бергамот",
+        "heart-note": "Роза",
+        "base-note": "Уд"
       },
       {
-        "name": "William P",
-        "description": "#",
+        "name": "William P.",
+        "description": "«Говорю вам, сам мистер Пенхалигон!» Он входит в комнату дымкой ветивера — теплым, свежим и землистым ароматом. Такой великолепный аромат! Неудивительно, что он единственный парфюмер, которому доверяют представители высшего общества.",
         "image": "images/williampenhaligon",
         "data": "williampenhaligon",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-the-inimitable-william-penhaligon/95000005",
+        "alt-note": "Бергамот",
+        "heart-note": "Ладан",
+        "base-note": "Гаитянский ветивер"
       }
     ]
   },
@@ -258,24 +339,33 @@
     "products": [
       {
         "name": "Quercus",
-        "description": "#",
+        "description": "Изысканный одеколон, названный в честь культового английского дуба. Свежие, как горный ручей, ноты базилика и лимона, сладкий жасмин и древесная, мшистая глубина, которая благополучно возвращает вас на землю.",
         "image": "images/quercus",
         "data": "quercus",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-quercus/80700023",
+        "alt-note": "Мандарин",
+        "heart-note": "Ландыш",
+        "base-note": "Дубовый мох"
       },
       {
         "name": "Constance",
-        "description": "#",
+        "description": "Констанция— это олицетворение очень современной женщины. Она пренебрегает обычаями и поступает так, как ей нравится. Прохладный кардамон, острый перец, соленая карамель— ее своевольный аромат нарушает все правила. ",
         "image": "images/constance",
         "data": "constance",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-changing-constance/80700002",
+        "alt-note": "Кардамон",
+        "heart-note": "Карамель с соленым маслом",
+        "base-note": "Ваниль"
       },
       {
         "name": "Savoy Steam",
-        "description": "#",
+        "description": "В хаммаме поднимается пар, наполненный пьянящим ароматом свежих тунисских роз. Розовый перец, бодрящий, как и сама купель, уравновешивают розмарин и ладан. Действительно, настоящее наслаждение.",
         "image": "images/savoysteam",
         "data": "savoysteam",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-savoy-steam/80700025",
+        "alt-note": "Розмарин",
+        "heart-note": "Герань",
+        "base-note": "Бензоин"
       }
     ]
   },
@@ -286,24 +376,33 @@
     "products": [
       {
         "name": "Matthew",
-        "description": "#",
+        "description": "Мэтью всегда рядом с неприятностями — проказник, но добр к сестре. Его парфюмированная вода раскрывает неожиданное происхождение: свежий, игристый мандарин галантно выходит из древесных глубин.",
         "image": "images/cousinmatthew",
         "data": "cousinmatthew",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-the-impudent-cousin-matthew/80700010",
+        "alt-note": "Лимон",
+        "heart-note": "Ягода можжевельника",
+        "base-note": "Пачули"
       },
       {
         "name": "Blenheim",
-        "description": "#",
+        "description": "О, привет! Сухо и свежо, как лучший джин— или все лучшее от английского юмора. Лимон, черный перец и сосна. Эта туалетная вода была создана для герцога Мальборо, и это заметно.",
         "image": "images/blenheim",
         "data": "blenheim",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-blenheim-bouquet/80700018",
+        "alt-note": "Лимон",
+        "heart-note": "Отсутствует",
+        "base-note": "Черный перец"
       },
       {
-        "name": "Castille",
-        "description": "#",
+        "name": "Castile",
+        "description": "Теплый средиземноморский бриз приносит аромат флердоранжа на склон холма. Нероли источает солнечную свежесть; на лице невольно появляется улыбка. В этой туалетной воде заключено испанское лето.",
         "image": "images/castile",
         "data": "castile",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-savoy-steam/80700025",
+        "alt-note": "Петигрен",
+        "heart-note": "Флердоранж",
+        "base-note": "Драгоценная древесина"
       }
     ]
   },
@@ -314,24 +413,33 @@
     "products": [
       {
         "name": "Babylon",
-        "description": "#",
+        "description": "Логово беззакония или величественное чудо древнего мира? Неважно— аромат Babylon просто божественный. Теплая ваниль, благородный кедр и декадентский шафран. Некоторые тайны лучше оставить нераскрытыми.",
         "image": "images/babylon",
         "data": "babylon",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-babylon/98300001",
+        "alt-note": "Шафран",
+        "heart-note": "Нагармота",
+        "base-note": "Сандаловое дерево"
       },
       {
         "name": "Halfeti",
-        "description": "#",
+        "description": "Итак, это любовь. Опьяняющий, таинственный аромат: энергичный грейпфрут, левантийская пряность и сплетение роз в лунном свете. Но что это на берегу реки? Может быть, это легендарная черная роза?",
         "image": "images/halfeti",
         "data": "halfeti",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-halfeti/80700016",
+        "alt-note": "Бергамот",
+        "heart-note": "Роза",
+        "base-note": "Уд"
       },
       {
-        "name": "Terryble Teddy",
-        "description": "#",
+        "name": "Terrible Teddy",
+        "description": "Тедди живет азартом погони, заманивая ничего не подозревающие сердца своим ароматом кожи, ладана и амброксана. Покоритель сердец, его взгляд устремлен на Хелен... пока он не встретил герцога. ",
         "image": "images/terribleteddy",
         "data": "terribleteddy",
-        "link": "#"
+        "link": "https://www.letu.ru/product/penhaligon-s-terrible-teddy/80700007",
+        "alt-note": "Ладан",
+        "heart-note": "Кожа",
+        "base-note": "Ветивер"
       }
     ]
   }

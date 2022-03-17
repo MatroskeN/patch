@@ -905,7 +905,7 @@ initWheel();
                         </div>
                     </div>
                     `;
-                document.querySelector('.add-sample').attributes.href = item[0].link;
+                document.querySelector('.add-sample').href = item[0].link;
                 $(`.add-to-basket`).fadeIn(500);
                 nextStep();
             });
