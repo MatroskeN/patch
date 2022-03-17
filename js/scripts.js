@@ -890,7 +890,7 @@ initWheel();
                 let data = evt.target.dataset.name;
                 let item = dataCards.filter((item) => item.data === data)
                 console.log(item)
-                document.getElementById('bottle-image').innerHTML = `<img src="${item[0].image}"/>`;
+                document.getElementById('bottle-image2').innerHTML = `<img src="${item[0].image}"/>`;
                 document.getElementById('sample-content').innerHTML = `
                     <div class="row">
                         <div class="col-xs-12">
