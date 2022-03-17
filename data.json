@@ -1,0 +1,194 @@
+[
+  {
+    "gender": "GENTS",
+    "scoreMin": 12,
+    "scoreMax": 15,
+    "products": [
+      {
+        "name": "Endymion"
+      },
+      {
+        "name": "Arthur"
+      },
+      {
+        "name": "Mr Sam"
+      }
+    ]
+  },
+  {
+    "gender": "GENTS",
+    "scoreMin": 16,
+    "scoreMax": 19,
+    "products": [
+      {
+        "name": "Mr Sam"
+      },
+      {
+        "name": "Endymion"
+      },
+      {
+        "name": "Teddy"
+      }
+    ]
+  },
+  {
+    "gender": "GENTS",
+    "scoreMin": 20,
+    "scoreMax": 23,
+    "products": [
+      {
+        "name": "Blenheim "
+      },
+      {
+        "name": "Endymion "
+      },
+      {
+        "name": "The Duke"
+      }
+    ]
+  },
+  {
+    "gender": "GENTS",
+    "scoreMin": 24,
+    "scoreMax": 28,
+    "products": [
+      {
+        "name": "Sartorial"
+      },
+      {
+        "name": "Lord George"
+      },
+      {
+        "name": "The Duke"
+      }
+    ]
+  },
+  {
+    "gender": "LADIES",
+    "scoreMin": 12,
+    "scoreMax": 15,
+    "products": [
+      {
+        "name": "The Favourite"
+      },
+      {
+        "name": "Constance"
+      },
+      {
+        "name": "Yasmine"
+      }
+    ]
+  },
+  {
+    "gender": "LADIES",
+    "scoreMin": 16,
+    "scoreMax": 19,
+    "products": [
+      {
+        "name": "Duchess Rose"
+      },
+      {
+        "name": "Heartless Helen"
+      },
+      {
+        "name": "The Favourite"
+      }
+    ]
+  },
+  {
+    "gender": "LADIES",
+    "scoreMin": 20,
+    "scoreMax": 23,
+    "products": [
+      {
+        "name": "Duchess Rose "
+      },
+      {
+        "name": "Luna "
+      },
+      {
+        "name": "Cousin Flora"
+      }
+    ]
+  },
+  {
+    "gender": "LADIES",
+    "scoreMin": 24,
+    "scoreMax": 28,
+    "products": [
+      {
+        "name": "William P."
+      },
+      {
+        "name": "Elisabethan R"
+      },
+      {
+        "name": "Lady Blanche"
+      }
+    ]
+  },
+  {
+    "gender": "IT MATTERS NOT",
+    "scoreMin": 12,
+    "scoreMax": 15,
+    "products": [
+      {
+        "name": "Babylon"
+      },
+      {
+        "name": "Halfeti"
+      },
+      {
+        "name": "William P"
+      }
+    ]
+  },
+  {
+    "gender": "IT MATTERS NOT",
+    "scoreMin": 16,
+    "scoreMax": 19,
+    "products": [
+      {
+        "name": "The Duke"
+      },
+      {
+        "name": "Constance"
+      },
+      {
+        "name": "Savoy Steam"
+      }
+    ]
+  },
+  {
+    "gender": "IT MATTERS NOT",
+    "scoreMin": 20,
+    "scoreMax": 23,
+    "products": [
+      {
+        "name": " Matthew "
+      },
+      {
+        "name": "Blenheim "
+      },
+      {
+        "name": "Castille"
+      }
+    ]
+  },
+  {
+    "gender": "IT MATTERS NOT",
+    "scoreMin": 24,
+    "scoreMax": 28,
+    "products": [
+      {
+        "name": "Constantinople"
+      },
+      {
+        "name": "Halfeti "
+      },
+      {
+        "name": "Terryble Teddy"
+      }
+    ]
+  }
+]
