@@ -5,14 +5,7 @@ Number.prototype.between = function(a, b, inclusive) {
 }
 
 async function getAroma(gender, score){
-    let data;
-    await fetch('/data.json', {
-        method: "GET"
-    })
-        .then(res => res.json())
-        .then(res => {
-            data = res;
-        });
+    let data = window.INITIAL_STATE;
     let newArr = data.filter((item) => item.gender === gender)
     let result;
     newArr.forEach((item) => {
