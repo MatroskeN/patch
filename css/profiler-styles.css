@@ -897,8 +897,8 @@ h1,h2,h3,h4,h5,span,p,a{
 }
  #fragrance-profiler .your-fragrances .chosen-cards {
 	 justify-content: unset;
-	 width: 395px;
-	 margin-left: 47%;
+	 width: fit-content;
+	 margin: 0 auto;
 }
  @media (max-width: 767px) {
 	 #fragrance-profiler .your-fragrances .chosen-cards {

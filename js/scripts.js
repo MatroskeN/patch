@@ -838,7 +838,7 @@ initWheel();
                 <div class="col-md-3 col-md-offset-1 col-xs-6 col-xs-offset-3 playing-cards">
                     <img class="card-1 fragrance-card card-img check-data" data-name="${item.data}" src="${item.image}.png">
                     <img class="card-bg card-bg-left" src="images/pack-left-v6.png">
-                    <p class="fragcardlinks shuffle">Перемешать</p>
+<!--                    <p class="fragcardlinks shuffle">Перемешать</p>-->
                 </div>
                 `;
             })
