@@ -6,18 +6,24 @@
     "products": [
       {
         "name": "Endymion",
-        "image": "images/endymion.png",
-        "data": "endymion"
+        "description": "Классическая элегантность под стать самому красивому сыну Зевса. Искра бергамота кружится в танце с замшей, кофе и геранью. Одеколон на века. Кто сможет устоять перед таким мужчиной?",
+        "image": "images/endymion",
+        "data": "endymion",
+        "link": "https://www.letu.ru/product/penhaligon-s-endymion/80700020"
       },
       {
         "name": "Halfeti",
-        "image": "images/halfeti.png",
-        "data": "halfeti"
+        "description": "Итак, это любовь. Опьяняющий, таинственный аромат: энергичный грейпфрут, левантийская пряность и сплетение роз в лунном свете. Но что это на берегу реки? Может быть, это легендарная черная роза?",
+        "image": "images/halfeti",
+        "data": "halfeti",
+        "link": "https://www.letu.ru/product/penhaligon-s-halfeti/80700016"
       },
       {
         "name": "Babylon",
-        "image": "images/babylon.png",
-        "data": "babylon"
+        "description": "Логово беззакония или величественное чудо древнего мира? Неважно— аромат Babylon просто божественный. Теплая ваниль, благородный кедр и декадентский шафран. Некоторые тайны лучше оставить нераскрытыми.",
+        "image": "images/babylon",
+        "data": "babylon",
+        "link": "https://www.letu.ru/product/penhaligon-s-babylon/98300001"
       }
     ]
   },
@@ -28,18 +34,24 @@
     "products": [
       {
         "name": "Mr Sam",
-        "image": "images/blazingmistersam.png",
-        "data": "blazingmistersam"
+        "description": "Американец за границей со всей своей дерзкой уверенностью в себе, которую можно от него ожидать. В его парфюмированной воде горячие и холодные пряные ноты смешиваются с сухим пачули и сливочным кедром. Никто не может устоять перед чарами Сэма. «Йо-хо!»",
+        "image": "images/blazingmistersam",
+        "data": "blazingmistersam",
+        "link": "https://www.letu.ru/product/penhaligon-s-blazing-mister-sam/80700001"
       },
       {
         "name": "Endymion",
-        "image": "images/endymion.png",
-        "data": "endymion"
+        "description": "#",
+        "image": "images/endymion",
+        "data": "endymion",
+        "link": "#"
       },
       {
         "name": "Terryble Teddy",
-        "image": "images/terribleteddy.png",
-        "data": "terribleteddy"
+        "description": "#",
+        "image": "images/terribleteddy",
+        "data": "terribleteddy",
+        "link": "#"
       }
     ]
   },
@@ -50,18 +62,24 @@
     "products": [
       {
         "name": "Blenheim",
-        "image": "images/blenheim.png",
-        "data": "blenheim"
+        "description": "#",
+        "image": "images/blenheim",
+        "data": "blenheim",
+        "link": "#"
       },
       {
         "name": "Endymion",
-        "image": "images/endymion.png",
-        "data": "endymion"
+        "description": "#",
+        "image": "images/endymion",
+        "data": "endymion",
+        "link": "#"
       },
       {
         "name": "Quercus",
-        "image": "images/quercus.png",
-        "data": "quercus"
+        "description": "#",
+        "image": "images/quercus",
+        "data": "quercus",
+        "link": "#"
       }
     ]
   },
@@ -72,18 +90,24 @@
     "products": [
       {
         "name": "Sartorial",
-        "image": "images/sartorial.png",
-        "data": "sartorial"
+        "description": "#",
+        "image": "images/sartorial",
+        "data": "sartorial",
+        "link": "#"
       },
       {
         "name": "Endymion",
-        "image": "images/endymion.png",
-        "data": "endymion"
+        "description": "#",
+        "image": "images/endymion",
+        "data": "endymion",
+        "link": "#"
       },
       {
         "name": "Quercus",
-        "image": "images/quercus.png",
-        "data": "quercus"
+        "description": "#",
+        "image": "images/quercus",
+        "data": "quercus",
+        "link": "#"
       }
     ]
   },
@@ -94,18 +118,24 @@
     "products": [
       {
         "name": "The Favourite",
-        "image": "images/thefavourite.png",
-        "data": "thefavourite"
+        "description": "#",
+        "image": "images/thefavourite",
+        "data": "thefavourite",
+        "link": "#"
       },
       {
         "name": "Constance",
-        "image": "images/constance.png",
-        "data": "constance"
+        "description": "#",
+        "image": "images/constance",
+        "data": "constance",
+        "link": "#"
       },
       {
         "name": "Halfeti",
-        "image": "images/halfeti.png",
-        "data": "halfeti"
+        "description": "#",
+        "image": "images/halfeti",
+        "data": "halfeti",
+        "link": "#"
       }
     ]
   },
@@ -116,18 +146,24 @@
     "products": [
       {
         "name": "Duchess Rose",
-        "image": "images/duchessrose.png",
-        "data": "duchessrose"
+        "description": "#",
+        "image": "images/duchessrose",
+        "data": "duchessrose",
+        "link": "#"
       },
       {
         "name": "Heartless Helen",
-        "image": "images/heartlesshelen.png",
-        "data": "heartlesshelen"
+        "description": "#",
+        "image": "images/heartlesshelen",
+        "data": "heartlesshelen",
+        "link": "#"
       },
       {
         "name": "The Favourite",
-        "image": "images/thefavourite.png",
-        "data": "thefavourite"
+        "description": "#",
+        "image": "images/thefavourite",
+        "data": "thefavourite",
+        "link": "#"
       }
     ]
   },
@@ -138,18 +174,24 @@
     "products": [
       {
         "name": "Duchess Rose",
-        "image": "images/duchessrose.png",
-        "data": "duchessrose"
+        "description": "#",
+        "image": "images/duchessrose",
+        "data": "duchessrose",
+        "link": "#"
       },
       {
         "name": "Luna",
-        "image": "images/luna.png",
-        "data": "luna"
+        "description": "#",
+        "image": "images/luna",
+        "data": "luna",
+        "link": "#"
       },
       {
         "name": "Cousin Flora",
-        "image": "images/cousinflora.png",
-        "data": "cousinflora"
+        "description": "#",
+        "image": "images/cousinflora",
+        "data": "cousinflora",
+        "link": "#"
       }
     ]
   },
@@ -160,18 +202,24 @@
     "products": [
       {
         "name": "William P.",
-        "image": "images/williampenhaligon.png",
-        "data": "williampenhaligon"
+        "description": "#",
+        "image": "images/williampenhaligon",
+        "data": "williampenhaligon",
+        "link": "#"
       },
       {
         "name": "Elisabethan R",
-        "image": "images/elisabethanrose.png",
-        "data": "elisabethanrose"
+        "description": "#",
+        "image": "images/elisabethanrose",
+        "data": "elisabethanrose",
+        "link": "#"
       },
       {
         "name": "Lady Blanche",
-        "image": "images/ladyblanche-bottle.png",
-        "data": "ladyblanche"
+        "description": "#",
+        "image": "images/ladyblanche-bottle",
+        "data": "ladyblanche",
+        "link": "#"
       }
     ]
   },
@@ -182,18 +230,24 @@
     "products": [
       {
         "name": "Babylon",
-        "image": "images/babylon.png",
-        "data": "babylon"
+        "description": "#",
+        "image": "images/babylon",
+        "data": "babylon",
+        "link": "#"
       },
       {
         "name": "Halfeti",
-        "image": "images/halfeti.png",
-        "data": "halfeti"
+        "description": "#",
+        "image": "images/halfeti",
+        "data": "halfeti",
+        "link": "#"
       },
       {
         "name": "William P",
-        "image": "images/williampenhaligon.png",
-        "data": "williampenhaligon"
+        "description": "#",
+        "image": "images/williampenhaligon",
+        "data": "williampenhaligon",
+        "link": "#"
       }
     ]
   },
@@ -204,18 +258,24 @@
     "products": [
       {
         "name": "Quercus",
-        "image": "images/quercus.png",
-        "data": "quercus"
+        "description": "#",
+        "image": "images/quercus",
+        "data": "quercus",
+        "link": "#"
       },
       {
         "name": "Constance",
-        "image": "images/constance.png",
-        "data": "constance"
+        "description": "#",
+        "image": "images/constance",
+        "data": "constance",
+        "link": "#"
       },
       {
         "name": "Savoy Steam",
-        "image": "images/savoysteam.png",
-        "data": "savoysteam"
+        "description": "#",
+        "image": "images/savoysteam",
+        "data": "savoysteam",
+        "link": "#"
       }
     ]
   },
@@ -226,18 +286,24 @@
     "products": [
       {
         "name": "Matthew",
-        "image": "images/cousinmatthew.png",
-        "data": "cousinmatthew"
+        "description": "#",
+        "image": "images/cousinmatthew",
+        "data": "cousinmatthew",
+        "link": "#"
       },
       {
         "name": "Blenheim",
-        "image": "images/blenheim.png",
-        "data": "blenheim"
+        "description": "#",
+        "image": "images/blenheim",
+        "data": "blenheim",
+        "link": "#"
       },
       {
         "name": "Castille",
-        "image": "images/castile.png",
-        "data": "castile"
+        "description": "#",
+        "image": "images/castile",
+        "data": "castile",
+        "link": "#"
       }
     ]
   },
@@ -248,18 +314,24 @@
     "products": [
       {
         "name": "Babylon",
-        "image": "images/babylon.png",
-        "data": "babylon"
+        "description": "#",
+        "image": "images/babylon",
+        "data": "babylon",
+        "link": "#"
       },
       {
         "name": "Halfeti",
-        "image": "images/halfeti.png",
-        "data": "halfeti"
+        "description": "#",
+        "image": "images/halfeti",
+        "data": "halfeti",
+        "link": "#"
       },
       {
         "name": "Terryble Teddy",
-        "image": "images/terribleteddy.png",
-        "data": "terribleteddy"
+        "description": "#",
+        "image": "images/terribleteddy",
+        "data": "terribleteddy",
+        "link": "#"
       }
     ]
   }

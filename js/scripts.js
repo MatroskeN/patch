@@ -799,19 +799,10 @@ initWheel();
 
 
     $('.add-sample').on('click', function(){
-        
+
         if (fragClickCount === 1) {
             fragClickCount = 0;
-            
-            if (activeFragCard == "blazingmistersam"){
-                $(this).attr("href", "https://www.letu.ru/product/penhaligon-s-blazing-mister-sam/80700001")
-            }
-            if (activeFragCard == "cairo"){
-                $(this).attr("href", "https://www.letu.ru/product/penhaligon-s-cairo/89900001")
-            }
-            if (activeFragCard == "vaara"){
-                $(this).attr("href", "https://www.letu.ru/brand/penhaligon-s")
-            }
+
             if (firstEmpty == true){
                 $(`[data-name="${activeFragCard}"]`).parent().addClass(`picked-card1`);
                 $(`[data-name="${activeFragCard}"]`).parent().removeClass(`picked-card2`);
@@ -827,19 +818,19 @@ initWheel();
                 document.getElementById(`sample-final2`).innerHTML = `<img src="images/${activeFragCard}.png">`;
                 fragCardArray.push(activeFragCard);
             }
-            
+
             $(`[data-name="${activeFragCard}"]`).fadeOut(500);
             $(`[data-name="${activeFragCard}"]`).siblings('.fragcardlinks').fadeOut(500);
-    
+
             fragCardsPicked ++;
             if (fragCardsPicked == 2) {
                 $(`.add-to-basket`).fadeIn(500);
             }
-            
+
             previousStep();
             cardAnimation();
         }
-          
+
     });
 
 
@@ -879,7 +870,7 @@ initWheel();
             res.products.forEach((item) => {
                 cards += `
                 <div class="col-md-3 col-md-offset-1 col-xs-6 col-xs-offset-3 playing-cards">
-                    <img class="card-1 fragrance-card card-img check-data" data-name="${item.data}" src="${item.image}">
+                    <img class="card-1 fragrance-card card-img check-data" data-name="${item.data}" src="${item.image}.png">
                     <img class="card-bg card-bg-left" src="images/pack-left-v6.png">
                     <p class="fragcardlinks shuffle">Перемешать</p>
                 </div>
@@ -890,11 +881,13 @@ initWheel();
                 let data = evt.target.dataset.name;
                 let item = dataCards.filter((item) => item.data === data)
                 console.log(item)
-                document.getElementById('bottle-image2').innerHTML = `<img src="${item[0].image}"/>`;
+                document.getElementById('bottle-image').innerHTML = `<img src="${item[0].image}-sample.png"/>`;
+                document.getElementById('bottle-image2').innerHTML = `<img src="${item[0].image}-bottle.png"/>`;
                 document.getElementById('sample-content').innerHTML = `
                     <div class="row">
                         <div class="col-xs-12">
                             <h2>${item[0].name}</h2>
+                            <p>${item[0].description}</p>
                         </div>
                     </div>
                     <div class="row notes">
@@ -912,9 +905,10 @@ initWheel();
                         </div>
                     </div>
                     `;
+                document.querySelector('.add-sample').attributes.href = item[0].link;
                 $(`.add-to-basket`).fadeIn(500);
                 nextStep();
-            })
+            });
         })
 
         // Load personality content for Gent
