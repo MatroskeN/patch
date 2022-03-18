@@ -798,7 +798,7 @@ h1,h2,h3,h4,h5,span,p,a{
 }
  @media (max-width: 499px) {
 	 #fragrance-profiler .card-container {
-		 margin-top: 85px;
+		 margin-top: 125px;
 	}
 }
  @keyframes rotating {
@@ -894,6 +894,7 @@ h1,h2,h3,h4,h5,span,p,a{
 }
  #fragrance-profiler .chosen-cards {
 	 justify-content: center;
+	 margin-top: 50px;
 }
  #fragrance-profiler .your-fragrances .chosen-cards {
 	 justify-content: unset;
@@ -990,6 +991,7 @@ h1,h2,h3,h4,h5,span,p,a{
  @media (max-width: 499px) {
 	 #fragrance-profiler .question.panel .hidden-button {
 		 margin: 0px auto 0;
+		 margin-top: 80px;
 	}
 }
  #fragrance-profiler .hidden-button {
@@ -1918,7 +1920,7 @@ h1,h2,h3,h4,h5,span,p,a{
 }
  @media (max-width: 399px) {
 	 #fragrance-profiler .popup .man {
-		 bottom: -33%;
+		 display: none;
 	}
 }
  @media only screen and (width: 375px) and (height: 812px) and (orientation: portrait) and (-webkit-device-pixel-ratio: 3) {
@@ -2055,7 +2057,7 @@ h1,h2,h3,h4,h5,span,p,a{
 }
  #fragrance-profiler .popup.youare .persona {
 	 position: absolute;
-	 width: 68%;
+	 width: auto;
 	 left: 17%;
 	 top: 15%;
 	 -webkit-transform: rotate(3deg);
