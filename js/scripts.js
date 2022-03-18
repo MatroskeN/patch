@@ -1187,69 +1187,7 @@ initWheel();
 
    // Reset display and data
    $('#start-over, #start-over-button').on('click',function(){
-       $(`.${profilerData.path}.step-${step}`).fadeOut(500, function(){
-
-        step = 1;
-        score = 0;
-        cardsPicked = 0;
-        fragCardsPicked = 0;
-        genClick = 0; 
-        activeFragCard = null;
-        fragCardArray = [];
-        cardData = [];
-        profilerData.gift = null;
-        profilerData.path = 'generic';
-        profilerData.identity = null;
-        profilerData.personalityType = null;
-        firstEmpty = true;
-        document.getElementById(`fragrance-card1`).innerHTML = ``;
-        document.getElementById(`fragrance-card2`).innerHTML = ``;
-        document.getElementById(`sample-final1`).innerHTML = ``;
-        document.getElementById(`sample-final2`).innerHTML = ``;
-        document.getElementById('card1').innerHTML = ``;
-        document.getElementById('card2').innerHTML = ``;
-        document.getElementById('card3').innerHTML = ``;
-        document.getElementById('card4').innerHTML = ``;
-        document.getElementById('card5').innerHTML = ``;
-        document.getElementById('card6').innerHTML = ``;
-        document.getElementById('card7').innerHTML = ``;
-        document.getElementById('card8').innerHTML = ``;
-        document.getElementById('card9').innerHTML = ``;
-        document.getElementById('card10').innerHTML = ``;
-        document.getElementById('card11').innerHTML = ``;
-        $(`#fragrance-profiler`).removeClass(`mobile-full-screen`);
-        $(`.step-1`).fadeIn(500);
-        $('.results').fadeOut(500);
-        $('.playing-cards .card-img').fadeIn(500);
-        $('.playing-cards .card-img').parent().fadeIn(500);
-        $(`.playing-cards .card-img`).removeClass('selected-card-slider');
-        $('.playing-cards').removeClass('picked-card-1').removeClass('picked-card-2').removeClass('picked-card-3').removeClass('picked-card-4').removeClass('picked-card-5').removeClass('picked-card-6').removeClass('picked-card-7').removeClass('picked-card-8');
-        $('.bartender').fadeIn(500);
-        $('.hidden-button').fadeOut(500);
-        $('#finish').fadeOut(500);
-        $('#result-overlay').fadeOut(500);
-        $('.extra').parent().fadeIn(500);
-        $('.extra').parent().removeClass('margin-auto');
-        $('#start-over').fadeOut(500);
-        $(`.add-to-basket`).fadeOut(500);
-        $(`.next-step`).attr('disabled', false); 
-        $('.pointer').removeClass('lady-animate').removeClass('it-matters-not-animate');
-        $(`.question-text`).toggle();
-        $('html, body').animate({ scrollTop: 0 }, 500);
-        $('#question-error').fadeOut(500);
-        if ($(window).width() < 484 ) {
-            $('.panel-container .question .button-container').fadeOut(500);
-        }
-        document.getElementById('youare-picker').innerHTML = `<img src="images/step-3-picker-gent.png">`;
-        $(`.personality-results .card-slot`).on('click', function(){
-            removal();
-        });
-        $('.choice').on('click', function(){
-            $('.choice').off('click');
-            profilerData.gift = $(this).data('name');
-            nextStep();
-        });
-       });
+       document.location.reload();
    });
    
    // Close error popup
