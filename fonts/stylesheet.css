@@ -1,0 +1,90 @@
+@font-face {
+    font-family: 'Corbel';
+    src: url('Corbel-Italic.woff2') format('woff2'),
+        url('Corbel-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corbel';
+    src: url('CorbelLight-Italic.woff2') format('woff2'),
+        url('CorbelLight-Italic.woff') format('woff');
+    font-weight: 300;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corbel';
+    src: url('Corbel-Bold.woff2') format('woff2'),
+        url('Corbel-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corbel';
+    src: url('Corbel.woff2') format('woff2'),
+        url('Corbel.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corbel';
+    src: url('CorbelLight.woff2') format('woff2'),
+        url('CorbelLight.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Corbel';
+    src: url('Corbel-BoldItalic.woff2') format('woff2'),
+        url('Corbel-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Century Schoolbook';
+    src: url('CenturySchoolbook-Bold.woff2') format('woff2'),
+        url('CenturySchoolbook-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Century Schoolbook';
+    src: url('CenturySchoolbook-BoldItalic.woff2') format('woff2'),
+        url('CenturySchoolbook-BoldItalic.woff') format('woff');
+    font-weight: bold;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Century Schoolbook';
+    src: url('CenturySchoolbook-Italic.woff2') format('woff2'),
+        url('CenturySchoolbook-Italic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Century Schoolbook';
+    src: url('CenturySchoolbook.woff2') format('woff2'),
+        url('CenturySchoolbook.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

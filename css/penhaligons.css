@@ -333,7 +333,9 @@ div[class*='col-'] {
   .col-xs-4 {
     max-width: 33.33333%;
     flex: 0 0 33.33333%;
-    -ms-flex: 0 0 33.33333%; }
+    -ms-flex: 0 0 33.33333%;
+
+  }
 
   .col-xs-offset-4 {
     margin-left: 33.33333%; }
