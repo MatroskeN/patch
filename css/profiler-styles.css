@@ -87,7 +87,7 @@ h1,h2,h3,h4,h5,a,button{
 	 background-size: inherit;
 }
 
- #fragrance-profiler .step-1 h2, p{
+ #fragrance-profiler .text-align-left{
 	 text-align: left;
  }
  #fragrance-profiler .penhaligon {
